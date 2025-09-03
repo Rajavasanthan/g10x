@@ -1,21 +1,23 @@
 interface BtnProps {
     text: string;
-    bg_color: string;
-    border_color: string;
-    text_color: string;
-    hover_bg_color: string;
-    hover_text_color: string;
-    arrow_bg_color: string;
+    bgColor: string;
+    borderColor: string;
+    textColor: string;
+    hoverBgColor: string;
+    hoverTextColor: string;
+    arrowBgColor: string;
 }
 
-export function Btn({ text, bg_color, border_color, text_color, hover_bg_color, hover_text_color, arrow_bg_color }: BtnProps) {
-
+export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hoverTextColor, arrowBgColor }: BtnProps) {
     return (
-        <button className={`group bg-${bg_color} text-${text_color} p-1.5 pl-4 rounded-full text-lg flex items-center gap-4 cursor-pointer hover:bg-${hover_bg_color} hover:text-${hover_text_color} border border-${border_color} duration-500 transform transition-transform hover:translate-x-2.5`}>
+        <button
+            className={`group ${bgColor} ${textColor} p-1.5 pl-4 rounded-full text-lg flex items-center gap-4 cursor-pointer ${hoverBgColor} ${hoverTextColor} ${borderColor} duration-500 transform transition-transform hover:translate-x-2.5`}
+        >
             {text}
 
-            <span className={`relative w-10 h-10 bg-${arrow_bg_color} rounded-full flex items-center justify-center overflow-hidden`}>
-
+            <span
+                className={`relative w-10 h-10 ${arrowBgColor} rounded-full flex items-center justify-center overflow-hidden`}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -45,8 +47,7 @@ export function Btn({ text, bg_color, border_color, text_color, hover_bg_color, 
                         d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                     />
                 </svg>
-
             </span>
         </button>
-    )
+    );
 }

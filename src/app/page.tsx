@@ -1,4 +1,4 @@
-import { Btn, Navbar } from "@/components";
+import { Btn, Navbar, AnimationPage } from "@/components";
 import meetingImg from "../../public/images/meeting-img.jpg";
 
 import volkerRailImg from "../../public/images/VolkerRail.svg"
@@ -40,7 +40,16 @@ export default function Home() {
           </p>
 
           <div className="flex">
-            <Btn text="Find your challenge" bg_color="[#e83a77]" border_color="[#e83a77]" text_color="black" hover_bg_color="[#e83a77]" hover_text_color="white" arrow_bg_color="[#e83a77]" />
+            <Btn
+              text="Find your challenge"
+              bgColor="bg-[#e83a77]"
+              borderColor="border border-[#e83a77]"
+              textColor="text-black"
+              hoverBgColor="hover:bg-[#e83a77]"
+              hoverTextColor="hover:text-white"
+              arrowBgColor="bg-[#e83a77]"
+            />
+
           </div>
         </div>
 
@@ -208,11 +217,21 @@ export default function Home() {
           </p>
 
           <div className="mt-5 md:mt-8">
-            <Btn text="Schedule an introductory meeting" bg_color="[#ede7dd]" border_color="black" text_color="black" hover_bg_color="black" hover_text_color="white" arrow_bg_color="[#e83a77]" />
+            <Btn
+              text="Schedule an introductory meeting"
+              bgColor="bg-[#ede7dd]"
+              borderColor="border border-black"
+              textColor="text-black"
+              hoverBgColor="hover:bg-black"
+              hoverTextColor="hover:text-white"
+              arrowBgColor="bg-[#e83a77]"
+            />
+
           </div>
 
 
         </section>
+
 
         <section className="bg-black px-6 md:px-18 py-24">
 
@@ -241,12 +260,22 @@ export default function Home() {
           </div>
 
           <div className="mt-5 md:mt-14">
-            <Btn text="Get to know us and discover how we can support you" bg_color="white" border_color="black" text_color="black" hover_bg_color="white" hover_text_color="black" arrow_bg_color="[#e83a77]" />
+            <Btn
+              text="Get to know us and discover how we can support you"
+              bgColor="bg-white"
+              borderColor="border border-white"
+              textColor="text-black"
+              hoverBgColor="hover:bg-white"
+              hoverTextColor="hover:text-black"
+              arrowBgColor="bg-[#e83a77]"
+            />
+
           </div>
 
         </section>
 
-        <section className="bg-[#ede7dd] px-6 md:px-18 py-20 md:py-26">
+
+        <section className="bg-[#ede7dd] px-6 md:px-18 pt-14 md:pt-26">
 
           <div className="relative">
 
@@ -258,17 +287,17 @@ export default function Home() {
 
             </div>
 
-            <div className="absolute flex flex-col items-end top-75 right-10">
+            <div className="absolute flex flex-col items-end top-4 md:top-75 right-5 md:right-10">
 
-              <h3 className="text-4xl">A former colleague recommended</h3>
-              <h3 className="text-4xl">Bluetech to me. Best</h3>
-              <h3 className="text-4xl">decision of my</h3>
-              <h3 className="text-4xl">career.</h3>
+              <h3 className="text-2xl md:text-4xl">A former colleague recommended</h3>
+              <h3 className="text-2xl md:text-4xl">Bluetech to me. Best</h3>
+              <h3 className="text-2xl md:text-4xl">decision of my</h3>
+              <h3 className="text-2xl md:text-4xl">career.</h3>
 
-              <p className="mt-10 font-semibold">You sense that Bluetech is all</p>
-              <p className="font-semibold">about people, not CVs and targets. That, for me, is the added</p>
-              <p className="font-semibold">value of Bluetech. The variety of assignments and the direct</p>
-              <p className="font-semibold">approach make working here ideal.</p>
+              <p className="mt-2 md:mt-10 font-semibold text-sm md:text-lg">You sense that Bluetech is all</p>
+              <p className="font-semibold text-sm md:text-lg">about people, not CVs and targets. That, for me, is the added</p>
+              <p className="font-semibold text-sm md:text-lg">value of Bluetech. The variety of assignments and the direct</p>
+              <p className="font-semibold text-sm md:text-lg">approach make working here ideal.</p>
               <p className="font-light mt-4">— Tom</p>
 
             </div>
@@ -277,9 +306,10 @@ export default function Home() {
 
         </section>
 
-        <section className="bg-[#ede7dd] px-6 md:px-18 pb-18 md:pb-26">
 
-          <div className="flex flex-col -space-y-7">
+        <section className="bg-[#ede7dd] px-6 pt-14 md:pt-20 md:px-18 pb-18 md:pb-26">
+
+          <div className="flex flex-col -space-y-2 md:-space-y-7">
             <h2 className="text-[42px] md:text-[70px]">Working on technical</h2>
 
             <h2 className="text-[42px] md:text-[70px]">projects that make an</h2>
@@ -289,22 +319,22 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col md:flex-row gap-8">
 
-            <div className="flex flex-col w-74">
+            <div className="flex flex-col w-full md:w-74">
 
               <div className="flex items-end gap-2.5">
                 <img src={buildingLightImg.src} alt="building image" className="w-10" />
-                <h3 className="text-[28px] relative top-2 font-semibold">Utilit eit</h3>
+                <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Utilit eit</h3>
               </div>
 
               <p className="mt-6 font-light">Smart building installations for hospitals, schools and offices.</p>
 
             </div>
 
-            <div className="flex flex-col w-68 md:ml-2">
+            <div className="flex flex-col w-full md:w-68 md:ml-2">
 
               <div className="flex items-end gap-2.5">
                 <img src={infrastructureImg.src} alt="building image" className="w-10" />
-                <h3 className="text-[28px] relative top-2 font-semibold">Infrastructure</h3>
+                <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Infrastructure</h3>
               </div>
 
               <p className="mt-6 font-light">Safe, efficient infrastructure. From tunnels and locks to traffic systems.</p>
@@ -312,22 +342,22 @@ export default function Home() {
             </div>
 
 
-            <div className="flex flex-col w-64 md:ml-8">
+            <div className="flex flex-col w-full md:w-64 md:ml-8">
 
               <div className="flex items-end gap-2.5">
                 <img src={securityImg.src} alt="building image" className="w-10" />
-                <h3 className="text-[28px] relative top-2 font-semibold">Security</h3>
+                <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Security</h3>
               </div>
 
               <p className="mt-6 font-light">Advanced fire safety and access control systems.</p>
 
             </div>
 
-            <div className="flex flex-col w-60 md:ml-8">
+            <div className="flex flex-col w-full md:w-60 md:ml-8">
 
               <div className="flex items-end gap-2.5">
                 <img src={energyImg.src} alt="building image" className="w-9" />
-                <h3 className="text-[28px] relative top-2 font-semibold">Energy</h3>
+                <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Energy</h3>
               </div>
 
               <p className="mt-6 font-light">Sustainable solutions for energy storage and smart grids.</p>
@@ -336,11 +366,24 @@ export default function Home() {
 
           </div>
 
+          <div className="mt-10 md:mt-14">
+            <Btn
+              text="View all our project cases"
+              bgColor="bg-[#ede7dd]"
+              borderColor="border border-black"
+              textColor="text-black"
+              hoverBgColor="hover:bg-black"
+              hoverTextColor="hover:text-white"
+              arrowBgColor="bg-[#e83a77]"
+            />
+
+          </div>
+
 
         </section>
 
 
-
+        <AnimationPage />
 
 
 
