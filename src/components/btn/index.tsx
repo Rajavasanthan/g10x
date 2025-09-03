@@ -1,11 +1,20 @@
+interface BtnProps {
+    text: string;
+    bg_color: string;
+    border_color: string;
+    text_color: string;
+    hover_bg_color: string;
+    hover_text_color: string;
+    arrow_bg_color: string;
+}
 
-export function Btn() {
+export function Btn({ text, bg_color, border_color, text_color, hover_bg_color, hover_text_color, arrow_bg_color }: BtnProps) {
 
     return (
-        <button className="group bg-[#e83a77] p-3 px-5 rounded-full text-lg flex gap-4 cursor-pointer hover:text-white duration-500 transform transition-transform  hover:translate-x-2.5 shadow-md">
-            Find your challenge
+        <button className={`group bg-${bg_color} text-${text_color} p-1.5 pl-4 rounded-full text-lg flex items-center gap-4 cursor-pointer hover:bg-${hover_bg_color} hover:text-${hover_text_color} border border-${border_color} duration-500 transform transition-transform hover:translate-x-2.5`}>
+            {text}
 
-            <span className="relative w-6 h-6 overflow-hidden">
+            <span className={`relative w-10 h-10 bg-${arrow_bg_color} rounded-full flex items-center justify-center overflow-hidden`}>
 
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +22,7 @@ export function Btn() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="white"
-                    className="absolute inset-0 w-7 h-8 transform transition-all duration-1000 group-hover:translate-x-6 group-hover:-translate-y-6 opacity-100 group-hover:opacity-0"
+                    className="absolute w-7 h-8 transform transition-all duration-1000 group-hover:translate-x-6 group-hover:-translate-y-6 opacity-100 group-hover:opacity-0"
                 >
                     <path
                         strokeLinecap="round"
@@ -22,14 +31,13 @@ export function Btn() {
                     />
                 </svg>
 
-
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="white"
-                    className="absolute inset-0 w-7 h-8 transform -translate-x-6 translate-y-6 opacity-0 transition-all duration-1000 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
+                    className="absolute w-7 h-8 transform -translate-x-6 translate-y-6 opacity-0 transition-all duration-1000 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
                 >
                     <path
                         strokeLinecap="round"
@@ -39,8 +47,6 @@ export function Btn() {
                 </svg>
 
             </span>
-
         </button>
     )
-
 }
