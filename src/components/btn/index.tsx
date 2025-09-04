@@ -5,10 +5,9 @@ interface BtnProps {
     textColor: string;
     hoverBgColor: string;
     hoverTextColor: string;
-    arrowBgColor: string;
 }
 
-export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hoverTextColor, arrowBgColor }: BtnProps) {
+export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hoverTextColor }: BtnProps) {
     return (
         <button
             className={`group ${bgColor} ${textColor} p-1.5 pl-4 rounded-full text-lg flex items-center gap-4 cursor-pointer ${hoverBgColor} ${hoverTextColor} ${borderColor} duration-500 transform transition-transform hover:translate-x-2.5`}
@@ -16,7 +15,7 @@ export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hover
             {text}
 
             <span
-                className={`relative w-10 h-10 ${arrowBgColor} rounded-full flex items-center justify-center overflow-hidden`}
+                className={`relative w-10 h-10 bg-[#e83a77] rounded-full flex items-center justify-center overflow-hidden`}
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -7,6 +7,11 @@ import img_1 from "../../../public/images/img-1.webp";
 import img_2 from "../../../public/images/img-2.webp";
 import img_3 from "../../../public/images/img-3.webp";
 import img_4 from "../../../public/images/img-4.webp";
+import img_5 from "../../../public/images/img-5.webp";
+import img_6 from "../../../public/images/img-6.webp";
+import img_7 from "../../../public/images/img-7.webp";
+import img_8 from "../../../public/images/img-8.webp";
+import img_9 from "../../../public/images/img-9.webp";
 
 
 
@@ -17,25 +22,52 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function AnimationPage() {
   useEffect(() => {
-    const images = gsap.utils.toArray(".scroll-image") as HTMLElement[];
 
-    images.forEach((img) => {
-      const tl = gsap.timeline({
+    const images1 = gsap.utils.toArray<HTMLElement>(".scroll-image1");
+    images1.forEach((img) => {
+      gsap.timeline({
         scrollTrigger: {
           trigger: img,
           start: "top bottom",
           end: "bottom top",
-          scrub: 1.5, 
+          scrub: 1.5,
         },
-      });
-
-      tl.to(img, { x: 50, duration: 5, ease: "power2.out" });
+      }).to(img, { x: 50, duration: 5, ease: "power2.out" });
     });
+
+
+    const images2 = gsap.utils.toArray<HTMLElement>(".scroll-image2");
+    images2.forEach((img) => {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: img,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        },
+      }).to(img, { y: -50, duration: 5, ease: "power2.out" });
+    });
+
+
+    const images3 = gsap.utils.toArray<HTMLElement>(".scroll-image3");
+    images3.forEach((img) => {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: img,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        },
+      }).from(img, { x: 50, duration: 5, ease: "power2.out" });
+    });
+
+
   }, []);
 
+
   return (
-    <section className="bg-black px-6 md:px-18 py-30 relative">
-      
+    <section className="bg-black px-6 md:px-18 py-40 relative overflow-x-hidden">
+
       <div className="bg-[#ede7dd] rounded-2xl px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
         <h3 className="text-3xl">A network of like-minded specialists</h3>
 
@@ -62,7 +94,6 @@ export function AnimationPage() {
             textColor="text-black"
             hoverBgColor="hover:bg-black"
             hoverTextColor="hover:text-white"
-            arrowBgColor="bg-[#e83a77]"
           />
         </div>
       </div>
@@ -70,19 +101,19 @@ export function AnimationPage() {
       <img
         src={img_1.src}
         alt="Image 1"
-        className="w-44 absolute top-28 left-0 scroll-image"
+        className="w-44 absolute top-28 left-0 scroll-image1"
       />
 
       <img
         src={img_2.src}
         alt="Image 1"
-        className="h-28 absolute top-98 left-16 scroll-image"
+        className="h-28 absolute top-98 left-16 scroll-image1"
       />
 
-       <img
+      <img
         src={img_3.src}
         alt="Image 1"
-        className="w-38 absolute bottom-16 left-8 scroll-image"
+        className="w-38 absolute bottom-16 left-8 scroll-image1"
       />
 
       <img
@@ -90,6 +121,38 @@ export function AnimationPage() {
         alt="Image 1"
         className="w-60 absolute bottom-8 right-26"
       />
+
+      <img
+        src={img_5.src}
+        alt="Image 1"
+        className="w-38 absolute bottom-4 left-86 scroll-image2"
+      />
+
+      <img
+        src={img_6.src}
+        alt="Image 1"
+        className="w-68 absolute top-22 right-120 scroll-image2"
+      />
+
+      <img
+        src={img_7.src}
+        alt="Image 1"
+        className="w-78 absolute bottom-10 right-74 scroll-image3"
+      />
+
+      <img
+        src={img_8.src}
+        alt="Image 1"
+        className="w-78 absolute top-70 -right-50 scroll-image3"
+      />
+
+      <img
+        src={img_9.src}
+        alt="Image 1"
+        className="w-40 absolute top-24 right-6 scroll-image3"
+      />
+
+
     </section>
   );
 }

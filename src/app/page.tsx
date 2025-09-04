@@ -16,6 +16,14 @@ import infrastructureImg from "../../public/images/Infrastructure.svg"
 import securityImg from "../../public/images/security.svg"
 import energyImg from "../../public/images/energy.svg"
 
+import menImg2 from "../../public/images/men-img2.jpg";
+import menImg3 from "../../public/images/men-img3.webp";
+
+import logoWhiteImg from "../../public/images/logo-white.svg"
+import linkedInImg from "../../public/images/Linkedin-img.svg"
+import instagramImg from "../../public/images/Instagram-img.svg"
+import facebookImg from "../../public/images/Facebook-img.svg"
+
 export default function Home() {
   return (
     <div className="w-full min-h-screen bg-[#ede7dd] overflow-y-auto">
@@ -24,12 +32,12 @@ export default function Home() {
         <Navbar />
       </div>
 
+      {/* Fixed section 1  */}
+      <section className="fixed top-0 left-0 w-full h-full p-10 overflow-hidden">
 
-      <section className="fixed top-0 left-0 w-full h-screen p-10 overflow-hidden">
+        <div className="flex flex-col space-y-8 md:w-1/2 z-50 absolute mt-[80%] md:mt-[8%]">
 
-        <div className="flex flex-col space-y-8 w-1/2 z-50 absolute mt-[8%]">
-
-          <div className="text-7xl">
+          <div className="text-5xl md:text-7xl">
             Help us build the technology of tomorrow
           </div>
 
@@ -47,7 +55,6 @@ export default function Home() {
               textColor="text-black"
               hoverBgColor="hover:bg-[#e83a77]"
               hoverTextColor="hover:text-white"
-              arrowBgColor="bg-[#e83a77]"
             />
 
           </div>
@@ -57,13 +64,14 @@ export default function Home() {
           <img
             src={meetingImg.src}
             alt="Meeting image"
-            className="h-screen w-[70%] object-cover"
+            className="md:h-screen mt-20 md:mt-0 md:w-[70%] object-cover"
           />
         </div>
       </section>
 
 
-      <div className="relative mt-[97vh] bg-[#ede7dd] border-t border-t-black w-full">
+
+      <div className="relative mt-[97vh] z-50 md:mb-[97vh] bg-[#ede7dd] border-t border-t-black w-full">
 
 
 
@@ -224,7 +232,6 @@ export default function Home() {
               textColor="text-black"
               hoverBgColor="hover:bg-black"
               hoverTextColor="hover:text-white"
-              arrowBgColor="bg-[#e83a77]"
             />
 
           </div>
@@ -267,7 +274,6 @@ export default function Home() {
               textColor="text-black"
               hoverBgColor="hover:bg-white"
               hoverTextColor="hover:text-black"
-              arrowBgColor="bg-[#e83a77]"
             />
 
           </div>
@@ -281,7 +287,7 @@ export default function Home() {
 
             <div className="relative w-full">
 
-              <img src={gardenImg.src} alt="interview image" className="opacity-40 w-full" />
+              <img src={gardenImg.src} alt="Garder image" className="opacity-40 w-full" />
 
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#dfdacf]"></div>
 
@@ -374,7 +380,6 @@ export default function Home() {
               textColor="text-black"
               hoverBgColor="hover:bg-black"
               hoverTextColor="hover:text-white"
-              arrowBgColor="bg-[#e83a77]"
             />
 
           </div>
@@ -385,9 +390,138 @@ export default function Home() {
 
         <AnimationPage />
 
+        <section className="bg-[#ede7dd] px-6 md:px-18 py-20 pb-6">
+          <h2 className="text-[42px] md:text-[70px]">Stories of Bluetechers</h2>
+
+          <div className="flex gap-6 md:gap-14 mt-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
+
+
+            <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
+              <img src={menImg2.src} alt="Men image 2" className="rounded-xl w-full" />
+
+              <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
+
+              <div className="flex flex-col space-y-5 absolute top-72 md:top-46 left-6">
+                <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Trainee</p>
+                <h3 className="text-white text-3xl">Daan Jansen: From traineeship to own projects</h3>
+                <p className="text-white text-xl font-semibold underline">Read more</p>
+              </div>
+            </div>
+
+
+            <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
+              <img src={menImg2.src} alt="Men image 2" className="rounded-xl w-full" />
+
+              <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
+
+              <div className="flex flex-col space-y-5 absolute top-52 md:top-35 left-6 p-2">
+                <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Inhouse Creator</p>
+                <h3 className="text-white text-3xl">Bryan Tobben: Always looking for what can be done smarter, faster and more scalable</h3>
+                <p className="text-white text-xl font-semibold underline">Read more</p>
+              </div>
+            </div>
+
+
+            <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
+              <img src={menImg2.src} alt="Men image 2" className="rounded-xl w-full" />
+
+              <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
+
+              <div className="flex flex-col space-y-5 absolute top-76 md:top-59 left-6">
+                <h3 className="text-white text-3xl">Mariska: First modular substation in the Netherlands installed</h3>
+                <p className="text-white text-xl font-semibold underline">Read more</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section className="bg-gradient-to-r from-[#52b2b8] to-[#b0e8eb] overflow-x-hidden px-6 md:px-18 py-20 md:py-22">
+
+          <div className="flex flex-col md:flex-row justify-between">
+
+            <div className="flex flex-col space-y-4 md:space-y-8 md:w-1/2 mt-4">
+
+              <h2 className="text-[42px] md:text-[70px] leading-13 md:leading-20">Would you like to get acquainted to see if there is a match?</h2>
+
+              <p className="font-light text-[22px]">Do you have a question, want to meet up, or simply discuss your options? Get in touch; we'd love to discuss your needs.</p>
+
+              <div className="mt-2">
+                <Btn
+                  text="Schedule an introductory meeting"
+                  bgColor="bg-black"
+                  borderColor="border border-black"
+                  textColor="text-white"
+                  hoverBgColor="hover:bg-black"
+                  hoverTextColor="hover:text-white"
+                />
+
+              </div>
+
+            </div>
+
+            <img src={menImg3.src} alt="Men image 3" className="md:h-110 mt-12 rounded-xl" />
+
+          </div>
+
+
+        </section>
 
 
       </div>
+
+      {/* Fixed section 2  */}
+      {/* <section className="bg-black z-50 md:z-0 pt-10 md:pt-34 md:fixed md:bottom-0 md:left-0 w-full md:overflow-hidden">
+
+        <div className="flex flex-col md:flex-row px-6 md:px-18">
+
+          <div className="flex flex-col items-center md:ml-40">
+
+            <img src={logoWhiteImg.src} alt="logo white" className="w-110" />
+
+            <div className="flex gap-8 mt-10 md:mt-20">
+
+              <img src={linkedInImg.src} alt="Linked in image" className="w-14" />
+
+              <img src={instagramImg.src} alt="Instagram image" className="w-14" />
+
+              <img src={facebookImg.src} alt="Facebook image" className="w-14" />
+
+            </div>
+
+          </div>
+
+
+          <div className="flex flex-col border-l border-gray-500 pl-16 mt-4 md:pl-20 pb-10 md:pb-25 ml-10 md:ml-74">
+
+            <ul className="flex flex-col text-white mt-14 md:mt-24 text-lg">
+              <li className="cursor-pointer hover:underline">Vacancies</li>
+              <li className="cursor-pointer hover:underline">Trainee</li>
+              <li className="cursor-pointer hover:underline">Interim manager</li>
+              <li className="cursor-pointer hover:underline">Client</li>
+            </ul>
+
+            <div className="text-white border border-white py-1 px-4 mt-10 md:mt-24 rounded-3xl w-fit duration-500 transform transition-transform hover:translate-x-2.5 cursor-pointer">Contact us</div>
+
+          </div>
+
+        </div>
+
+
+        <div className="border-t border-gray-500 mt-6 py-6 md:py-9">
+
+          <ul className="flex w-full justify-center items-center text-white underline text-sm md:text-[17px] gap-9">
+            <li className="cursor-pointer">Privacy statement</li>
+
+            <li className="cursor-pointer">Disclaimer</li>
+
+            <li className="cursor-pointer">General terms and conditions</li>
+          </ul>
+
+        </div>
+
+      </section> */}
 
     </div>
   );
