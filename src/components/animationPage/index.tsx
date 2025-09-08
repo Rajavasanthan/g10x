@@ -17,6 +17,7 @@ import img_9 from "../../../public/images/img-9.webp";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,7 +74,7 @@ export function AnimationPage() {
         <h3 className="text-3xl">A network of like-minded specialists</h3>
 
         <p className="text-xl mt-10 leading-relaxed">
-          At Bluetech, you don't work alone. You're part of a close-knit
+          At Bluetech, you don&apos;t work alone. You&apos;re part of a close-knit
           community where knowledge sharing, growth, and fun are a given.
         </p>
 
@@ -103,56 +104,56 @@ export function AnimationPage() {
 
       </div>
 
-      <img
-        src={img_1.src}
+      <Image
+        src={img_1}
         alt="Image 1"
         className="md:w-44 w-24 top-19 absolute md:top-28 left-0 scroll-image1"
       />
 
-      <img
-        src={img_2.src}
+      <Image
+        src={img_2}
         alt="Image 1"
-        className="md:h-28 h-22 absolute top-110 md:top-98 left-0 md:left-16 scroll-image1"
+        className="w-20 md:w-32 absolute top-110 md:top-98 left-0 md:left-16 scroll-image1"
       />
 
-      <img
-        src={img_3.src}
+      <Image
+        src={img_3}
         alt="Image 1"
         className="md:w-38 w-20 absolute bottom-16 left-8 scroll-image1"
       />
 
-      <img
-        src={img_4.src}
+      <Image
+        src={img_4}
         alt="Image 1"
         className="md:w-60 w-30 absolute bottom-8 right-20 md:right-26"
       />
 
-      <img
-        src={img_5.src}
+      <Image
+        src={img_5}
         alt="Image 1"
         className="md:w-38 w-26 absolute bottom-4 left-30 md:left-86 scroll-image2"
       />
 
-      <img
-        src={img_6.src}
+      <Image
+        src={img_6}
         alt="Image 1"
         className="md:w-68 w-48 absolute top-22 right-30 md:right-120 scroll-image2"
       />
 
-      <img
-        src={img_7.src}
+      <Image
+        src={img_7}
         alt="Image 1"
         className="md:w-78 w-59 absolute bottom-10 right-10 md:right-74 scroll-image3"
       />
 
-      <img
-        src={img_8.src}
+      <Image
+        src={img_8}
         alt="Image 1"
         className="md:w-78 w-64 absolute top-70 -right-30 md:-right-50 scroll-image3"
       />
 
-      <img
-        src={img_9.src}
+      <Image
+        src={img_9}
         alt="Image 1"
         className="md:w-40 w-30 absolute top-24 right-6 scroll-image3"
       />

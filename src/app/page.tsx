@@ -23,6 +23,7 @@ import logoWhiteImg from "../../public/images/logo-white.svg"
 import linkedInImg from "../../public/images/Linkedin-img.svg"
 import instagramImg from "../../public/images/Instagram-img.svg"
 import facebookImg from "../../public/images/Facebook-img.svg"
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -62,11 +63,11 @@ export default function Home() {
 
         <div className="flex-1 flex justify-end opacity-40 items-center">
 
-          <img
-            src={meetingImg.src}
+          <Image
+            src={meetingImg}
             alt="Meeting image"
-            className="md:h-screen mt-20 md:mt-0 md:w-[70%] object-cover"
-          />
+            className="md:h-screen mt-20 md:mt-0 md:w-[70%] object-cover"></Image>
+          
         </div>
 
       </section>
@@ -77,19 +78,19 @@ export default function Home() {
 
 
 
-        <section className="flex overflow-x-auto w-full justify-start md:justify-center items-center gap-6 md:gap-20 p-8 md:p-10">
+        <section className="flex overflow-x-auto md:overflow-x-hidden w-full justify-start md:justify-center items-center gap-6 md:gap-20 p-8 md:p-10">
 
-          <img src={volkerRailImg.src} alt="VolkerRail" className="h-8 md:h-10 flex-shrink-0" />
+          <Image src={volkerRailImg} alt="VolkerRail" className="w-38 flex-shrink-0"></Image>
 
-          <img src={schipholImg.src} alt="Schiphol" className="h-12 md:h-16 flex-shrink-0" />
+          <Image src={schipholImg} alt="Schiphol" className="w-38 flex-shrink-0"></Image>
 
-          <img src={bamImg.src} alt="BAM" className="h-8 md:h-10 flex-shrink-0" />
+          <Image src={bamImg} alt="BAM" className="w-38 flex-shrink-0"></Image>
 
-          <img src={heijmansImg.src} alt="Heijmans" className="h-16 md:h-20 flex-shrink-0" />
+          <Image src={heijmansImg} alt="Heijmans" className="w-38 flex-shrink-0"></Image>
 
-          <img src={croonwolterWitImg.src} alt="CroonwolterWit" className="h-6 md:h-8 flex-shrink-0" />
+          <Image src={croonwolterWitImg} alt="CroonwolterWit" className="w-38 flex-shrink-0"></Image>
 
-          <img src={spieImg.src} alt="SPIE" className="h-10 md:h-12 flex-shrink-0" />
+          <Image src={spieImg} alt="SPIE" className="w-38 flex-shrink-0"></Image>
 
         </section>
 
@@ -106,16 +107,16 @@ export default function Home() {
 
           <h2 className="text-white text-[40px] md:hidden block">Your career in technology starts here</h2>
 
-          <p className="text-white mt-2 hidden md:block">Whether you're just starting out or have been around for years, at Bluetech you'll find the challenge that suits <br /> you. Together, we'll choose a path that aligns with your talents, ambitions, and desires.</p>
+          <p className="text-white mt-2 hidden md:block">Whether you&apos;re just starting out or have been around for years, at Bluetech you&apos;ll find the challenge that suits <br /> you. Together, we&apos;ll choose a path that aligns with your talents, ambitions, and desires.</p>
 
-          <p className="text-white text-sm mt-2 md:hidden block">Whether you're just starting out or have been around for years, at Bluetech you'll find the challenge that suits <br /> you. Together, we'll choose a path that aligns with your talents, ambitions, and desires.</p>
+          <p className="text-white text-sm mt-2 md:hidden block">Whether you&apos;re just starting out or have been around for years, at Bluetech you&apos;ll find the challenge that suits <br /> you. Together, we&apos;ll choose a path that aligns with your talents, ambitions, and desires.</p>
 
           <div className="mt-14 flex flex-col md:flex-row md:gap-6 -space-y-6 ">
 
             <div className="md:w-74 w-full overflow-hidden cursor-pointer">
 
-              <img src={menImg.src} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
-              />
+              <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+              ></Image>
 
               <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -136,7 +137,7 @@ export default function Home() {
 
             <div className="md:w-74 w-full overflow-hidden cursor-pointer">
 
-              <img src={menImg.src} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+              <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
               />
 
               <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -158,7 +159,7 @@ export default function Home() {
 
             <div className="md:w-74 w-full overflow-hidden cursor-pointer">
 
-              <img src={menImg.src} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+              <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
               />
 
               <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -180,7 +181,7 @@ export default function Home() {
 
             <div className="md:w-74 w-full overflow-hidden cursor-pointer">
 
-              <img src={menImg.src} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+              <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
               />
 
               <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -273,7 +274,7 @@ export default function Home() {
 
               <h3 className="text-[30px]">Personal growth and craftsmanship</h3>
 
-              <p className="font-light mt-3">With the Bluetech Academy, you'll develop both technically and personally. Training, coaching, and guidance are key.</p>
+              <p className="font-light mt-3">With the Bluetech Academy, you&apos;ll develop both technically and personally. Training, coaching, and guidance are key.</p>
 
             </div>
 
@@ -281,7 +282,7 @@ export default function Home() {
 
               <h3 className="text-[30px]">Learning from and with each other</h3>
 
-              <p className="font-light mt-3">You'll be part of a network of over 100 experts. There's always someone to bounce ideas off, laugh with, and learn from.</p>
+              <p className="font-light mt-3">You&apos;ll be part of a network of over 100 experts. There&apos;s always someone to bounce ideas off, laugh with, and learn from.</p>
 
             </div>
 
@@ -308,7 +309,7 @@ export default function Home() {
 
             <div className="relative w-full">
 
-              <img src={gardenImg.src} alt="Garder image" className="opacity-40 w-full" />
+              <Image src={gardenImg} alt="Garder image" className="opacity-40 w-full" />
 
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#dfdacf]"></div>
 
@@ -359,7 +360,7 @@ export default function Home() {
 
               <div className="flex items-end gap-2.5">
 
-                <img src={buildingLightImg.src} alt="building image" className="w-10" />
+                <Image src={buildingLightImg} alt="building image" className="w-10" />
 
                 <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Utilit eit</h3>
 
@@ -374,7 +375,7 @@ export default function Home() {
 
               <div className="flex items-end gap-2.5">
 
-                <img src={infrastructureImg.src} alt="building image" className="w-10" />
+                <Image src={infrastructureImg} alt="building image" className="w-10" />
 
                 <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Infrastructure</h3>
 
@@ -389,7 +390,7 @@ export default function Home() {
 
               <div className="flex items-end gap-2.5">
 
-                <img src={securityImg.src} alt="building image" className="w-10" />
+                <Image src={securityImg} alt="building image" className="w-10" />
 
                 <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Security</h3>
 
@@ -404,7 +405,7 @@ export default function Home() {
 
               <div className="flex items-end gap-2.5">
 
-                <img src={energyImg.src} alt="building image" className="w-9" />
+                <Image src={energyImg} alt="building image" className="w-9" />
 
                 <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Energy</h3>
 
@@ -443,7 +444,7 @@ export default function Home() {
 
             <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
 
-              <img src={menImg2.src} alt="Men image 2" className="rounded-xl w-full" />
+              <Image src={menImg2} alt="Men image 2" className="rounded-xl w-full" />
 
               <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -462,7 +463,7 @@ export default function Home() {
 
             <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
 
-              <img src={menImg2.src} alt="Men image 2" className="rounded-xl w-full" />
+              <Image src={menImg2} alt="Men image 2" className="rounded-xl w-full" />
 
               <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -481,7 +482,7 @@ export default function Home() {
 
             <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
 
-              <img src={menImg2.src} alt="Men image 2" className="rounded-xl w-full" />
+              <Image src={menImg2} alt="Men image 2" className="rounded-xl w-full" />
 
               <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -508,7 +509,7 @@ export default function Home() {
 
               <h2 className="text-[42px] md:text-[70px] leading-13 md:leading-20">Would you like to get acquainted to see if there is a match?</h2>
 
-              <p className="font-light text-[22px]">Do you have a question, want to meet up, or simply discuss your options? Get in touch; we'd love to discuss your needs.</p>
+              <p className="font-light text-[22px]">Do you have a question, want to meet up, or simply discuss your options? Get in touch; we&apos;d love to discuss your needs.</p>
 
               <div className="mt-2">
 
@@ -525,7 +526,7 @@ export default function Home() {
 
             </div>
 
-            <img src={menImg3.src} alt="Men image 3" className="md:h-110 mt-12 rounded-xl" />
+            <Image src={menImg3} alt="Men image 3" className="md:w-110 md:h-110 mt-12 rounded-xl" />
 
           </div>
 
@@ -538,15 +539,15 @@ export default function Home() {
 
             <div className="flex flex-col items-center md:ml-40">
 
-              <img src={logoWhiteImg.src} alt="logo white" className="w-110" />
+              <Image src={logoWhiteImg} alt="logo white" className="w-110" />
 
               <div className="flex gap-8 mt-10 md:mt-20">
 
-                <img src={linkedInImg.src} alt="Linked in image" className="w-14" />
+                <Image src={linkedInImg} alt="Linked in image" className="w-14" />
 
-                <img src={instagramImg.src} alt="Instagram image" className="w-14" />
+                <Image src={instagramImg} alt="Instagram image" className="w-14" />
 
-                <img src={facebookImg.src} alt="Facebook image" className="w-14" />
+                <Image src={facebookImg} alt="Facebook image" className="w-14" />
 
               </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../../public/images/logo.svg';
 import logoWhite from "../../../public/images/logo-white.svg"
+import Image from 'next/image';
 
 export function Navbar() {
     return (
@@ -10,7 +11,7 @@ export function Navbar() {
 
                 <div className='flex justify-between w-[1405px] items-center'>
 
-                    <img src={logo.src} alt="Logo" className="w-64 mt-6" />
+                    <Image src={logo} alt="Logo" className="w-64 mt-6" />
 
 
                     <ul className="hidden md:flex space-x-16 text-xl mt-12">
@@ -45,7 +46,7 @@ export function Navbar() {
 
                             <div className="flex justify-between items-center p-8 border-b border-gray-700">
 
-                                <img src={logoWhite.src} alt="Logo" className="w-50" />
+                                <Image src={logoWhite} alt="Logo" className="w-50" />
 
                                 <label htmlFor="menu-toggle" className="cursor-pointer text-3xl">
                                     ✕
