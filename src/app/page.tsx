@@ -19,7 +19,9 @@ import energyImg from "../../public/images/energy.svg"
 import menImg2 from "../../public/images/men-img2.jpg";
 import menImg3 from "../../public/images/men-img3.webp";
 
-import logoWhiteImg from "../../public/images/logo-white.svg"
+import originalLogo from "../../public/images/original_logo.png"
+
+// import logoWhiteImg from "../../public/images/logo-white.svg"
 import linkedInImg from "../../public/images/Linkedin-img.svg"
 import instagramImg from "../../public/images/Instagram-img.svg"
 import facebookImg from "../../public/images/Facebook-img.svg"
@@ -40,7 +42,7 @@ export default function Home() {
 
 
           <div className="xl:w-[1405px]">
-            <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-50 absolute mt-[80%] md:mt-[8%] 2xl:mt-[30%]">
+            <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-50 absolute mt-[80%] md:mt-[8%] 2xl:bottom-[10%]">
 
               <div className="text-5xl md:text-7xl">
                 Help us build the technology of tomorrow
@@ -122,9 +124,9 @@ export default function Home() {
 
               <p className="text-white text-sm mt-2 md:hidden block">Whether you&apos;re just starting out or have been around for years, at Bluetech you&apos;ll find the challenge that suits <br /> you. Together, we&apos;ll choose a path that aligns with your talents, ambitions, and desires.</p>
 
-              <div className="mt-14 flex flex-wrap md:gap-6 -space-y-6 ">
+              <div className="mt-14 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 md:gap-6 -space-y-6 ">
 
-                <div className="md:w-74 w-full overflow-hidden cursor-pointer">
+                <div className="overflow-hidden cursor-pointer">
 
                   <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
                   ></Image>
@@ -146,7 +148,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="md:w-74 w-full overflow-hidden cursor-pointer">
+                <div className="overflow-hidden cursor-pointer">
 
                   <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
                   />
@@ -168,7 +170,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="md:w-74 w-full overflow-hidden cursor-pointer">
+                <div className="overflow-hidden cursor-pointer">
 
                   <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
                   />
@@ -190,7 +192,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="md:w-74 w-full overflow-hidden cursor-pointer">
+                <div className="overflow-hidden cursor-pointer">
 
                   <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
                   />
@@ -288,16 +290,16 @@ export default function Home() {
 
               <h2 className="text-[42px] md:text-[70px] text-white">Why choose Bluetech?</h2>
 
-              <div className="mt-12 flex flex-wrap gap-6 md:gap-8">
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 md:gap-8">
 
-                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl w-full md:w-98">
+                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl">
 
                   <h3 className="text-[30px]">Working on large, complex projects</h3>
 
                   <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
                 </div>
 
-                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl w-full md:w-98">
+                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl">
 
                   <h3 className="text-[30px]">Personal growth and craftsmanship</h3>
 
@@ -305,7 +307,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl w-full md:w-98">
+                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl">
 
                   <h3 className="text-[30px]">Learning from and with each other</h3>
 
@@ -397,9 +399,9 @@ export default function Home() {
 
               </div>
 
-              <div className="mt-10 flex flex-wrap gap-8">
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
 
-                <div className="flex flex-col w-full md:w-74">
+                <div className="flex flex-col">
 
                   <div className="flex items-end gap-2.5">
 
@@ -414,7 +416,7 @@ export default function Home() {
                 </div>
 
 
-                <div className="flex flex-col w-full md:w-68 md:ml-2">
+                <div className="flex flex-col">
 
                   <div className="flex items-end gap-2.5">
 
@@ -429,7 +431,7 @@ export default function Home() {
                 </div>
 
 
-                <div className="flex flex-col w-full md:w-64 md:ml-8">
+                <div className="flex flex-col">
 
                   <div className="flex items-end gap-2.5">
 
@@ -444,7 +446,7 @@ export default function Home() {
                 </div>
 
 
-                <div className="flex flex-col w-full md:w-60 md:ml-8">
+                <div className="flex flex-col">
 
                   <div className="flex items-end gap-2.5">
 
@@ -490,12 +492,12 @@ export default function Home() {
 
               <h2 className="text-[42px] md:text-[70px]">Stories of Bluetechers</h2>
 
-              <div className="flex md:gap-7 2xl:gap-14 mt-10 overflow-x-auto md:overflow-visible scrollbar-hide flex-wrap overflow-y-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:gap-8 gap-0">
 
 
-                <div className="relative w-full md:min-w-0 md:w-100">
+                <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-xl w-full" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-xl" />
 
                   <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -512,9 +514,9 @@ export default function Home() {
                 </div>
 
 
-                <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
+                <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-xl w-full" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-xl" />
 
                   <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -531,9 +533,9 @@ export default function Home() {
                 </div>
 
 
-                <div className="relative w-full flex-shrink-0 snap-center md:min-w-0 md:w-100">
+                <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-xl w-full" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-xl" />
 
                   <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
@@ -606,7 +608,7 @@ export default function Home() {
 
                 <div className="flex flex-col items-center md:ml-40">
 
-                  <Image src={logoWhiteImg} alt="logo white" className="w-110" />
+                  <Image src={originalLogo} alt="logo white" className="w-50" />
 
                   <div className="flex gap-8 mt-10 md:mt-20">
 
