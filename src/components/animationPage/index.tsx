@@ -13,6 +13,8 @@ import img_7 from "../../../public/images/img-7.webp";
 import img_8 from "../../../public/images/img-8.webp";
 import img_9 from "../../../public/images/img-9.webp";
 
+import b_img from "../../../public/images/B_img.svg"
+
 
 
 import gsap from "gsap";
@@ -75,28 +77,30 @@ export function AnimationPage() {
 
           <div>
 
-            <div className="bg-[#ede7dd] rounded-2xl px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
+            <div className="relative px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
 
-              <h3 className="text-3xl">A network of like-minded specialists</h3>
+              <Image src={b_img} alt="Background image" className="absolute w-full" />
 
-              <p className="text-xl mt-10 leading-relaxed">
+              <h3 className="text-3xl z-10">A network of like-minded specialists</h3>
+
+              <p className="text-xl mt-10 leading-relaxed z-10">
                 At Bluetech, you don&apos;t work alone. You&apos;re part of a close-knit
                 community where knowledge sharing, growth, and fun are a given.
               </p>
 
-              <p className="font-light mt-10">
+              <p className="font-light mt-10 z-10">
                 Workshops, meet-ups and knowledge sessions
               </p>
 
-              <p className="font-light mt-3">
+              <p className="font-light mt-3 z-10">
                 Team outings, celebrating successes and connecting
               </p>
 
-              <p className="font-light mt-3">
+              <p className="font-light mt-3 z-10">
                 Personal contact, also outside of work
               </p>
 
-              <div className="mt-5 md:mt-10">
+              <div className="mt-5 md:mt-10 z-10">
                 <Btn
                   text="More about our community"
                   bgColor="bg-[#ede7dd]"

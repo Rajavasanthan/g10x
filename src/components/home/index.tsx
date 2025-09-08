@@ -1,0 +1,85 @@
+"use client"
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { Btn } from "@/components";
+import meetingImg from "../../../public/images/meeting-img.jpg";
+
+export function HomePage() {
+    const [visible, setVisible] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const viewportHeight = window.innerHeight;
+
+            if (scrollY >= viewportHeight) {
+                setVisible(false);
+            } else {
+                setVisible(true);
+            }
+
+            console.log(`${scrollY} , ${viewportHeight}`);
+
+        };
+
+
+        window.addEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <section
+            className={`fixed top-0 left-0 h-full w-full p-10 overflow-hidden transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
+                }`}>
+
+            <div className="flex justify-center">
+
+                <div className="xl:w-[1405px]">
+
+                    <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-50 absolute mt-[80%] md:mt-[9%] 2xl:bottom-[10%]">
+
+                        <div className="text-5xl md:text-7xl">
+                            Help us build the technology of tomorrow
+                        </div>
+
+                        <p className="text-xl">
+                            From sustainable building installations to smart infrastructure: <br />
+                            your expertise makes the difference. Together, we create <br />
+                            technical solutions that make an impact.
+                        </p>
+
+                        <div className="flex">
+
+                            <Btn
+                                text="Find your challenge"
+                                bgColor="bg-[#e83a77]"
+                                borderColor="border border-[#e83a77]"
+                                textColor="text-black"
+                                hoverBgColor="hover:bg-[#e83a77]"
+                                hoverTextColor="hover:text-white"
+                            />
+
+                        </div>
+
+                    </div>
+
+                    <div className="flex-1 flex justify-end opacity-40 items-center relative">
+
+                        <Image
+                            src={meetingImg}
+                            alt="Meeting image"
+                            className="md:h-screen mt-20 md:mt-0 md:w-[66%] object-cover"
+
+                        />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    );
+}
+
+export default HomePage;

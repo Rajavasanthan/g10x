@@ -1,5 +1,4 @@
-import { Btn, Navbar, AnimationPage } from "@/components";
-import meetingImg from "../../public/images/meeting-img.jpg";
+import { Btn, Navbar, AnimationPage, HomePage, Footer } from "@/components";
 
 import volkerRailImg from "../../public/images/volkerrail_black.png"
 import schipholImg from "../../public/images/schiphol_black.png"
@@ -19,13 +18,11 @@ import energyImg from "../../public/images/energy.svg"
 import menImg2 from "../../public/images/men-img2.jpg";
 import menImg3 from "../../public/images/men-img3.webp";
 
-import originalLogo from "../../public/images/original_logo.png"
-
-// import logoWhiteImg from "../../public/images/logo-white.svg"
-import linkedInImg from "../../public/images/Linkedin-img.svg"
-import instagramImg from "../../public/images/Instagram-img.svg"
-import facebookImg from "../../public/images/Facebook-img.svg"
+import gardenImgBorder from "../../public/images/garden-img-border.svg"
 import Image from "next/image";
+
+import right_corner_img from "../../public/images/right_corner_img.svg";
+import b_img from "../../public/images/B_img.svg"
 
 export default function Home() {
   return (
@@ -35,55 +32,10 @@ export default function Home() {
         <Navbar />
       </div>
 
-
-      <section className="fixed top-0 left-0 h-full w-full p-10 overflow-hidden">
-
-        <div className="flex justify-center">
+      <HomePage />
 
 
-          <div className="xl:w-[1405px]">
-            <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-50 absolute mt-[80%] md:mt-[8%] 2xl:bottom-[10%]">
-
-              <div className="text-5xl md:text-7xl">
-                Help us build the technology of tomorrow
-              </div>
-
-              <p className="text-xl">
-                From sustainable building installations to smart infrastructure: <br />
-                your expertise makes the difference. Together, we create <br />
-                technical solutions that make an impact.
-              </p>
-
-              <div className="flex">
-                <Btn
-                  text="Find your challenge"
-                  bgColor="bg-[#e83a77]"
-                  borderColor="border border-[#e83a77]"
-                  textColor="text-black"
-                  hoverBgColor="hover:bg-[#e83a77]"
-                  hoverTextColor="hover:text-white"
-                />
-
-              </div>
-            </div>
-
-            <div className="flex-1 flex justify-end opacity-40 items-center">
-
-              <Image
-                src={meetingImg}
-                alt="Meeting image"
-                className="md:h-screen mt-20 md:mt-0 md:w-[70%] object-cover"></Image>
-
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-
-
-      <div className="relative mt-[97vh] z-30 bg-[#ede7dd] border-t border-t-black w-full">
+      <div className="relative mt-[97vh] mb-[97vh] 2xl:mb-[55vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
 
 
 
@@ -290,28 +242,48 @@ export default function Home() {
 
               <h2 className="text-[42px] md:text-[70px] text-white">Why choose Bluetech?</h2>
 
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 md:gap-8">
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 ">
 
-                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl">
+                <div className="relative">
 
-                  <h3 className="text-[30px]">Working on large, complex projects</h3>
+                  <Image src={b_img} alt="B image" className="h-100" />
 
-                  <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
-                </div>
+                  <div className="px-6 py-10 absolute top-10 ml-10">
 
-                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl">
+                    <h3 className="text-[30px]">Working on large, complex projects</h3>
 
-                  <h3 className="text-[30px]">Personal growth and craftsmanship</h3>
-
-                  <p className="font-light mt-3">With the Bluetech Academy, you&apos;ll develop both technically and personally. Training, coaching, and guidance are key.</p>
+                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                  </div>
 
                 </div>
 
-                <div className="bg-[#ede7dd] px-6 py-10 rounded-xl">
 
-                  <h3 className="text-[30px]">Learning from and with each other</h3>
 
-                  <p className="font-light mt-3">You&apos;ll be part of a network of over 100 experts. There&apos;s always someone to bounce ideas off, laugh with, and learn from.</p>
+                <div className="relative">
+
+                  <Image src={b_img} alt="B image" className="h-100" />
+
+                  <div className="px-6 py-10 absolute top-10 ml-10">
+
+                    <h3 className="text-[30px]">Working on large, complex projects</h3>
+
+                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                  </div>
+
+                </div>
+
+
+
+                <div className="relative">
+
+                  <Image src={b_img} alt="B image" className="h-100" />
+
+                  <div className="px-6 py-10 absolute top-10 ml-10">
+
+                    <h3 className="text-[30px]">Working on large, complex projects</h3>
+
+                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                  </div>
 
                 </div>
 
@@ -346,9 +318,11 @@ export default function Home() {
 
                 <div className="relative w-full">
 
-                  <Image src={gardenImg} alt="Garder image" className="opacity-40 w-full" />
+                  <Image src={gardenImg} alt="Garden image" className="opacity-80 w-full" />
 
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#dfdacf]"></div>
+
+                  <Image src={gardenImgBorder} alt="Garden border" className="absolute inset-0 h-full w-full -left-110" />
 
                 </div>
 
@@ -492,14 +466,16 @@ export default function Home() {
 
               <h2 className="text-[42px] md:text-[70px]">Stories of Bluetechers</h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:gap-8 gap-0">
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:gap-8 gap-0">
 
 
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-xl" />
+                  <Image src={right_corner_img} alt="Corner image" className="absolute right-0" />
 
-                  <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
+                  <Image src={menImg2} alt="Men image 2" />
+
+                  <div className="relative bottom-26 w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
                   <div className="flex flex-col space-y-5 absolute bottom-[22%] left-[4%]">
 
@@ -511,14 +487,17 @@ export default function Home() {
 
                   </div>
 
+
                 </div>
 
 
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-xl" />
+                  <Image src={right_corner_img} alt="Corner image" className="absolute right-0" />
 
-                  <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
+                  <Image src={menImg2} alt="Men image 2" />
+
+                  <div className="relative bottom-26 w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
                   <div className="flex flex-col space-y-5 absolute bottom-[22%] left-[4%]">
 
@@ -535,9 +514,11 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-xl" />
+                  <Image src={right_corner_img} alt="Corner image" className="absolute right-0" />
 
-                  <div className="relative bottom-26 rounded-xl w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
+                  <Image src={menImg2} alt="Men image 2" />
+
+                  <div className="relative bottom-26 w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
 
                   <div className="flex flex-col space-y-5 absolute bottom-[22%] left-[4%]">
 
@@ -598,74 +579,10 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-black z-50 pt-10 md:pt-34 w-full">
-
-          <div className="flex justify-center">
-
-            <div className="xl:w-[1405px]">
-
-              <div className="flex flex-col md:flex-row px-6 md:px-18">
-
-                <div className="flex flex-col items-center md:ml-40">
-
-                  <Image src={originalLogo} alt="logo white" className="w-50" />
-
-                  <div className="flex gap-8 mt-10 md:mt-20">
-
-                    <Image src={linkedInImg} alt="Linked in image" className="w-14" />
-
-                    <Image src={instagramImg} alt="Instagram image" className="w-14" />
-
-                    <Image src={facebookImg} alt="Facebook image" className="w-14" />
-
-                  </div>
-
-                </div>
-
-
-                <div className="flex flex-col border-l border-gray-500 pl-16 mt-4 md:pl-20 pb-10 md:pb-25 ml-10 md:ml-74">
-
-                  <ul className="flex flex-col text-white mt-14 md:mt-24 text-lg">
-
-                    <li className="cursor-pointer hover:underline">Vacancies</li>
-
-                    <li className="cursor-pointer hover:underline">Trainee</li>
-
-                    <li className="cursor-pointer hover:underline">Interim manager</li>
-
-                    <li className="cursor-pointer hover:underline">Client</li>
-
-                  </ul>
-
-                  <div className="text-white border border-white py-1 px-4 mt-10 md:mt-24 rounded-3xl w-fit duration-500 transform transition-transform hover:translate-x-2.5 cursor-pointer">Contact us</div>
-
-                </div>
-
-              </div>
-
-
-              <div className="border-t border-gray-500 mt-6 py-6 md:py-9">
-
-                <ul className="flex w-full flex-wrap justify-center items-center text-white underline text-sm md:text-[17px] gap-5 md:gap-9">
-
-                  <li className="cursor-pointer">Privacy statement</li>
-
-                  <li className="cursor-pointer">Disclaimer</li>
-
-                  <li className="cursor-pointer">General terms and conditions</li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
       </div>
+
+
+      <Footer />
 
     </div>
   );
