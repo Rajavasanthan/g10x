@@ -69,6 +69,7 @@ export function AnimationPage() {
     <section className="bg-black px-6 md:px-18 py-40 relative overflow-x-hidden">
 
       <div className="bg-[#ede7dd] rounded-2xl px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
+
         <h3 className="text-3xl">A network of like-minded specialists</h3>
 
         <p className="text-xl mt-10 leading-relaxed">
@@ -79,9 +80,11 @@ export function AnimationPage() {
         <p className="font-light mt-10">
           Workshops, meet-ups and knowledge sessions
         </p>
+
         <p className="font-light mt-3">
           Team outings, celebrating successes and connecting
         </p>
+
         <p className="font-light mt-3">
           Personal contact, also outside of work
         </p>
@@ -95,65 +98,67 @@ export function AnimationPage() {
             hoverBgColor="hover:bg-black"
             hoverTextColor="hover:text-white"
           />
+
         </div>
+
       </div>
 
       <img
         src={img_1.src}
         alt="Image 1"
-        className="w-44 absolute top-28 left-0 scroll-image1"
+        className="md:w-44 w-24 top-19 absolute md:top-28 left-0 scroll-image1"
       />
 
       <img
         src={img_2.src}
         alt="Image 1"
-        className="h-28 absolute top-98 left-16 scroll-image1"
+        className="md:h-28 h-22 absolute top-110 md:top-98 left-0 md:left-16 scroll-image1"
       />
 
       <img
         src={img_3.src}
         alt="Image 1"
-        className="w-38 absolute bottom-16 left-8 scroll-image1"
+        className="md:w-38 w-20 absolute bottom-16 left-8 scroll-image1"
       />
 
       <img
         src={img_4.src}
         alt="Image 1"
-        className="w-60 absolute bottom-8 right-26"
+        className="md:w-60 w-30 absolute bottom-8 right-20 md:right-26"
       />
 
       <img
         src={img_5.src}
         alt="Image 1"
-        className="w-38 absolute bottom-4 left-86 scroll-image2"
+        className="md:w-38 w-26 absolute bottom-4 left-30 md:left-86 scroll-image2"
       />
 
       <img
         src={img_6.src}
         alt="Image 1"
-        className="w-68 absolute top-22 right-120 scroll-image2"
+        className="md:w-68 w-48 absolute top-22 right-30 md:right-120 scroll-image2"
       />
 
       <img
         src={img_7.src}
         alt="Image 1"
-        className="w-78 absolute bottom-10 right-74 scroll-image3"
+        className="md:w-78 w-59 absolute bottom-10 right-10 md:right-74 scroll-image3"
       />
 
       <img
         src={img_8.src}
         alt="Image 1"
-        className="w-78 absolute top-70 -right-50 scroll-image3"
+        className="md:w-78 w-64 absolute top-70 -right-30 md:-right-50 scroll-image3"
       />
 
       <img
         src={img_9.src}
         alt="Image 1"
-        className="w-40 absolute top-24 right-6 scroll-image3"
+        className="md:w-40 w-30 absolute top-24 right-6 scroll-image3"
       />
 
-
     </section>
+    
   );
 }
 
