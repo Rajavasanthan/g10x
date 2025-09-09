@@ -21,9 +21,6 @@ import menImg3 from "../../public/images/men-img3.webp";
 import gardenImgBorder from "../../public/images/garden-img-border.svg"
 import Image from "next/image";
 
-import right_corner_img from "../../public/images/right_corner_img.svg";
-import logModelImg from "../../public/images/logo_model_img.png"
-
 import originalLogo from "../../public/images/original_logo.png";
 import linkedInImg from "../../public/images/Linkedin-img.svg";
 import instagramImg from "../../public/images/Instagram-img.svg";
@@ -249,26 +246,10 @@ export default function Home() {
 
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 ">
 
-                <div className="relative">
+                
+                <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
 
-                  <Image src={logModelImg} alt="B image" className="h-100" />
-
-                  <div className="px-6 py-10 absolute top-10 ml-10">
-
-                    <h3 className="text-[30px]">Working on large, complex projects</h3>
-
-                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
-                  </div>
-
-                </div>
-
-
-
-                <div className="relative">
-
-                  <Image src={logModelImg} alt="B image" className="h-100" />
-
-                  <div className="px-6 py-10 absolute top-10 ml-10">
+                  <div>
 
                     <h3 className="text-[30px]">Working on large, complex projects</h3>
 
@@ -279,11 +260,22 @@ export default function Home() {
 
 
 
-                <div className="relative">
+                <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
 
-                  <Image src={logModelImg} alt="B image" className="h-100" />
+                  <div>
 
-                  <div className="px-6 py-10 absolute top-10 ml-10">
+                    <h3 className="text-[30px]">Working on large, complex projects</h3>
+
+                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                  </div>
+
+                </div>
+
+
+
+                <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
+
+                  <div>
 
                     <h3 className="text-[30px]">Working on large, complex projects</h3>
 
@@ -477,13 +469,11 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={right_corner_img} alt="Corner image" className="absolute right-0" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
 
-                  <Image src={menImg2} alt="Men image 2" />
+                  <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="relative bottom-26 w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
-
-                  <div className="flex flex-col space-y-5 absolute bottom-[22%] left-[4%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
 
                     <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Trainee</p>
 
@@ -499,13 +489,11 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={right_corner_img} alt="Corner image" className="absolute right-0" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
 
-                  <Image src={menImg2} alt="Men image 2" />
+                  <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="relative bottom-26 w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
-
-                  <div className="flex flex-col space-y-5 absolute bottom-[22%] left-[4%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
 
                     <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Inhouse Creator</p>
 
@@ -520,13 +508,11 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={right_corner_img} alt="Corner image" className="absolute right-0" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
 
-                  <Image src={menImg2} alt="Men image 2" />
+                  <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="relative bottom-26 w-full h-28 bg-gradient-to-t from-black to-transparent"></div>
-
-                  <div className="flex flex-col space-y-5 absolute bottom-[22%] left-[4%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
 
                     <h3 className="text-white text-3xl">Mariska: First modular substation in the Netherlands installed</h3>
 
@@ -574,7 +560,7 @@ export default function Home() {
 
                 </div>
 
-                <Image src={menImg3} alt="Men image 3" className="md:w-110 md:h-110 mt-12 rounded-xl" />
+                <Image src={menImg3} alt="Men image 3" className="md:w-110 md:h-110 mt-12 rounded-l-[60px] rounded-b-[60px]" />
 
               </div>
 
