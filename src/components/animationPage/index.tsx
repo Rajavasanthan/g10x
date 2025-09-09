@@ -69,7 +69,7 @@ export function AnimationPage() {
 
 
   return (
-    <section className="bg-black px-6 md:px-18 py-40 overflow-x-hidden">
+    <section className="bg-black px-6 md:px-18 py-30 md:py-60 overflow-x-hidden">
 
       <div className="flex justify-center">
 
@@ -117,55 +117,55 @@ export function AnimationPage() {
             <Image
               src={img_1}
               alt="Image 1"
-              className="md:w-44 w-24 top-19 absolute md:top-4 2xl:top-10 left-0 scroll-image1"
+              className="md:w-44 w-24 top-19 absolute md:-top-28 -left-20 scroll-image1"
             />
 
             <Image
               src={img_2}
               alt="Image 1"
-              className="w-20 md:w-32 absolute top-110 md:top-78 2xl:top-80 left-0 md:left-16 scroll-image1"
+              className="w-20 md:w-42 absolute top-110 md:top-44 left-0 md:left-0 scroll-image1"
             />
 
             <Image
               src={img_3}
               alt="Image 1"
-              className="md:w-38 w-20 absolute bottom-16 md:bottom-2 2xl:bottom-1 left-8 scroll-image1"
+              className="md:w-38 w-20 absolute bottom-16 md:-bottom-20 -left-20 scroll-image1"
             />
 
             <Image
               src={img_4}
               alt="Image 1"
-              className="md:w-44 w-30 absolute bottom-8 2xl:bottom-1 2xl:right-10 right-20 md:right-16"
+              className="md:w-56 w-30 absolute bottom-10 md:-bottom-40 right-20 md:right-16"
             />
 
             <Image
               src={img_5}
               alt="Image 1"
-              className="md:w-32 w-26 absolute bottom-4 2xl:bottom-1 left-30 md:left-66 2xl:left-70 scroll-image2"
+              className="md:w-38 w-26 absolute -bottom-20 left-30 md:left-56 scroll-image2"
             />
 
             <Image
               src={img_6}
               alt="Image 1"
-              className="md:w-52 w-48 absolute top-22 md:top-0 2xl:-top-20 right-30 md:right-120 scroll-image2"
+              className="md:w-62 w-48 absolute top-22 md:-top-10 right-30 md:right-120 scroll-image2"
             />
 
             <Image
               src={img_7}
               alt="Image 1"
-              className="md:w-58 w-59 absolute bottom-10 2xl:right-50 right-10 md:right-50 scroll-image3"
+              className="md:w-68 w-59 absolute -bottom-24 right-10 md:right-60 scroll-image3"
             />
 
             <Image
               src={img_8}
               alt="Image 1"
-              className="md:w-60 w-64 absolute md:top-46 top-70 2xl:top-50 -right-30 md:-right-40 scroll-image3"
+              className="md:w-64 w-64 absolute md:top-36 top-70 -right-30 md:-right-50 scroll-image3"
             />
 
             <Image
               src={img_9}
               alt="Image 1"
-              className="md:w-34 w-30 absolute top-24 md:top-10 2xl:top-2 right-6 scroll-image3"
+              className="md:w-40 w-30 absolute top-24 md:-top-16 -right-10 scroll-image3"
             />
 
 

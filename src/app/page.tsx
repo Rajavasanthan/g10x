@@ -22,7 +22,12 @@ import gardenImgBorder from "../../public/images/garden-img-border.svg"
 import Image from "next/image";
 
 import right_corner_img from "../../public/images/right_corner_img.svg";
-import b_img from "../../public/images/B_img.svg"
+import logModelImg from "../../public/images/logo_model_img.png"
+
+import originalLogo from "../../public/images/original_logo.png";
+import linkedInImg from "../../public/images/Linkedin-img.svg";
+import instagramImg from "../../public/images/Instagram-img.svg";
+import facebookImg from "../../public/images/Facebook-img.svg";
 
 export default function Home() {
   return (
@@ -35,23 +40,23 @@ export default function Home() {
       <HomePage />
 
 
-      <div className="relative mt-[97vh] mb-[97vh] 2xl:mb-[55vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
+      <div className="relative mt-[97vh] md:mb-[97vh] 2xl:mb-[52vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
 
 
 
         <section className="flex overflow-x-auto md:overflow-x-hidden w-full justify-start md:justify-center items-center gap-6 md:gap-20 p-8 md:p-10">
 
-          <Image src={volkerRailImg} alt="VolkerRail" className="w-38 flex-shrink-0"></Image>
+          <Image src={volkerRailImg} alt="VolkerRail" className="w-38"></Image>
 
-          <Image src={schipholImg} alt="Schiphol" className="w-38 flex-shrink-0"></Image>
+          <Image src={schipholImg} alt="Schiphol" className="w-38"></Image>
 
-          <Image src={bamImg} alt="BAM" className="w-38 flex-shrink-0"></Image>
+          <Image src={bamImg} alt="BAM" className="w-38"></Image>
 
-          <Image src={heijmansImg} alt="Heijmans" className="w-38 flex-shrink-0"></Image>
+          <Image src={heijmansImg} alt="Heijmans" className="w-38"></Image>
 
-          <Image src={croonwolterWitImg} alt="CroonwolterWit" className="w-38 flex-shrink-0"></Image>
+          <Image src={croonwolterWitImg} alt="CroonwolterWit" className="w-38"></Image>
 
-          <Image src={spieImg} alt="SPIE" className="w-38 flex-shrink-0"></Image>
+          <Image src={spieImg} alt="SPIE" className="w-38"></Image>
 
         </section>
 
@@ -246,7 +251,7 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={b_img} alt="B image" className="h-100" />
+                  <Image src={logModelImg} alt="B image" className="h-100" />
 
                   <div className="px-6 py-10 absolute top-10 ml-10">
 
@@ -261,7 +266,7 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={b_img} alt="B image" className="h-100" />
+                  <Image src={logModelImg} alt="B image" className="h-100" />
 
                   <div className="px-6 py-10 absolute top-10 ml-10">
 
@@ -276,7 +281,7 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={b_img} alt="B image" className="h-100" />
+                  <Image src={logModelImg} alt="B image" className="h-100" />
 
                   <div className="px-6 py-10 absolute top-10 ml-10">
 
@@ -318,11 +323,12 @@ export default function Home() {
 
                 <div className="relative w-full">
 
+                  <Image src={gardenImgBorder} alt="Garden border" className="absolute z-50 h-full w-full right-[32%]" />
+
                   <Image src={gardenImg} alt="Garden image" className="opacity-80 w-full" />
 
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#dfdacf]"></div>
 
-                  <Image src={gardenImgBorder} alt="Garden border" className="absolute inset-0 h-full w-full -left-110" />
 
                 </div>
 
@@ -569,6 +575,74 @@ export default function Home() {
                 </div>
 
                 <Image src={menImg3} alt="Men image 3" className="md:w-110 md:h-110 mt-12 rounded-xl" />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section
+          className={`bg-black md:hidden block w-full pt-40 p-10`}>
+
+          <div className="flex justify-center">
+
+            <div>
+
+              <div className="flex flex-col px-6 ">
+
+                <div className="flex flex-col items-center">
+
+                  <Image src={originalLogo} alt="logo white" className="w-50" />
+
+                  <div className="flex gap-8 mt-10 ">
+
+                    <Image src={linkedInImg} alt="Linked in image" className="w-14" />
+
+                    <Image src={instagramImg} alt="Instagram image" className="w-14" />
+
+                    <Image src={facebookImg} alt="Facebook image" className="w-14" />
+
+                  </div>
+
+                </div>
+
+                <div className="flex flex-col border-l border-gray-500 pl-16 mt-4 pb-10 ml-10 ">
+
+                  <ul className="flex flex-col text-white mt-14 md:mt-24 text-lg">
+
+                    <li className="cursor-pointer hover:underline">Vacancies</li>
+
+                    <li className="cursor-pointer hover:underline">Trainee</li>
+
+                    <li className="cursor-pointer hover:underline">Interim manager</li>
+
+                    <li className="cursor-pointer hover:underline">Client</li>
+
+                  </ul>
+
+                  <div className="text-white border border-white py-1 px-4 mt-10 rounded-3xl w-fit duration-500 transform transition-transform hover:translate-x-2.5 cursor-pointer">
+                    Contact us
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className="border-t border-gray-500 mt-6 pt-6 md:pt-9">
+
+                <ul className="flex w-full flex-wrap justify-center items-center text-white underline text-sm md:text-[17px] gap-5 md:gap-9">
+
+                  <li className="cursor-pointer">Privacy statement</li>
+
+                  <li className="cursor-pointer">Disclaimer</li>
+
+                  <li className="cursor-pointer">General terms and conditions</li>
+
+                </ul>
 
               </div>
 
