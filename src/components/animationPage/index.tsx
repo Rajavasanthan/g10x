@@ -13,7 +13,7 @@ import img_7 from "../../../public/images/img-7.webp";
 import img_8 from "../../../public/images/img-8.webp";
 import img_9 from "../../../public/images/img-9.webp";
 
-import b_img from "../../../public/images/B_img.svg"
+// import b_img from "../../../public/images/B_img.svg"
 
 
 
@@ -77,9 +77,9 @@ export function AnimationPage() {
 
           <div>
 
-            <div className="relative px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
+            <div className="bg-[#ede7dd] rounded-l-[60px] rounded-b-[60px] relative px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
 
-              <Image src={b_img} alt="Background image" className="absolute w-full" />
+              {/* <Image src={b_img} alt="Background image" className="absolute w-full hidden" /> */}
 
               <h3 className="text-3xl z-10">A network of like-minded specialists</h3>
 
@@ -117,55 +117,55 @@ export function AnimationPage() {
             <Image
               src={img_1}
               alt="Image 1"
-              className="md:w-44 w-24 top-19 absolute md:-top-28 -left-20 scroll-image1"
+              className="md:w-44 w-24 top-19 absolute md:-top-28 -left-20 scroll-image1 hidden md:block"
             />
 
             <Image
               src={img_2}
               alt="Image 1"
-              className="w-20 md:w-42 absolute top-110 md:top-44 left-0 md:left-0 scroll-image1"
+              className="w-20 md:w-42 absolute top-110 md:top-44 left-0 md:left-0 scroll-image1 hidden md:block"
             />
 
             <Image
               src={img_3}
               alt="Image 1"
-              className="md:w-38 w-20 absolute bottom-16 md:-bottom-20 -left-20 scroll-image1"
+              className="md:w-38 w-20 absolute bottom-16 md:-bottom-20 -left-20 scroll-image1 hidden md:block"
             />
 
             <Image
               src={img_4}
               alt="Image 1"
-              className="md:w-56 w-30 absolute bottom-10 md:-bottom-40 right-20 md:right-16"
+              className="md:w-56 w-30 absolute bottom-10 md:-bottom-40 right-20 md:right-16 hidden md:block"
             />
 
             <Image
               src={img_5}
               alt="Image 1"
-              className="md:w-38 w-26 absolute -bottom-20 left-30 md:left-56 scroll-image2"
+              className="md:w-38 w-26 absolute -bottom-20 left-30 md:left-56 scroll-image2 hidden md:block"
             />
 
             <Image
               src={img_6}
               alt="Image 1"
-              className="md:w-62 w-48 absolute top-22 md:-top-10 right-30 md:right-120 scroll-image2"
+              className="md:w-62 w-48 absolute top-22 md:-top-10 right-30 md:right-120 scroll-image2 hidden md:block"
             />
 
             <Image
               src={img_7}
               alt="Image 1"
-              className="md:w-68 w-59 absolute -bottom-24 right-10 md:right-60 scroll-image3"
+              className="md:w-68 w-59 absolute -bottom-24 right-10 md:right-60 scroll-image3 hidden md:block"
             />
 
             <Image
               src={img_8}
               alt="Image 1"
-              className="md:w-64 w-64 absolute md:top-36 top-70 -right-30 md:-right-50 scroll-image3"
+              className="md:w-64 w-64 absolute md:top-36 top-70 -right-30 md:-right-50 scroll-image3 hidden md:block"
             />
 
             <Image
               src={img_9}
               alt="Image 1"
-              className="md:w-40 w-30 absolute top-24 md:-top-16 -right-10 scroll-image3"
+              className="md:w-40 w-30 absolute top-24 md:-top-16 -right-10 scroll-image3 hidden md:block"
             />
 
 

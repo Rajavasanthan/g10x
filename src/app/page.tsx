@@ -246,7 +246,7 @@ export default function Home() {
 
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 ">
 
-                
+
                 <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
 
                   <div>
@@ -324,23 +324,31 @@ export default function Home() {
 
                 </div>
 
-                <div className="absolute flex flex-col items-end bottom-[5%] right-[2%]">
+                <div className="absolute md:flex flex-col items-end bottom-[5%] right-[2%] hidden">
 
-                  <h3 className="text-2xl md:text-4xl">A former colleague recommended</h3>
+                  <h3 className="text-4xl">A former colleague recommended</h3>
 
-                  <h3 className="text-2xl md:text-4xl">Bluetech to me. Best</h3>
+                  <h3 className="text-4xl">Bluetech to me. Best</h3>
 
-                  <h3 className="text-2xl md:text-4xl">decision of my</h3>
+                  <h3 className="text-4xl">decision of my</h3>
 
-                  <h3 className="text-2xl md:text-4xl">career.</h3>
+                  <h3 className="text-4xl">career.</h3>
 
-                  <p className="mt-2 md:mt-10 font-semibold text-sm md:text-lg">You sense that Bluetech is all</p>
+                  <p className="mt-2 font-semibold text-lg">You sense that Bluetech is all</p>
 
-                  <p className="font-semibold text-sm md:text-lg">about people, not CVs and targets. That, for me, is the added</p>
+                  <p className="font-semibold text-lg">about people, not CVs and targets. That, for me, is the added</p>
 
-                  <p className="font-semibold text-sm md:text-lg">value of Bluetech. The variety of assignments and the direct</p>
+                  <p className="font-semibold text-lg">value of Bluetech. The variety of assignments and the direct</p>
 
-                  <p className="font-semibold text-sm md:text-lg">approach make working here ideal.</p>
+                  <p className="font-semibold text-lg">approach make working here ideal.</p>
+
+                  <p className="font-light mt-4">— Tom</p>
+
+                </div>
+
+                <div className="absolute top-[4%] left-[4%] right-[4%] flex flex-col items-end md:hidden">
+
+                  <p className="mt-2 font-semibold text-sm">You sense that Bluetech is all about people, not CVs and targets. That, for me, is the added value of Bluetech. The variety of assignments and the direct approach make working here ideal.</p>
 
                   <p className="font-light mt-4">— Tom</p>
 
