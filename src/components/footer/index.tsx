@@ -13,9 +13,8 @@ export function Footer() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const viewportHeight = window.innerHeight;
 
-            if (scrollY >= viewportHeight) {
+            if (scrollY >= 3000) {
                 setVisible(true);
             } else {
                 setVisible(false);
@@ -27,7 +26,7 @@ export function Footer() {
 
     return (
         <section
-            className={`bg-black fixed bottom-0 left-0 w-full pt-40 p-10 overflow-hidden transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
+            className={`bg-black hidden md:block fixed bottom-0 left-0 w-full pt-40 p-10 overflow-hidden transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
                 }`}>
 
             <div className="flex justify-center">

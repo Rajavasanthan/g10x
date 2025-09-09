@@ -11,15 +11,14 @@ export function HomePage() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const viewportHeight = window.innerHeight;
 
-            if (scrollY >= viewportHeight) {
+            if (scrollY >= 3000) {
                 setVisible(false);
             } else {
                 setVisible(true);
             }
 
-            console.log(`${scrollY} , ${viewportHeight}`);
+            console.log(`${scrollY}`);
 
         };
 
