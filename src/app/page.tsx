@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen bg-[#ede7dd] overflow-y-auto">
 
-      <div className="absolute top-0 left-0 w-full z-20">
+      <div className="absolute top-0 left-0 w-full z-50">
         <Navbar />
       </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
 
                 <div className="overflow-hidden cursor-pointer">
 
-                  <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  <Image src={menImg} alt="Men image" className="w-full h-32 object-cover transform transition-transform duration-500 hover:scale-110"
                   ></Image>
 
                   <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -104,7 +104,7 @@ export default function Home() {
 
                 <div className="overflow-hidden cursor-pointer">
 
-                  <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  <Image src={menImg} alt="Men image" className="w-full h-32 object-cover transform transition-transform duration-500 hover:scale-110"
                   />
 
                   <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -126,7 +126,7 @@ export default function Home() {
 
                 <div className="overflow-hidden cursor-pointer">
 
-                  <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  <Image src={menImg} alt="Men image" className="w-full h-32 object-cover transform transition-transform duration-500 hover:scale-110"
                   />
 
                   <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -148,7 +148,7 @@ export default function Home() {
 
                 <div className="overflow-hidden cursor-pointer">
 
-                  <Image src={menImg} alt="Men image" className="w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  <Image src={menImg} alt="Men image" className="w-full h-32 object-cover transform transition-transform duration-500 hover:scale-110"
                   />
 
                   <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
@@ -346,7 +346,9 @@ export default function Home() {
 
                 </div>
 
-                <div className="absolute top-[4%] left-[4%] right-[4%] flex flex-col items-end md:hidden">
+                <div className="flex flex-col items-end md:hidden relative bottom-10 z-50">
+
+                  <h3 className="text-xl">A former colleague recommended Bluetech to me. Best decision of my career.</h3>
 
                   <p className="mt-2 font-semibold text-sm">You sense that Bluetech is all about people, not CVs and targets. That, for me, is the added value of Bluetech. The variety of assignments and the direct approach make working here ideal.</p>
 
@@ -363,13 +365,13 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-[#ede7dd] px-6 pt-14 md:pt-20 md:px-18 pb-18 md:pb-26">
+        <section className="bg-[#ede7dd] px-6 pt-4 md:pt-20 md:px-18 pb-18 md:pb-26">
 
           <div className="flex justify-center">
 
             <div className="xl:w-[1405px]">
 
-              <div className="flex flex-col -space-y-2 md:-space-y-7">
+              <div className="md:flex flex-col -space-y-2 md:-space-y-7 hidden">
 
                 <h2 className="text-[42px] md:text-[70px]">Working on technical</h2>
 
@@ -377,6 +379,10 @@ export default function Home() {
 
                 <h2 className="text-[42px] md:text-[70px]">impact</h2>
 
+              </div>
+
+              <div className="flex flex-col -space-y-2 md:hidden">
+                <h2 className="text-[42px]">Working on technical projects that make an impact</h2>
               </div>
 
               <div className="mt-10 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-8">

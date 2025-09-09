@@ -64,13 +64,13 @@ export function HomePage() {
     }, [word]);
 
     return (
-        <section className={`fixed top-0 left-0 h-full w-full p-10 overflow-hidden transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0"}`}>
+        <section className={`fixed top-0 left-0 h-full w-full p-10 z-30 overflow-hidden transition-opacity duration-500 ${visible ? "block" : "hidden"}`}>
 
             <div className="flex justify-center">
 
                 <div className="xl:w-[1405px]">
 
-                    <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-50 absolute mt-[80%] md:mt-[9%] 2xl:bottom-[10%]">
+                    <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-40 absolute mt-[80%] md:mt-[9%] 2xl:bottom-[10%]">
 
                         <div className="text-5xl md:text-7xl">
                             Help us{" "}
@@ -107,7 +107,7 @@ export function HomePage() {
                         <Image
                             src={meetingImg}
                             alt="Meeting image"
-                            className="2xl:h-screen mt-20 md:mt-12 md:w-[66%] object-cover rounded-l-[60px] rounded-b-[60px]"
+                            className="2xl:h-screen mt-40 md:mt-12 md:w-[66%] object-cover rounded-l-[60px] rounded-b-[60px]"
                         />
 
                     </div>
