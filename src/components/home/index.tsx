@@ -107,7 +107,7 @@ export function HomePage() {
                         <Image
                             src={meetingImg}
                             alt="Meeting image"
-                            className="md:h-screen mt-20 md:mt-0 md:w-[66%] object-cover"
+                            className="2xl:h-screen mt-20 md:mt-12 md:w-[66%] object-cover rounded-l-[60px] rounded-b-[60px]"
                         />
 
                     </div>
