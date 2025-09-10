@@ -23,7 +23,7 @@ export function Navbar() {
                         </div>
                     </div>
 
-                    <ul className="hidden md:flex space-x-16 text-xl mt-12">
+                    <ul className="hidden md:flex space-x-16 text-xl mt-10">
 
                         <li className="cursor-pointer">Community</li>
 
@@ -34,7 +34,7 @@ export function Navbar() {
                     </ul>
 
 
-                    <div className="md:hidden mt-12">
+                    <div className="md:hidden mt-6">
 
                         <input type="checkbox" id="menu-toggle" className="peer hidden" />
 
