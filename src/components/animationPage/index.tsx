@@ -3,17 +3,32 @@
 import { useEffect } from "react";
 import { Btn } from "@/components";
 
-import img_1 from "../../../public/images/img-1.webp";
-import img_2 from "../../../public/images/img-2.webp";
-import img_3 from "../../../public/images/img-3.webp";
-import img_4 from "../../../public/images/img-4.webp";
-import img_5 from "../../../public/images/img-5.webp";
-import img_6 from "../../../public/images/img-6.webp";
-import img_7 from "../../../public/images/img-7.webp";
-import img_8 from "../../../public/images/img-8.webp";
-import img_9 from "../../../public/images/img-9.webp";
+// import img_1 from "../../../public/images/img-1.webp";
+// import img_2 from "../../../public/images/img-2.webp";
+// import img_3 from "../../../public/images/img-3.webp";
+// import img_4 from "../../../public/images/img-4.webp";
+// import img_5 from "../../../public/images/img-5.webp";
+// import img_6 from "../../../public/images/img-6.webp";
+// import img_7 from "../../../public/images/img-7.webp";
+// import img_8 from "../../../public/images/img-8.webp";
+// import img_9 from "../../../public/images/img-9.webp";
 
 // import b_img from "../../../public/images/B_img.svg"
+
+import image1 from "../../../public/images/image1.jpg"
+import image2 from "../../../public/images/image2.jpg"
+import image3 from "../../../public/images/image3.webp"
+import image4 from "../../../public/images/image4.jpg"
+import image5 from "../../../public/images/image5.webp"
+import image6 from "../../../public/images/image6.webp"
+import image7 from "../../../public/images/image7.jpg"
+import image8 from "../../../public/images/image8.jpg"
+import image9 from "../../../public/images/image9.jpg"
+import image10 from "../../../public/images/image10.jpg"
+import image11 from "../../../public/images/image11.png"
+import image12 from "../../../public/images/image12.jpg"
+import image13 from "../../../public/images/image13.jpg"
+
 
 
 
@@ -69,17 +84,85 @@ export function AnimationPage() {
 
 
   return (
-    <section className="bg-black px-6 md:px-18 py-30 md:py-60 overflow-x-hidden">
+    <section className="bg-black px-6 md:px-18 py-30 overflow-x-hidden">
 
       <div className="flex justify-center">
 
-        <div className="xl:w-[1405px] relative">
+        <div className="xl:w-[1405px]">
 
-          <div>
+          <div className="w-full flex flex-col justify-center items-center ">
+
+            <div className="flex space-x-2 md:space-x-4">
+
+              <div className="flex flex-col space-y-2 mt-10 md:mt-24">
+                <Image src={image1} alt="Image1" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+                <Image src={image12} alt="Image12" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              </div>
+
+              <div className="flex flex-col space-y-2">
+                <Image src={image2} alt="Image2" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+                <Image src={image3} alt="Image3" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              </div>
+
+              <Image src={image4} alt="Image4" className="w-8 h-16 md:w-28 md:h-42 rounded-lg mt-8 md:mt-22" />
+              <Image src={image5} alt="Image5" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              <Image src={image6} alt="Image6" className="w-8 h-16 md:w-28 md:h-40 rounded-lg mt-6 md:mt-14" />
+              <Image src={image7} alt="Image7" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              <Image src={image8} alt="Image8" className="w-8 h-16 md:w-28 md:h-42 rounded-lg mt-8 md:mt-22" />
+
+              <div className="flex flex-col space-y-2">
+                <Image src={image9} alt="Image9" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+                <Image src={image10} alt="Image10" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              </div>
+
+              <div className="flex flex-col space-y-2 mt-10 md:mt-24">
+                <Image src={image11} alt="Image11" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+                <Image src={image13} alt="Image12" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              </div>
+
+            </div>
+
+            <div className="text-white max-w-2xl mt-10 md:mt-0 md:relative left-[4%]">
+              <h3 className="text-3xl z-10">A network of like-minded specialists</h3>
+
+              <p className="text-xl mt-4 md:mt-10 leading-relaxed z-10">
+                At Bluetech, you don&apos;t work alone. You&apos;re part of a close-knit
+                community where knowledge sharing, growth, and fun are a given.
+              </p>
+
+              <p className="font-light mt-4 md:mt-10 z-10">
+                Workshops, meet-ups and knowledge sessions
+              </p>
+
+              <p className="font-light mt-3 z-10">
+                Team outings, celebrating successes and connecting
+              </p>
+
+              <p className="font-light mt-3 z-10">
+                Personal contact, also outside of work
+              </p>
+
+              <div className="mt-5 md:mt-10 z-10">
+                <Btn
+                  text="More about our community"
+                  bgColor="bg-white"
+                  borderColor="border border-black"
+                  textColor="text-black"
+                  hoverBgColor="hover:bg-white"
+                  hoverTextColor="hover:text-black"
+                />
+
+              </div>
+            </div>
+
+          </div>
+
+       
+
+
+          {/* <div>
 
             <div className="bg-[#ede7dd] rounded-l-[60px] rounded-b-[60px] relative px-6 md:px-74 text-center py-18 md:py-26 flex flex-col justify-center items-center">
-
-              {/* <Image src={b_img} alt="Background image" className="absolute w-full hidden" /> */}
 
               <h3 className="text-3xl z-10">A network of like-minded specialists</h3>
 
@@ -169,7 +252,8 @@ export function AnimationPage() {
             />
 
 
-          </div>
+          </div> */}
+
 
         </div>
 
