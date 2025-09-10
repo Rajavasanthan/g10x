@@ -84,7 +84,7 @@ export function AnimationPage() {
 
 
   return (
-    <section className="bg-black px-6 md:px-18 py-30 overflow-x-hidden">
+    <section className="bg-black px-6 md:px-18 py-16 md:py-30 overflow-x-hidden">
 
       <div className="flex justify-center">
 
