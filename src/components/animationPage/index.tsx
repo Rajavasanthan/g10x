@@ -38,9 +38,49 @@ export function AnimationPage() {
       },
       opacity: 0,
       y: 50,
-      duration: 0.8,
+      duration: 0.3,
+      ease: "power3.out",
       stagger: 0.2,
-    })
+    });
+
+    gsap.from(".image2", {
+      scrollTrigger: {
+        trigger: ".image",
+        start: "top 85%",
+        toggleActions: "restart pause resume reset",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 0.1,
+      ease: "power3.out",
+      stagger: 0.2,
+    });
+
+    gsap.from(".image3", {
+      scrollTrigger: {
+        trigger: ".image",
+        start: "top 85%",
+        toggleActions: "restart pause resume reset",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 0.6,
+      ease: "power3.out",
+      stagger: 0.2,
+    });
+
+    gsap.from(".image4", {
+      scrollTrigger: {
+        trigger: ".image",
+        start: "top 85%",
+        toggleActions: "restart pause resume reset",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 0.8,
+      ease: "power3.out",
+      stagger: 0.2,
+    });
 
 
   }, []);
@@ -58,29 +98,29 @@ export function AnimationPage() {
             <div className="flex space-x-1.5 md:space-x-4">
 
               <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
-                <Image src={image1} alt="Image1" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
-                <Image src={image12} alt="Image12" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image1} alt="Image1" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
+                <Image src={image12} alt="Image12" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
               </div>
 
               <div className="flex flex-col space-y-1.5 md:space-y-4">
-                <Image src={image2} alt="Image2" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
-                <Image src={image3} alt="Image3" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image2} alt="Image2" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
+                <Image src={image3} alt="Image3" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
               </div>
 
-              <Image src={image4} alt="Image4" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image mt-8 md:mt-22" />
+              <Image src={image4} alt="Image4" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image4 mt-8 md:mt-22" />
               <Image src={image5} alt="Image5" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
               <Image src={image6} alt="Image6" className="w-8 h-11 md:w-28 md:h-40 rounded-sm md:rounded-lg image mt-6 md:mt-14" />
-              <Image src={image7} alt="Image7" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+              <Image src={image7} alt="Image7" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image3" />
               <Image src={image8} alt="Image8" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image mt-8 md:mt-22" />
 
               <div className="flex flex-col space-y-1.5 md:space-y-4">
-                <Image src={image9} alt="Image9" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
-                <Image src={image10} alt="Image10" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image9} alt="Image9" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image3" />
+                <Image src={image10} alt="Image10" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image3" />
               </div>
 
               <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
                 <Image src={image11} alt="Image11" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
-                <Image src={image13} alt="Image12" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image13} alt="Image12" className="w-8 h-11 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
               </div>
 
             </div>
