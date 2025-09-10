@@ -64,15 +64,15 @@ export function HomePage() {
     }, [word]);
 
     return (
-        <section className={`fixed top-0 left-0 h-full w-full p-10 z-30 overflow-hidden transition-opacity duration-500 ${visible ? "block" : "hidden"}`}>
+        <section className={`fixed top-0 left-0 h-full w-full pt-10 md:p-10 z-30 overflow-hidden transition-opacity duration-500 ${visible ? "block" : "hidden"}`}>
 
             <div className="flex justify-center">
 
                 <div className="xl:w-[1405px]">
 
-                    <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-40 absolute mt-[80%] md:mt-[9%] 2xl:bottom-[10%]">
+                    <div className="flex flex-col space-y-8 md:w-1/2 2xl:w-[620px] z-40 absolute mt-[80%] md:mt-[9%] 2xl:bottom-[10%] px-6">
 
-                        <div className="text-5xl md:text-7xl">
+                        <div className="text-5xl md:text-7xl mt-4 md:mt-0">
                             Help us{" "}
                             <span key={word} className="rotating-word inline-block text-[#bb0f4b]">
                                 {word}
@@ -107,7 +107,7 @@ export function HomePage() {
                         <Image
                             src={meetingImg}
                             alt="Meeting image"
-                            className="2xl:h-screen mt-40 md:mt-12 md:w-[66%] object-cover rounded-l-[60px] rounded-b-[60px]"
+                            className="2xl:h-screen mt-18 md:mt-12 md:w-[66%] object-cover rounded-l-[60px] rounded-b-[60px] px-6"
                         />
 
                     </div>
