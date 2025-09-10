@@ -94,30 +94,30 @@ export function AnimationPage() {
 
             <div className="flex space-x-2 md:space-x-4">
 
-              <div className="flex flex-col space-y-2 mt-10 md:mt-24">
-                <Image src={image1} alt="Image1" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
-                <Image src={image12} alt="Image12" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              <div className="flex flex-col space-y-2 md:space-y-4 mt-10 md:mt-24">
+                <Image src={image1} alt="Image1" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+                <Image src={image12} alt="Image12" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
               </div>
 
-              <div className="flex flex-col space-y-2">
-                <Image src={image2} alt="Image2" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
-                <Image src={image3} alt="Image3" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              <div className="flex flex-col space-y-2 md:space-y-4">
+                <Image src={image2} alt="Image2" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+                <Image src={image3} alt="Image3" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
               </div>
 
-              <Image src={image4} alt="Image4" className="w-8 h-16 md:w-28 md:h-42 rounded-lg mt-8 md:mt-22" />
-              <Image src={image5} alt="Image5" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
-              <Image src={image6} alt="Image6" className="w-8 h-16 md:w-28 md:h-40 rounded-lg mt-6 md:mt-14" />
-              <Image src={image7} alt="Image7" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
-              <Image src={image8} alt="Image8" className="w-8 h-16 md:w-28 md:h-42 rounded-lg mt-8 md:mt-22" />
+              <Image src={image4} alt="Image4" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg mt-8 md:mt-22" />
+              <Image src={image5} alt="Image5" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+              <Image src={image6} alt="Image6" className="w-8 h-13 md:w-28 md:h-40 rounded-sm md:rounded-lg mt-6 md:mt-14" />
+              <Image src={image7} alt="Image7" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+              <Image src={image8} alt="Image8" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg mt-8 md:mt-22" />
 
-              <div className="flex flex-col space-y-2">
-                <Image src={image9} alt="Image9" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
-                <Image src={image10} alt="Image10" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              <div className="flex flex-col space-y-2 md:space-y-4">
+                <Image src={image9} alt="Image9" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+                <Image src={image10} alt="Image10" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
               </div>
 
-              <div className="flex flex-col space-y-2 mt-10 md:mt-24">
-                <Image src={image11} alt="Image11" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
-                <Image src={image13} alt="Image12" className="w-8 h-16 md:w-28 md:h-42 rounded-lg" />
+              <div className="flex flex-col space-y-2 md:space-y-4 mt-10 md:mt-24">
+                <Image src={image11} alt="Image11" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+                <Image src={image13} alt="Image12" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
               </div>
 
             </div>
