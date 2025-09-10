@@ -37,7 +37,7 @@ export default function Home() {
       <HomePage />
 
 
-      <div className="relative mt-[97vh] md:mb-[97vh] 2xl:mb-[64vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
+      <div className="relative mt-[97vh] md:mb-[97vh] 2xl:mb-[70vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
 
 
 
