@@ -3,17 +3,6 @@
 import { useEffect } from "react";
 import { Btn } from "@/components";
 
-// import img_1 from "../../../public/images/img-1.webp";
-// import img_2 from "../../../public/images/img-2.webp";
-// import img_3 from "../../../public/images/img-3.webp";
-// import img_4 from "../../../public/images/img-4.webp";
-// import img_5 from "../../../public/images/img-5.webp";
-// import img_6 from "../../../public/images/img-6.webp";
-// import img_7 from "../../../public/images/img-7.webp";
-// import img_8 from "../../../public/images/img-8.webp";
-// import img_9 from "../../../public/images/img-9.webp";
-
-// import b_img from "../../../public/images/B_img.svg"
 
 import image1 from "../../../public/images/image1.jpg"
 import image2 from "../../../public/images/image2.jpg"
@@ -30,54 +19,28 @@ import image12 from "../../../public/images/image12.jpg"
 import image13 from "../../../public/images/image13.jpg"
 
 
-
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export function AnimationPage() {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+
   useEffect(() => {
 
-    const images1 = gsap.utils.toArray<HTMLElement>(".scroll-image1");
-    images1.forEach((img) => {
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: img,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1.5,
-        },
-      }).to(img, { x: 50, duration: 5, ease: "power2.out" });
-    });
-
-
-    const images2 = gsap.utils.toArray<HTMLElement>(".scroll-image2");
-    images2.forEach((img) => {
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: img,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1.5,
-        },
-      }).to(img, { y: -50, duration: 5, ease: "power2.out" });
-    });
-
-
-    const images3 = gsap.utils.toArray<HTMLElement>(".scroll-image3");
-    images3.forEach((img) => {
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: img,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1.5,
-        },
-      }).from(img, { x: 50, duration: 5, ease: "power2.out" });
-    });
+    gsap.from(".image", {
+      scrollTrigger: {
+        trigger: ".image",
+        start: "top 85%",
+        toggleActions: "restart pause resume reset",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 0.8,
+      stagger: 0.2,
+    })
 
 
   }, []);
@@ -92,32 +55,32 @@ export function AnimationPage() {
 
           <div className="w-full flex flex-col justify-center items-center ">
 
-            <div className="flex space-x-2 md:space-x-4">
+            <div className="flex space-x-1.5 md:space-x-4">
 
-              <div className="flex flex-col space-y-2 md:space-y-4 mt-10 md:mt-24">
-                <Image src={image1} alt="Image1" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
-                <Image src={image12} alt="Image12" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
+                <Image src={image1} alt="Image1" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image12} alt="Image12" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
               </div>
 
-              <div className="flex flex-col space-y-2 md:space-y-4">
-                <Image src={image2} alt="Image2" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
-                <Image src={image3} alt="Image3" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4">
+                <Image src={image2} alt="Image2" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image3} alt="Image3" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
               </div>
 
-              <Image src={image4} alt="Image4" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg mt-8 md:mt-22" />
-              <Image src={image5} alt="Image5" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
-              <Image src={image6} alt="Image6" className="w-8 h-13 md:w-28 md:h-40 rounded-sm md:rounded-lg mt-6 md:mt-14" />
-              <Image src={image7} alt="Image7" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
-              <Image src={image8} alt="Image8" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg mt-8 md:mt-22" />
+              <Image src={image4} alt="Image4" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image mt-8 md:mt-22" />
+              <Image src={image5} alt="Image5" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+              <Image src={image6} alt="Image6" className="w-8 h-13 md:w-28 md:h-40 rounded-sm md:rounded-lg image mt-6 md:mt-14" />
+              <Image src={image7} alt="Image7" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+              <Image src={image8} alt="Image8" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image mt-8 md:mt-22" />
 
-              <div className="flex flex-col space-y-2 md:space-y-4">
-                <Image src={image9} alt="Image9" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
-                <Image src={image10} alt="Image10" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4">
+                <Image src={image9} alt="Image9" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image10} alt="Image10" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
               </div>
 
-              <div className="flex flex-col space-y-2 md:space-y-4 mt-10 md:mt-24">
-                <Image src={image11} alt="Image11" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
-                <Image src={image13} alt="Image12" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
+                <Image src={image11} alt="Image11" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
+                <Image src={image13} alt="Image12" className="w-8 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
               </div>
 
             </div>
@@ -157,7 +120,7 @@ export function AnimationPage() {
 
           </div>
 
-       
+
 
 
           {/* <div>
