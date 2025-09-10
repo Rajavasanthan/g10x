@@ -83,12 +83,12 @@ export function AnimationPage() {
 
               <h3 className="text-3xl z-10">A network of like-minded specialists</h3>
 
-              <p className="text-xl mt-10 leading-relaxed z-10">
+              <p className="text-xl mt-4 md:mt-10 leading-relaxed z-10">
                 At Bluetech, you don&apos;t work alone. You&apos;re part of a close-knit
                 community where knowledge sharing, growth, and fun are a given.
               </p>
 
-              <p className="font-light mt-10 z-10">
+              <p className="font-light mt-4 md:mt-10 z-10">
                 Workshops, meet-ups and knowledge sessions
               </p>
 
@@ -117,55 +117,55 @@ export function AnimationPage() {
             <Image
               src={img_1}
               alt="Image 1"
-              className="md:w-44 w-24 top-19 absolute md:-top-28 -left-20 scroll-image1 hidden md:block"
+              className="md:w-44 w-24 -top-20 absolute md:-top-28 -left-20 scroll-image1"
             />
 
             <Image
               src={img_2}
               alt="Image 1"
-              className="w-20 md:w-42 absolute top-110 md:top-44 left-0 md:left-0 scroll-image1 hidden md:block"
+              className="w-20 md:w-42 absolute top-20 md:top-44 -left-20 md:left-0 scroll-image1"
             />
 
             <Image
               src={img_3}
               alt="Image 1"
-              className="md:w-38 w-20 absolute bottom-16 md:-bottom-20 -left-20 scroll-image1 hidden md:block"
+              className="md:w-38 w-20 absolute -bottom-20 -left-10 md:-bottom-20 md:-left-20 scroll-image1"
             />
 
             <Image
               src={img_4}
               alt="Image 1"
-              className="md:w-56 w-30 absolute bottom-10 md:-bottom-40 right-20 md:right-16 hidden md:block"
+              className="md:w-56 w-30 absolute -bottom-30 md:-bottom-40 right-0 md:right-16"
             />
 
             <Image
               src={img_5}
               alt="Image 1"
-              className="md:w-38 w-26 absolute -bottom-20 left-30 md:left-56 scroll-image2 hidden md:block"
+              className="md:w-38 w-26 absolute -bottom-20 left-20 md:left-56 scroll-image2"
             />
 
             <Image
               src={img_6}
               alt="Image 1"
-              className="md:w-62 w-48 absolute top-22 md:-top-10 right-30 md:right-120 scroll-image2 hidden md:block"
+              className="md:w-62 w-48 absolute -top-16 md:-top-10 right-10 md:right-120 scroll-image2"
             />
 
             <Image
               src={img_7}
               alt="Image 1"
-              className="md:w-68 w-59 absolute -bottom-24 right-10 md:right-60 scroll-image3 hidden md:block"
+              className="md:w-68 w-39 absolute -bottom-24 right-10 md:right-60 scroll-image3"
             />
 
             <Image
               src={img_8}
               alt="Image 1"
-              className="md:w-64 w-64 absolute md:top-36 top-70 -right-30 md:-right-50 scroll-image3 hidden md:block"
+              className="md:w-64 w-64 absolute md:top-36 top-70 -right-60 md:-right-50 scroll-image3"
             />
 
             <Image
               src={img_9}
               alt="Image 1"
-              className="md:w-40 w-30 absolute top-24 md:-top-16 -right-10 scroll-image3 hidden md:block"
+              className="md:w-40 w-30 absolute top-24 md:-top-16 -right-22 md:-right-10 scroll-image3"
             />
 
 
