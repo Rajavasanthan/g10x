@@ -14,8 +14,14 @@ export function Navbar() {
 
                 <div className='flex justify-between w-[1405px] items-center'>
 
-                    <Image src={originalLogo} alt="Logo" className="w-14 mt-6" />
+                    <div className='flex gap-4 items-center'>
+                        <Image src={originalLogo} alt="Logo" className="w-14 mt-6" />
 
+                        <div className='flex flex-col mt-6 text-lg md:text-xl font-semibold text-gray-600'>
+                            <p>Global Thriving</p>
+                            <p>Enterpreneurs Network</p>
+                        </div>
+                    </div>
 
                     <ul className="hidden md:flex space-x-16 text-xl mt-12">
 
