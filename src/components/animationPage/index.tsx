@@ -126,28 +126,35 @@ export function AnimationPage() {
             </div>
 
             <div className="text-white max-w-2xl mt-10 md:mt-0 md:relative left-[4%]">
-              <h3 className="text-3xl z-10">A network of like-minded specialists</h3>
+              <h3 className="text-3xl z-10">A network of founders who thrive together</h3>
 
-              <p className="text-xl mt-4 md:mt-10 leading-relaxed z-10">
-                At Bluetech, you don&apos;t work alone. You&apos;re part of a close-knit
-                community where knowledge sharing, growth, and fun are a given.
+              <p className="text-xl mt-4 md:mt-6 leading-relaxed z-10">
+                At G10X, you&apos;re never building in isolation. You&apos;re part of a global founder circle where knowledge flows, partnerships spark, and growth compounds.
               </p>
 
-              <p className="font-light mt-4 md:mt-10 z-10">
-                Workshops, meet-ups and knowledge sessions
+              <p className="text-xl mt-4 leading-relaxed z-10">
+                Each category is a close-knit ecosystem — but the strength multiplies when we connect across sectors and borders.
+              </p>
+
+              <p className="font-light mt-4 md:mt-6 z-10">
+                Workshops & Masterclasses → Learn directly from peers, mentors, and industry leaders.
               </p>
 
               <p className="font-light mt-3 z-10">
-                Team outings, celebrating successes and connecting
+                Collaboration over Competition → Share resources, co-create, and grow together.
               </p>
 
               <p className="font-light mt-3 z-10">
-                Personal contact, also outside of work
+                Global Connections → Meet founders from across the world, united by shared focus.
+              </p>
+
+              <p className="font-light mt-3 z-10">
+                Celebrating Wins → From funding milestones to product launches, we cheer each other on.
               </p>
 
               <div className="mt-5 md:mt-10 z-10">
                 <Btn
-                  text="More about our community"
+                  text="Discover the G10X Community"
                   bgColor="bg-white"
                   borderColor="border border-black"
                   textColor="text-black"

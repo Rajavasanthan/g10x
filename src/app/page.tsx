@@ -10,10 +10,16 @@ import spieImg from "../../public/images/spie_black.png"
 import menImg from "../../public/images/men-img.jpg";
 import gardenImg from "../../public/images/garden-img.jpg";
 
-import buildingLightImg from "../../public/images/buildings-light.svg"
-import infrastructureImg from "../../public/images/Infrastructure.svg"
-import securityImg from "../../public/images/security.svg"
-import energyImg from "../../public/images/energy.svg"
+import healthCare from "../../public/images/healthcare.png";
+import finTech from "../../public/images/fintech.png";
+import climate_change from "../../public/images/climate-change.png"
+import connected_car from "../../public/images/connected-car.png"
+import learning from "../../public/images/learning.png"
+import protection from "../../public/images/protection.png"
+import school from "../../public/images/school.png"
+import smart_cities from "../../public/images/smart-cities.png"
+import solar_energy from "../../public/images/solar-energy.png"
+import space from "../../public/images/space.png"
 
 import menImg2 from "../../public/images/men-img2.jpg";
 import menImg3 from "../../public/images/men-img3.webp";
@@ -41,44 +47,45 @@ export default function Home() {
 
 
 
-        <section className="flex overflow-x-auto md:overflow-x-hidden w-full justify-start md:justify-center items-center gap-6 md:gap-20 p-8 md:p-10">
+        <section className="flex overflow-x-auto xl:overflow-x-hidden w-full justify-start xl:justify-center items-center gap-6 lg:gap-20 2xl:gap-25 p-4">
 
-          <Image src={volkerRailImg} alt="VolkerRail" className="w-38"></Image>
+          <Image src={volkerRailImg} alt="VolkerRail" className="max-w-38 flex-shrink-0" />
 
-          <Image src={schipholImg} alt="Schiphol" className="w-38"></Image>
+          <Image src={schipholImg} alt="Schiphol" className="max-w-38 flex-shrink-0" />
 
-          <Image src={bamImg} alt="BAM" className="w-38"></Image>
+          <Image src={bamImg} alt="BAM" className="max-w-38 flex-shrink-0" />
 
-          <Image src={heijmansImg} alt="Heijmans" className="w-38"></Image>
+          <Image src={heijmansImg} alt="Heijmans" className="max-w-38 flex-shrink-0" />
 
-          <Image src={croonwolterWitImg} alt="CroonwolterWit" className="w-38"></Image>
+          <Image src={croonwolterWitImg} alt="CroonwolterWit" className="max-w-38 flex-shrink-0" />
 
-          <Image src={spieImg} alt="SPIE" className="w-38"></Image>
+          <Image src={spieImg} alt="SPIE" className="max-w-38 flex-shrink-0" />
 
         </section>
 
-
-        <section className="bg-black px-6 md:px-18 pt-20 md:pb-4">
+        <section className="bg-black px-4 sm:px-6 md:px-10 pt-10 md:pt-20 md:pb-4">
 
           <div className="flex justify-center">
 
             <div className="xl:w-[1405px]">
 
-              <div className="flex flex-col -space-y-6">
+              <div className="flex flex-col md:space-y-2">
 
-                <h2 className="text-white text-[70px] hidden md:block">Your career in technology</h2>
+                <h2 className="text-white text-5xl lg:text-[70px] hidden md:block">Stay Ahead in the</h2>
 
-                <h2 className="text-white text-[70px] hidden md:block">starts here</h2>
+                <h2 className="text-white text-5xl lg:text-[70px] hidden md:block">Startup World</h2>
 
               </div>
 
-              <h2 className="text-white text-[40px] md:hidden block">Your career in technology starts here</h2>
+              <h2 className="text-white text-2xl md:hidden block">Stay Ahead in the Startup World</h2>
 
-              <p className="text-white mt-2 hidden md:block">Whether you&apos;re just starting out or have been around for years, at Bluetech you&apos;ll find the challenge that suits <br /> you. Together, we&apos;ll choose a path that aligns with your talents, ambitions, and desires.</p>
+              <p className="text-white mt-4 text-sm sm:text-base md:text-lg lg:text-xl xl:w-[80%]">The startup ecosystem moves fast — new trends, disruptive ideas, and bold strategies emerge every day.</p>
 
-              <p className="text-white text-sm mt-2 md:hidden block">Whether you&apos;re just starting out or have been around for years, at Bluetech you&apos;ll find the challenge that suits <br /> you. Together, we&apos;ll choose a path that aligns with your talents, ambitions, and desires.</p>
+              <p className="text-white mt-2 text-sm sm:text-base md:text-lg lg:text-xl xl:w-[80%]">Our blog brings you sharp insights, founder stories, and the latest developments across sectors, so you&apos;re always one step ahead.</p>
 
-              <div className="mt-14 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 md:gap-6 -space-y-6 ">
+
+
+              <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 md:gap-6 -space-y-12">
 
                 <div className="overflow-hidden cursor-pointer">
 
@@ -90,33 +97,11 @@ export default function Home() {
 
                   <div className="relative bottom-24 left-6 md:w-64 flex flex-col text-white">
 
-                    <h3 className="text-xl md:text-2xl">Traineeship</h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl">Emerging Tech & DeepTech</h3>
 
-                    <p className="text-sm md:text-[16px] mt-6">Kickstart your career with guidance, training, and real-world experience.</p>
+                    <p className="text-sm md:text-[16px] mt-6"> Explore how AI, quantum, and space tech are reshaping tomorrow&apos;s industries.</p>
 
-                    <p className="mt-6 text-xl underline">Read more</p>
-
-
-                  </div>
-
-
-                </div>
-
-                <div className="overflow-hidden cursor-pointer">
-
-                  <Image src={menImg} alt="Men image" className="w-full h-32 object-cover transform transition-transform duration-500 hover:scale-110"
-                  />
-
-                  <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
-
-
-                  <div className="relative bottom-24 left-6 md:w-64 w-full flex flex-col text-white">
-
-                    <h3 className="text-xl md:text-2xl">Interim assignments</h3>
-
-                    <p className="text-sm md:text-[16px] mt-6">Kickstart your career with guidance, training, and real-world experience.</p>
-
-                    <p className="mt-6 text-xl underline">Read more</p>
+                    <p className="mt-6 text-lg underline">Read more</p>
 
 
                   </div>
@@ -134,11 +119,11 @@ export default function Home() {
 
                   <div className="relative bottom-24 left-6 md:w-64 w-full flex flex-col text-white">
 
-                    <h3 className="text-xl md:text-2xl">Inhouse Creator</h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl">Funding & Growth</h3>
 
-                    <p className="text-sm md:text-[16px] mt-6">Kickstart your career with guidance, training, and real-world experience.</p>
+                    <p className="text-sm md:text-[16px] mt-6"> Insights on raising capital, scaling globally, and building sustainable growth strategies.</p>
 
-                    <p className="mt-6 text-xl underline">Read more</p>
+                    <p className="mt-6 text-lg underline">Read more</p>
 
 
                   </div>
@@ -156,11 +141,33 @@ export default function Home() {
 
                   <div className="relative bottom-24 left-6 md:w-64 w-full flex flex-col text-white">
 
-                    <h3 className="text-xl md:text-2xl">self-employed</h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl">Founder Playbooks</h3>
 
-                    <p className="text-sm md:text-[16px] mt-6">Kickstart your career with guidance, training, and real-world experience.</p>
+                    <p className="text-sm md:text-[16px] mt-6">Real stories, hard lessons, and proven methods from entrepreneurs who&apos;ve been there.</p>
 
-                    <p className="mt-6 text-xl underline">Read more</p>
+                    <p className="mt-6 text-lg underline">Read more</p>
+
+
+                  </div>
+
+
+                </div>
+
+                <div className="overflow-hidden cursor-pointer">
+
+                  <Image src={menImg} alt="Men image" className="w-full h-32 object-cover transform transition-transform duration-500 hover:scale-110"
+                  />
+
+                  <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
+
+
+                  <div className="relative bottom-24 left-6 md:w-64 w-full flex flex-col text-white">
+
+                    <h3 className="text-lg md:text-xl lg:text-2xl">Global Startup Trends</h3>
+
+                    <p className="text-sm md:text-[16px] mt-6">Stay tuned to what&apos;s happening across ecosystems — from Silicon Valley to Singapore.</p>
+
+                    <p className="mt-6 text-lg underline">Read more</p>
 
 
                   </div>
@@ -178,48 +185,42 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-[#ede7dd] px-6 md:px-18 py-20 md:py-22">
+        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 py-16 md:py-22">
 
           <div className="flex justify-center">
 
             <div className="xl:w-[1405px]">
 
-              <div className="flex flex-col -space-y-6">
+              <h2 className="text-2xl md:text-5xl lg:text-[70px] lg:leading-20 xl:w-[90%]">Access the Right Expertise, Instantly</h2>
 
-                <h2 className="text-[70px] hidden md:block">Looking for technical</h2>
+              <p className="mt-3 md:mt-7 text-sm sm:text-base md:text-lg font-light xl:w-[80%]">At G10X, you don&apos;t waste time searching. Each sector circle is packed with founders, domain mentors, and industry experts ready to share knowledge, solve challenges, and accelerate execution.</p>
 
-                <h2 className="text-[70px] hidden md:block">experts for your project?</h2>
+              <p className="mt-3 text-sm sm:text-base md:text-lg font-light xl:w-[80%]">Whether you&apos;re building in healthcare, fintech, mobility, or space, you&apos;ll always find the right people to guide, collaborate, and multiply your growth.</p>
 
-              </div>
-
-              <h2 className="md:text-2xl text-[40px] md:hidden block">Looking for technical experts for your project?</h2>
-
-              <p className="mt-3 md:mt-7 text-lg font-light">Our specialists are ready to step in immediately, with in-depth knowledge and a passion for technology.</p>
-
-              <p className="mt-3 md:mt-7 text-lg font-light flex items-center gap-2">
+              <p className="mt-3 md:mt-7 text-sm sm:text-base md:text-lg font-light flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="#4fb1b6" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
-                Specialist knowledge of complex projects
+                Sector-specific mentors and advisors who&apos;ve solved similar challenges
               </p>
 
-              <p className="mt-2 text-lg font-light flex items-center gap-2">
+              <p className="mt-2 text-sm sm:text-base md:text-lg font-light flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="#4fb1b6" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
-                Immediately available for short and long-term assignments
+                Peer founders who collaborate instead of compete
               </p>
 
-              <p className="mt-2 text-lg font-light flex items-center gap-2">
+              <p className="mt-2 text-sm sm:text-base md:text-lg font-light flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="#4fb1b6" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
-                Completely unburdened thanks to our team and guidance
+                A trusted circle where expertise and insights flow freely
               </p>
 
               <div className="mt-5 md:mt-8">
                 <Btn
-                  text="Schedule an introductory meeting"
+                  text="Join a Sector Circle"
                   bgColor="bg-[#ede7dd]"
                   borderColor="border border-black"
                   textColor="text-black"
@@ -236,50 +237,56 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-black px-6 md:px-18 py-24">
+        <section className="bg-black px-4 sm:px-6 md:px-10 py-10 md:py-20 lg:py-24">
 
           <div className="flex justify-center">
 
             <div className="xl:w-[1405px]">
 
-              <h2 className="text-[42px] md:text-[70px] text-white">Why choose Bluetech?</h2>
+              <h2 className="text-2xl md:text-5xl lg:text-[70px] text-white">Why Choose G10X?</h2>
 
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 ">
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 ">
 
 
-                <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
+                <div className="bg-[#ede7dd] flex justify-center items-center py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
 
-                  <div>
+                  <div className="flex flex-col space-y-2">
 
-                    <h3 className="text-[30px]">Working on large, complex projects</h3>
+                    <h3 className="text-xl md:text-[25px] lg:text-[30px]">Sector-Focused Ecosystems</h3>
 
-                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                    <p className="text-sm sm:text-base md:text-lg font-light">10 categories. 10 growth tracks</p>
+
+                    <p className="text-sm sm:text-base md:text-lg font-light">Every startup belongs to a well-defined circle — healthcare, fintech, mobility, deep tech, and more. This focus ensures targeted conversations, sharper insights, and stronger collaborations.</p>
                   </div>
 
                 </div>
 
 
 
-                <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
+                <div className="bg-[#ede7dd] flex justify-center items-center py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
 
-                  <div>
+                  <div className="flex flex-col space-y-2">
 
-                    <h3 className="text-[30px]">Working on large, complex projects</h3>
+                    <h3 className="text-xl md:text-[25px] lg:text-[30px]">Collective Growth Philosophy</h3>
 
-                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                    <p className="text-sm sm:text-base md:text-lg font-light">When one grows, all grow.</p>
+
+                    <p className="text-sm sm:text-base md:text-lg font-light">Members share playbooks, breakthroughs, and lessons — multiplying impact instead of competing for spotlight.</p>
                   </div>
 
                 </div>
 
 
 
-                <div className="bg-[#ede7dd] flex justify-center items-center py-20 px-8 rounded-l-[60px] rounded-b-[60px]">
+                <div className="bg-[#ede7dd] flex justify-center items-center py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
 
-                  <div>
+                  <div className="flex flex-col space-y-2">
 
-                    <h3 className="text-[30px]">Working on large, complex projects</h3>
+                    <h3 className="text-xl md:text-[25px] lg:text-[30px]">Built for Founders, by Founders</h3>
 
-                    <p className="font-light mt-3">From smart infrastructure and sustainable utility solutions to high-tech security systems, your expertise makes the difference.</p>
+                    <p className="text-sm sm:text-base md:text-lg font-light">No noise, no dilution.</p>
+
+                    <p className="text-sm sm:text-base md:text-lg font-light">Every policy, program, and initiative in G10X is designed to protect fairness, foster collaboration, and keep the founder&apos;s journey at the center.</p>
                   </div>
 
                 </div>
@@ -288,7 +295,7 @@ export default function Home() {
 
               <div className="mt-5 md:mt-14">
                 <Btn
-                  text="Get to know us and discover how we can support you"
+                  text="Get to know us and thrive with G10X"
                   bgColor="bg-white"
                   borderColor="border border-white"
                   textColor="text-black"
@@ -305,7 +312,7 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-[#ede7dd] px-6 md:px-18 pt-14 md:pt-26">
+        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 pt-14 md:pt-20 lg:pt-26">
 
           <div className="flex justify-center">
 
@@ -324,35 +331,22 @@ export default function Home() {
 
                 </div>
 
-                <div className="absolute md:flex flex-col items-end bottom-[5%] right-[2%] hidden">
+                <div className="absolute md:flex flex-col w-[50%] items-end bottom-[5%] z-50 right-[2%] hidden">
 
-                  <h3 className="text-4xl">A former colleague recommended</h3>
+                  <p className="mt-2 font-semibold text-lg">“Joining G10X was a turning point in my founder journey.</p>
 
-                  <h3 className="text-4xl">Bluetech to me. Best</h3>
+                  <p className="font-semibold text-lg">The sector-focused circle connected me with peers and mentors who understood my exact challenges. It&apos;s not just a community — it&apos;s where my startup found momentum.”</p>
 
-                  <h3 className="text-4xl">decision of my</h3>
 
-                  <h3 className="text-4xl">career.</h3>
-
-                  <p className="mt-2 font-semibold text-lg">You sense that Bluetech is all</p>
-
-                  <p className="font-semibold text-lg">about people, not CVs and targets. That, for me, is the added</p>
-
-                  <p className="font-semibold text-lg">value of Bluetech. The variety of assignments and the direct</p>
-
-                  <p className="font-semibold text-lg">approach make working here ideal.</p>
-
-                  <p className="font-light mt-4">— Tom</p>
+                  <p className="font-light mt-4 text-lg">— Person 1, ABC Company</p>
 
                 </div>
 
                 <div className="flex flex-col items-end md:hidden relative bottom-10 z-50">
 
-                  <h3 className="text-xl">A former colleague recommended Bluetech to me. Best decision of my career.</h3>
+                  <p className="mt-2 font-semibold text-sm">“Joining G10X was a turning point in my founder journey. The sector-focused circle connected me with peers and mentors who understood my exact challenges. It&apos;s not just a community — it&apos;s where my startup found momentum.”</p>
 
-                  <p className="mt-2 font-semibold text-sm">You sense that Bluetech is all about people, not CVs and targets. That, for me, is the added value of Bluetech. The variety of assignments and the direct approach make working here ideal.</p>
-
-                  <p className="font-light mt-4">— Tom</p>
+                  <p className="font-light mt-4 text-sm">— Person 1, ABC Company</p>
 
                 </div>
 
@@ -365,39 +359,39 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-[#ede7dd] px-6 pt-4 md:pt-20 md:px-18 pb-18 md:pb-26">
+        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 pt-4 md:pt-12 lg:pt-20 pb-18 md:pb-26">
 
           <div className="flex justify-center">
 
             <div className="xl:w-[1405px]">
 
-              <div className="md:flex flex-col -space-y-2 md:-space-y-7 hidden">
+              <div className="xl:flex flex-col -space-y-2 md:-space-y-7 hidden">
 
-                <h2 className="text-[42px] md:text-[70px]">Working on technical</h2>
+                <h2 className="text-[70px]">Building ventures that</h2>
 
-                <h2 className="text-[42px] md:text-[70px]">projects that make an</h2>
+                <h2 className="text-[70px]">make an impact across</h2>
 
-                <h2 className="text-[42px] md:text-[70px]">impact</h2>
+                <h2 className="text-[70px]">industries</h2>
 
               </div>
 
-              <div className="flex flex-col -space-y-2 md:hidden">
-                <h2 className="text-[42px]">Working on technical projects that make an impact</h2>
+              <div className="flex flex-col -space-y-2 xl:hidden">
+                <h2 className="text-2xl md:text-5xl">Building ventures that make an impact across industries</h2>
               </div>
 
-              <div className="mt-10 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
 
                 <div className="flex flex-col">
 
                   <div className="flex items-end gap-2.5">
 
-                    <Image src={buildingLightImg} alt="building image" className="w-10" />
+                    <Image src={healthCare} alt="building image" className="w-10" />
 
-                    <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Utilit eit</h3>
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Healthcare</h3>
 
                   </div>
 
-                  <p className="mt-6 font-light">Smart building installations for hospitals, schools and offices.</p>
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light"> Innovative solutions transforming patient care and medical ecosystems.</p>
 
                 </div>
 
@@ -406,13 +400,13 @@ export default function Home() {
 
                   <div className="flex items-end gap-2.5">
 
-                    <Image src={infrastructureImg} alt="building image" className="w-10" />
+                    <Image src={finTech} alt="building image" className="w-10" />
 
-                    <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Infrastructure</h3>
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Fintech</h3>
 
                   </div>
 
-                  <p className="mt-6 font-light">Safe, efficient infrastructure. From tunnels and locks to traffic systems.</p>
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Smarter, inclusive financial systems built for the digital age.</p>
 
                 </div>
 
@@ -421,13 +415,13 @@ export default function Home() {
 
                   <div className="flex items-end gap-2.5">
 
-                    <Image src={securityImg} alt="building image" className="w-10" />
+                    <Image src={connected_car} alt="building image" className="w-10" />
 
-                    <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Security</h3>
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Mobility</h3>
 
                   </div>
 
-                  <p className="mt-6 font-light">Advanced fire safety and access control systems.</p>
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">From EVs to logistics, reimagining how the world moves.</p>
 
                 </div>
 
@@ -436,13 +430,97 @@ export default function Home() {
 
                   <div className="flex items-end gap-2.5">
 
-                    <Image src={energyImg} alt="building image" className="w-9" />
+                    <Image src={solar_energy} alt="building image" className="w-9" />
 
-                    <h3 className="text-xl md:text-[28px] relative top-2 md:font-semibold">Energy</h3>
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Energy</h3>
 
                   </div>
 
-                  <p className="mt-6 font-light">Sustainable solutions for energy storage and smart grids.</p>
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Clean, sustainable solutions powering the future.</p>
+
+                </div>
+
+                <div className="flex flex-col">
+
+                  <div className="flex items-end gap-2.5">
+
+                    <Image src={learning} alt="building image" className="w-9" />
+
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Deep Tech</h3>
+
+                  </div>
+
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">AI, robotics, and frontier tech redefining what&apos;s possible.</p>
+
+                </div>
+
+                <div className="flex flex-col">
+
+                  <div className="flex items-end gap-2.5">
+
+                    <Image src={climate_change} alt="building image" className="w-9 lg:mb-4" />
+
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Climate & Sustainability</h3>
+
+                  </div>
+
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Driving green initiatives and circular economies.</p>
+
+                </div>
+
+                <div className="flex flex-col">
+
+                  <div className="flex items-end gap-2.5">
+
+                    <Image src={space} alt="building image" className="w-9" />
+
+                    <h3 className="text-lg md:text-xl lg:text-[28px] relative top-l lg:font-semibold">Space</h3>
+
+                  </div>
+
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Unlocking opportunities beyond Earth.</p>
+
+                </div>
+
+                <div className="flex flex-col">
+
+                  <div className="flex items-end gap-2.5">
+
+                    <Image src={school} alt="building image" className="w-9" />
+
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">EdTech</h3>
+
+                  </div>
+
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Reinventing how people learn and upskill.</p>
+
+                </div>
+
+                <div className="flex flex-col">
+
+                  <div className="flex items-end gap-2.5">
+
+                    <Image src={protection} alt="building image" className="w-9 lg:mb-1 xl:mb-4" />
+
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Consumer & Lifestyle</h3>
+
+                  </div>
+
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Products and platforms shaping daily life.</p>
+
+                </div>
+
+                <div className="flex flex-col">
+
+                  <div className="flex items-end gap-2.5">
+
+                    <Image src={smart_cities} alt="building image" className="w-10 lg:mb-1 xl:mb-4" />
+
+                    <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Smart Infrastructure</h3>
+
+                  </div>
+
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">Next-gen cities, security, and connected systems.</p>
 
                 </div>
 
@@ -450,7 +528,7 @@ export default function Home() {
 
               <div className="mt-10 md:mt-14">
                 <Btn
-                  text="View all our project cases"
+                  text="Get started with G10x now…"
                   bgColor="bg-[#ede7dd]"
                   borderColor="border border-black"
                   textColor="text-black"
@@ -476,9 +554,11 @@ export default function Home() {
 
             <div className="xl:w-[1405px]">
 
-              <h2 className="text-[42px] md:text-[70px]">Stories of Bluetechers</h2>
+              <h2 className="text-[42px] md:text-[70px]">Stories of G10X Founders</h2>
 
-              <div className="mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:gap-8 gap-0">
+              <p className="text-lg font-light">Every founder in G10X has a story. These are journeys of resilience, collaboration, and growth — powered by focus and community.</p>
+
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 space-x-6">
 
 
                 <div className="relative">
@@ -489,9 +569,9 @@ export default function Home() {
 
                   <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
 
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Trainee</p>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Healthcare Circle</p>
 
-                    <h3 className="text-white text-3xl">Daan Jansen: From traineeship to own projects</h3>
+                    <h3 className="text-white text-3xl"> Dr. Ananya: How her startup reduced patient wait time in rural clinics by 40% with AI triage.</h3>
 
                     <p className="text-white text-xl font-semibold underline">Read more</p>
 
@@ -509,9 +589,9 @@ export default function Home() {
 
                   <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
 
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Inhouse Creator</p>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Fintech Circle</p>
 
-                    <h3 className="text-white text-3xl">Bryan Tobben: Always looking for what can be done smarter, faster and more scalable</h3>
+                    <h3 className="text-white text-3xl">Arjun Mehta: Scaling a cross-border payments platform with mentorship from the G10X Fintech track.</h3>
 
                     <p className="text-white text-xl font-semibold underline">Read more</p>
 
@@ -528,7 +608,28 @@ export default function Home() {
 
                   <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
 
-                    <h3 className="text-white text-3xl">Mariska: First modular substation in the Netherlands installed</h3>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Mobility Circle</p>
+
+                    <h3 className="text-white text-3xl">Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X</h3>
+
+                    <p className="text-white text-xl font-semibold underline">Read more</p>
+
+                  </div>
+
+                </div>
+
+
+                <div className="relative">
+
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
+
+                  <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
+
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
+
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">DeepTech Circle</p>
+
+                    <h3 className="text-white text-3xl">Ravi & team: Turning a university project into a funded robotics startup with guidance from G10X mentors.</h3>
 
                     <p className="text-white text-xl font-semibold underline">Read more</p>
 
@@ -551,18 +652,19 @@ export default function Home() {
 
             <div className="xl:w-[1405px]">
 
-              <div className="flex flex-col md:flex-row justify-between">
+              <div className="flex flex-col md:flex-row md:space-x-30 justify-between">
 
-                <div className="flex flex-col space-y-4 md:space-y-8 md:w-1/2 mt-4">
+                <div className="flex flex-col space-y-4 md:space-y-8 mt-4">
 
-                  <h2 className="text-[42px] md:text-[70px] leading-13 md:leading-20">Would you like to get acquainted to see if there is a match?</h2>
+                  <h2 className="text-[42px] md:text-[70px] leading-13 md:leading-20">Ready to scale with focus and thrive with us?</h2>
 
-                  <p className="font-light text-[22px]">Do you have a question, want to meet up, or simply discuss your options? Get in touch; we&apos;d love to discuss your needs.</p>
+                  <p className="font-light text-[22px]">Whether you&apos;re a founder looking to grow in your sector, a mentor eager to guide, or an innovator seeking collaboration — G10X is the place where focus meets scale. Let&apos;s connect and explore how you can be part of this global founder community.
+                  </p>
 
                   <div className="mt-2">
 
                     <Btn
-                      text="Schedule an introductory meeting"
+                      text="Schedule an Introductory Call"
                       bgColor="bg-black"
                       borderColor="border border-black"
                       textColor="text-white"
@@ -574,7 +676,7 @@ export default function Home() {
 
                 </div>
 
-                <Image src={menImg3} alt="Men image 3" className="md:w-110 md:h-110 mt-12 rounded-l-[60px] rounded-b-[60px]" />
+                <Image src={menImg3} alt="Men image 3" className="md:w-1/3 md:h-110 mt-12 rounded-l-[60px] rounded-b-[60px] object-cover" />
 
               </div>
 
