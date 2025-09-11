@@ -129,7 +129,7 @@ export function AnimationPage() {
               <h3 className="text-3xl z-10">A network of founders who thrive together</h3>
 
               <p className="text-xl mt-4 md:mt-6 leading-relaxed z-10">
-                At G10X, you're never building in isolation. You're part of a global founder circle where knowledge flows, partnerships spark, and growth compounds.
+                At G10X, you&apos;re never building in isolation. You&apos;re part of a global founder circle where knowledge flows, partnerships spark, and growth compounds.
               </p>
 
               <p className="text-xl mt-4 leading-relaxed z-10">

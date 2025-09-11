@@ -81,7 +81,7 @@ export default function Home() {
 
               <p className="text-white mt-4 text-sm sm:text-base md:text-lg lg:text-xl xl:w-[80%]">The startup ecosystem moves fast — new trends, disruptive ideas, and bold strategies emerge every day.</p>
 
-              <p className="text-white mt-2 text-sm sm:text-base md:text-lg lg:text-xl xl:w-[80%]">Our blog brings you sharp insights, founder stories, and the latest developments across sectors, so you're always one step ahead.</p>
+              <p className="text-white mt-2 text-sm sm:text-base md:text-lg lg:text-xl xl:w-[80%]">Our blog brings you sharp insights, founder stories, and the latest developments across sectors, so you&apos;re always one step ahead.</p>
 
 
 
@@ -99,7 +99,7 @@ export default function Home() {
 
                     <h3 className="text-lg md:text-xl lg:text-2xl">Emerging Tech & DeepTech</h3>
 
-                    <p className="text-sm md:text-[16px] mt-6"> Explore how AI, quantum, and space tech are reshaping tomorrow's industries.</p>
+                    <p className="text-sm md:text-[16px] mt-6"> Explore how AI, quantum, and space tech are reshaping tomorrow&apos;s industries.</p>
 
                     <p className="mt-6 text-lg underline">Read more</p>
 
@@ -143,7 +143,7 @@ export default function Home() {
 
                     <h3 className="text-lg md:text-xl lg:text-2xl">Founder Playbooks</h3>
 
-                    <p className="text-sm md:text-[16px] mt-6">Real stories, hard lessons, and proven methods from entrepreneurs who've been there.</p>
+                    <p className="text-sm md:text-[16px] mt-6">Real stories, hard lessons, and proven methods from entrepreneurs who&apos;ve been there.</p>
 
                     <p className="mt-6 text-lg underline">Read more</p>
 
@@ -165,7 +165,7 @@ export default function Home() {
 
                     <h3 className="text-lg md:text-xl lg:text-2xl">Global Startup Trends</h3>
 
-                    <p className="text-sm md:text-[16px] mt-6">Stay tuned to what's happening across ecosystems — from Silicon Valley to Singapore.</p>
+                    <p className="text-sm md:text-[16px] mt-6">Stay tuned to what&apos;s happening across ecosystems — from Silicon Valley to Singapore.</p>
 
                     <p className="mt-6 text-lg underline">Read more</p>
 
@@ -193,15 +193,15 @@ export default function Home() {
 
               <h2 className="text-2xl md:text-5xl lg:text-[70px] lg:leading-20 xl:w-[90%]">Access the Right Expertise, Instantly</h2>
 
-              <p className="mt-3 md:mt-7 text-sm sm:text-base md:text-lg font-light xl:w-[80%]">At G10X, you don't waste time searching. Each sector circle is packed with founders, domain mentors, and industry experts ready to share knowledge, solve challenges, and accelerate execution.</p>
+              <p className="mt-3 md:mt-7 text-sm sm:text-base md:text-lg font-light xl:w-[80%]">At G10X, you don&apos;t waste time searching. Each sector circle is packed with founders, domain mentors, and industry experts ready to share knowledge, solve challenges, and accelerate execution.</p>
 
-              <p className="mt-3 text-sm sm:text-base md:text-lg font-light xl:w-[80%]">Whether you're building in healthcare, fintech, mobility, or space, you'll always find the right people to guide, collaborate, and multiply your growth.</p>
+              <p className="mt-3 text-sm sm:text-base md:text-lg font-light xl:w-[80%]">Whether you&apos;re building in healthcare, fintech, mobility, or space, you&apos;ll always find the right people to guide, collaborate, and multiply your growth.</p>
 
               <p className="mt-3 md:mt-7 text-sm sm:text-base md:text-lg font-light flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="#4fb1b6" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
-                Sector-specific mentors and advisors who've solved similar challenges
+                Sector-specific mentors and advisors who&apos;ve solved similar challenges
               </p>
 
               <p className="mt-2 text-sm sm:text-base md:text-lg font-light flex items-center gap-2">
@@ -286,7 +286,7 @@ export default function Home() {
 
                     <p className="text-sm sm:text-base md:text-lg font-light">No noise, no dilution.</p>
 
-                    <p className="text-sm sm:text-base md:text-lg font-light">Every policy, program, and initiative in G10X is designed to protect fairness, foster collaboration, and keep the founder's journey at the center.</p>
+                    <p className="text-sm sm:text-base md:text-lg font-light">Every policy, program, and initiative in G10X is designed to protect fairness, foster collaboration, and keep the founder&apos;s journey at the center.</p>
                   </div>
 
                 </div>
@@ -335,7 +335,7 @@ export default function Home() {
 
                   <p className="mt-2 font-semibold text-lg">“Joining G10X was a turning point in my founder journey.</p>
 
-                  <p className="font-semibold text-lg">The sector-focused circle connected me with peers and mentors who understood my exact challenges. It's not just a community — it's where my startup found momentum.”</p>
+                  <p className="font-semibold text-lg">The sector-focused circle connected me with peers and mentors who understood my exact challenges. It&apos;s not just a community — it&apos;s where my startup found momentum.”</p>
 
 
                   <p className="font-light mt-4 text-lg">— Person 1, ABC Company</p>
@@ -344,7 +344,7 @@ export default function Home() {
 
                 <div className="flex flex-col items-end md:hidden relative bottom-10 z-50">
 
-                  <p className="mt-2 font-semibold text-sm">“Joining G10X was a turning point in my founder journey. The sector-focused circle connected me with peers and mentors who understood my exact challenges. It's not just a community — it's where my startup found momentum.”</p>
+                  <p className="mt-2 font-semibold text-sm">“Joining G10X was a turning point in my founder journey. The sector-focused circle connected me with peers and mentors who understood my exact challenges. It&apos;s not just a community — it&apos;s where my startup found momentum.”</p>
 
                   <p className="font-light mt-4 text-sm">— Person 1, ABC Company</p>
 
@@ -450,7 +450,7 @@ export default function Home() {
 
                   </div>
 
-                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">AI, robotics, and frontier tech redefining what's possible.</p>
+                  <p className="text-sm sm:text-base md:text-lg mt-6 font-light">AI, robotics, and frontier tech redefining what&apos;s possible.</p>
 
                 </div>
 
@@ -658,7 +658,7 @@ export default function Home() {
 
                   <h2 className="text-[42px] md:text-[70px] leading-13 md:leading-20">Ready to scale with focus and thrive with us?</h2>
 
-                  <p className="font-light text-[22px]">Whether you're a founder looking to grow in your sector, a mentor eager to guide, or an innovator seeking collaboration — G10X is the place where focus meets scale. Let's connect and explore how you can be part of this global founder community.
+                  <p className="font-light text-[22px]">Whether you&apos;re a founder looking to grow in your sector, a mentor eager to guide, or an innovator seeking collaboration — G10X is the place where focus meets scale. Let&apos;s connect and explore how you can be part of this global founder community.
                   </p>
 
                   <div className="mt-2">

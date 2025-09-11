@@ -89,7 +89,7 @@ export function HomePage() {
 
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
                             From healthcare to deep tech, from fintech to space — every idea here finds its tribe.
-                            At G10X, startups don't get lost in noise — they scale with focus, relevance, and global collaboration.
+                            At G10X, startups don&apos;t get lost in noise — they scale with focus, relevance, and global collaboration.
                             Be part of a sector-focused circle where conversations are sharper, collaborations are stronger, and growth is accelerated.
                         </p>
 
