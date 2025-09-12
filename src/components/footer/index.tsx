@@ -26,7 +26,7 @@ export function Footer() {
 
     return (
         <section
-            className={`bg-black hidden lg:block md:h-screen 2xl:h-[760px] fixed bottom-0 left-0 w-full pt-40 overflow-hidden transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0"
+            className={`bg-black hidden lg:block lg:h-screen 2xl:h-[760px] fixed bottom-0 left-0 w-full pt-40 overflow-hidden transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0"
                 }`}>
 
             <div className="flex justify-center">

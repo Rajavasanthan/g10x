@@ -47,7 +47,7 @@ export default function Home() {
 
 
 
-        <section className="flex overflow-x-auto xl:overflow-x-hidden w-full justify-start xl:justify-center items-center gap-6 lg:gap-20 2xl:gap-25 p-4">
+        <section className="flex overflow-x-auto xl:overflow-x-hidden w-full justify-start xl:justify-center items-center gap-6 lg:gap-18 2xl:gap-25 p-4">
 
           <Image src={volkerRailImg} alt="VolkerRail" className="max-w-38 flex-shrink-0" />
 
@@ -548,7 +548,7 @@ export default function Home() {
         <AnimationPage />
 
 
-        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 md:py-16 py-10 lg:py-20 pb-0 lg:pb-6">
+        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 md:py-16 py-10 lg:py-20 pb-0 md:pb-2 lg:pb-6">
 
           <div className="flex justify-center">
 
@@ -558,7 +558,7 @@ export default function Home() {
 
               <p className="text-sm sm:text-base md:text-lg font-light mt-2 xl:w-[80%]">Every founder in G10X has a story. These are journeys of resilience, collaboration, and growth — powered by focus and community.</p>
 
-              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 -space-y-14 md:space-x-6">
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 -space-y-14 md:gap-6">
 
 
                 <div className="relative">
@@ -624,7 +624,7 @@ export default function Home() {
 
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[34%] lg:bottom-[28%] xl:bottom-[22%] left-[4%] p-4">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[26%] lg:bottom-[22%] xl:bottom-[22%] left-[4%] p-4">
 
                     <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">DeepTech Circle</p>
 
@@ -645,7 +645,7 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-gradient-to-r from-[#52b2b8] to-[#b0e8eb] overflow-x-hidden px-6 md:px-18 py-20 md:py-22">
+        <section className="bg-gradient-to-r from-[#52b2b8] to-[#b0e8eb] overflow-x-hidden px-4 sm:px-6 md:px-10 py-14 md:py-18 lg:py-22 xl:py-22">
 
           <div className="flex justify-center">
 
@@ -686,8 +686,7 @@ export default function Home() {
         </section>
 
 
-        <section
-          className={`bg-black lg:hidden block w-full pt-40 p-10`}>
+        <section className={`bg-black lg:hidden block w-full pt-40`}>
 
           <div className="flex justify-center">
 
@@ -711,7 +710,7 @@ export default function Home() {
 
                 </div>
 
-                <div className="flex flex-col border-l border-gray-500 pl-16 mt-4 pb-10 ml-10 ">
+                <div className="flex flex-col border-l border-gray-500 pl-16 mt-4 pb-10 ml-18 ">
 
                   <ul className="flex flex-col text-white mt-14 md:mt-24 text-sm">
 
@@ -733,9 +732,9 @@ export default function Home() {
 
               </div>
 
-              <div className="border-t border-gray-500 mt-6 pt-6 md:pt-9">
+              <div className="border-t border-gray-500 mt-6 pt-6 md:pt-9 pb-6 w-full">
 
-                <ul className="flex w-full flex-wrap justify-center items-center text-white underline text-sm gap-5 md:gap-9">
+                <ul className="flex flex-wrap justify-center items-center text-white underline text-sm gap-5 md:gap-9">
 
                   <li className="cursor-pointer">Privacy statement</li>
 

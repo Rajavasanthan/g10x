@@ -4,19 +4,19 @@ import { useEffect } from "react";
 import { Btn } from "@/components";
 
 
-import image1 from "../../../public/images/image1.jpg"
-import image2 from "../../../public/images/image2.jpg"
-import image3 from "../../../public/images/image3.webp"
-import image4 from "../../../public/images/image4.jpg"
-import image5 from "../../../public/images/image5.webp"
-import image6 from "../../../public/images/image6.webp"
-import image7 from "../../../public/images/image7.jpg"
-import image8 from "../../../public/images/image8.jpg"
-import image9 from "../../../public/images/image9.jpg"
-import image10 from "../../../public/images/image10.jpg"
-import image11 from "../../../public/images/image11.png"
-import image12 from "../../../public/images/image12.jpg"
-import image13 from "../../../public/images/image13.jpg"
+import image1 from "../../../public/images/img1.png"
+import image2 from "../../../public/images/img2.png"
+import image3 from "../../../public/images/img3.png"
+import image4 from "../../../public/images/img4.png"
+import image5 from "../../../public/images/img5.png"
+import image6 from "../../../public/images/img6.png"
+import image7 from "../../../public/images/img7.png"
+import image8 from "../../../public/images/img8.png"
+import image9 from "../../../public/images/img9.png"
+import image10 from "../../../public/images/img10.png"
+import image11 from "../../../public/images/img11.png"
+import image12 from "../../../public/images/img12.png"
+import image13 from "../../../public/images/img13.png"
 
 
 import gsap from "gsap";
@@ -95,37 +95,49 @@ export function AnimationPage() {
 
           <div className="w-full flex flex-col justify-center items-center ">
 
-            <div className="flex space-x-1.5 md:space-x-4">
+            <div className="flex space-x-1.5 md:space-x-4 ">
 
-              <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-16 lg:mt-22 xl:mt-24">
-                <Image src={image1} alt="Image1" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
-                <Image src={image12} alt="Image12" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4 relative top-10 md:top-24">
+                <Image src={image1} alt="Image1" className="h-fit rounded-sm md:rounded-lg object-cover image2" />
+                <Image src={image12} alt="Image12" className="h-fit rounded-sm md:rounded-lg object-cover image2" />
               </div>
 
               <div className="flex flex-col space-y-1.5 md:space-y-4">
-                <Image src={image2} alt="Image2" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
-                <Image src={image3} alt="Image3" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
+                <Image src={image2} alt="Image2" className="h-fit rounded-sm md:rounded-lg object-cover image2" />
+                <Image src={image3} alt="Image3" className="h-fit rounded-sm md:rounded-lg object-cover image2" />
               </div>
 
-              <Image src={image4} alt="Image4" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image4 mt-8 md:mt-22" />
-              <Image src={image5} alt="Image5" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image" />
-              <Image src={image6} alt="Image6" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image mt-6 md:mt-14" />
-              <Image src={image7} alt="Image7" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image3" />
-              <Image src={image8} alt="Image8" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image mt-8 md:mt-22" />
+              <div className="flex space-x-1.5 md:space-x-4">
+                <div>
+                  <Image src={image4} alt="Image4" className="max-h-fit rounded-sm md:rounded-lg object-cover image4 relative top-8 md:top-22" />
+                </div>
+                <div>
+                  <Image src={image5} alt="Image5" className="max-h-fit rounded-sm md:rounded-lg object-cover image" />
+                </div>
+                <div>
+                  <Image src={image6} alt="Image6" className="max-h-fit rounded-sm md:rounded-lg object-cover image relative top-6 md:top-14" />
+                </div>
+                <div>
+                  <Image src={image7} alt="Image7" className="max-h-fit rounded-sm md:rounded-lg object-cover image3" />
+                </div>
+                <div>
+                  <Image src={image8} alt="Image8" className="max-h-fit rounded-sm md:rounded-lg object-cover image relative top-8 md:top-22" />
+                </div>
+              </div>
 
               <div className="flex flex-col space-y-1.5 md:space-y-4">
-                <Image src={image9} alt="Image9" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image3" />
-                <Image src={image10} alt="Image10" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image3" />
+                <Image src={image9} alt="Image9" className="h-fit rounded-sm md:rounded-lg object-cover image3" />
+                <Image src={image10} alt="Image10" className="h-fit rounded-sm md:rounded-lg object-cover image3" />
               </div>
 
-              <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
-                <Image src={image11} alt="Image11" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image" />
-                <Image src={image13} alt="Image12" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4 relative top-10 md:top-24">
+                <Image src={image11} alt="Image11" className="h-fit rounded-sm md:rounded-lg object-cover image" />
+                <Image src={image13} alt="Image12" className="h-fit rounded-sm md:rounded-lg object-cover image2" />
               </div>
 
             </div>
 
-            <div className="text-white max-w-2xl mt-10 md:mt-0">
+            <div className="text-white max-w-2xl mt-20 md:mt-30 lg:mt-20 xl:mt-10">
               <h3 className="text-2xl md:text-3xl z-10">A network of founders who thrive together</h3>
 
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-4 md:mt-6 leading-relaxed z-10">
