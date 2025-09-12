@@ -9,14 +9,10 @@ interface BtnProps {
 
 export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hoverTextColor }: BtnProps) {
     return (
-        <button
-            className={`group ${bgColor} ${textColor} p-1.5 pl-4 rounded-full text-sm md:text-[15px] lg:text-lg flex items-center gap-4 cursor-pointer ${hoverBgColor} ${hoverTextColor} ${borderColor} duration-500 transform transition-transform hover:translate-x-2.5`}
-        >
+        <button className={`group ${bgColor} ${textColor} p-1.5 pl-4 rounded-full text-sm md:text-[15px] lg:text-lg flex items-center gap-4 cursor-pointer ${hoverBgColor} ${hoverTextColor} ${borderColor} duration-500 transform transition-transform hover:translate-x-2.5`}>
             {text}
-
             <span
-                className={`relative w-8 h-8 lg:w-10 lg:h-10 bg-[#e83a77] rounded-full flex items-center justify-center overflow-hidden`}
-            >
+                className={`relative w-8 h-8 lg:w-10 lg:h-10 bg-[#e83a77] rounded-full flex items-center justify-center overflow-hidden`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
