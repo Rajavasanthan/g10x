@@ -43,7 +43,7 @@ export default function Home() {
       <HomePage />
 
 
-      <div className="relative mt-[97vh] md:mb-[97vh] 2xl:mb-[70vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
+      <div className="relative mt-[97vh] lg:mb-[97vh] 2xl:mb-[54vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
 
 
 
@@ -548,32 +548,32 @@ export default function Home() {
         <AnimationPage />
 
 
-        <section className="bg-[#ede7dd] px-6 md:px-18 py-20 pb-6">
+        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 md:py-16 py-10 lg:py-20 pb-0 lg:pb-6">
 
           <div className="flex justify-center">
 
             <div className="xl:w-[1405px]">
 
-              <h2 className="text-[42px] md:text-[70px]">Stories of G10X Founders</h2>
+              <h2 className="text-2xl md:text-5xl xl:text-[70px]">Stories of G10X Founders</h2>
 
-              <p className="text-lg font-light">Every founder in G10X has a story. These are journeys of resilience, collaboration, and growth — powered by focus and community.</p>
+              <p className="text-sm sm:text-base md:text-lg font-light mt-2 xl:w-[80%]">Every founder in G10X has a story. These are journeys of resilience, collaboration, and growth — powered by focus and community.</p>
 
-              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 space-x-6">
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 -space-y-14 md:space-x-6">
 
 
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
 
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[22%] left-[4%] p-4">
 
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Healthcare Circle</p>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">Healthcare Circle</p>
 
-                    <h3 className="text-white text-3xl"> Dr. Ananya: How her startup reduced patient wait time in rural clinics by 40% with AI triage.</h3>
+                    <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl"> Dr. Ananya: How her startup reduced patient wait time in rural clinics by 40% with AI triage.</h3>
 
-                    <p className="text-white text-xl font-semibold underline">Read more</p>
+                    <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
 
                   </div>
 
@@ -583,17 +583,17 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
 
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[22%] left-[4%] p-4">
 
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Fintech Circle</p>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">Fintech Circle</p>
 
-                    <h3 className="text-white text-3xl">Arjun Mehta: Scaling a cross-border payments platform with mentorship from the G10X Fintech track.</h3>
+                    <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl">Arjun Mehta: Scaling a cross-border payments platform with mentorship from the G10X Fintech track.</h3>
 
-                    <p className="text-white text-xl font-semibold underline">Read more</p>
+                    <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
 
                   </div>
 
@@ -602,36 +602,35 @@ export default function Home() {
 
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
 
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[34%] lg:bottom-[28%] xl:bottom-[22%] left-[4%] p-4">
 
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">Mobility Circle</p>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">Mobility Circle</p>
 
-                    <h3 className="text-white text-3xl">Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X</h3>
+                    <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl">Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X</h3>
 
-                    <p className="text-white text-xl font-semibold underline">Read more</p>
+                    <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
 
                   </div>
 
                 </div>
 
-
                 <div className="relative">
 
-                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px]" />
+                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
 
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
 
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] left-[8%]">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[34%] lg:bottom-[28%] xl:bottom-[22%] left-[4%] p-4">
 
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit">DeepTech Circle</p>
+                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">DeepTech Circle</p>
 
-                    <h3 className="text-white text-3xl">Ravi & team: Turning a university project into a funded robotics startup with guidance from G10X mentors.</h3>
+                    <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl">Ravi & team: Turning a university project into a funded robotics startup with guidance from G10X mentors.</h3>
 
-                    <p className="text-white text-xl font-semibold underline">Read more</p>
+                    <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
 
                   </div>
 
@@ -652,13 +651,13 @@ export default function Home() {
 
             <div className="xl:w-[1405px]">
 
-              <div className="flex flex-col md:flex-row md:space-x-30 justify-between">
+              <div className="flex flex-col lg:flex-row lg:space-x-30 justify-between">
 
                 <div className="flex flex-col space-y-4 md:space-y-8 mt-4">
 
-                  <h2 className="text-[42px] md:text-[70px] leading-13 md:leading-20">Ready to scale with focus and thrive with us?</h2>
+                  <h2 className="text-2xl md:text-5xl xl:text-[70px] lg:leading-14 xl:leading-20">Ready to scale with focus and thrive with us?</h2>
 
-                  <p className="font-light text-[22px]">Whether you&apos;re a founder looking to grow in your sector, a mentor eager to guide, or an innovator seeking collaboration — G10X is the place where focus meets scale. Let&apos;s connect and explore how you can be part of this global founder community.
+                  <p className="font-light text-sm sm:text-base md:text-lg lg:xl">Whether you&apos;re a founder looking to grow in your sector, a mentor eager to guide, or an innovator seeking collaboration — G10X is the place where focus meets scale. Let&apos;s connect and explore how you can be part of this global founder community.
                   </p>
 
                   <div className="mt-2">
@@ -676,7 +675,7 @@ export default function Home() {
 
                 </div>
 
-                <Image src={menImg3} alt="Men image 3" className="md:w-1/3 md:h-110 mt-12 rounded-l-[60px] rounded-b-[60px] object-cover" />
+                <Image src={menImg3} alt="Men image 3" className="lg:w-1/3 md:h-110 mt-12 rounded-l-[60px] rounded-b-[60px] object-cover" />
 
               </div>
 
@@ -688,13 +687,13 @@ export default function Home() {
 
 
         <section
-          className={`bg-black md:hidden block w-full pt-40 p-10`}>
+          className={`bg-black lg:hidden block w-full pt-40 p-10`}>
 
           <div className="flex justify-center">
 
             <div>
 
-              <div className="flex flex-col px-6 ">
+              <div className="flex flex-col px-4">
 
                 <div className="flex flex-col items-center">
 
@@ -714,7 +713,7 @@ export default function Home() {
 
                 <div className="flex flex-col border-l border-gray-500 pl-16 mt-4 pb-10 ml-10 ">
 
-                  <ul className="flex flex-col text-white mt-14 md:mt-24 text-lg">
+                  <ul className="flex flex-col text-white mt-14 md:mt-24 text-sm">
 
                     <li className="cursor-pointer hover:underline">Vacancies</li>
 
@@ -726,7 +725,7 @@ export default function Home() {
 
                   </ul>
 
-                  <div className="text-white border border-white py-1 px-4 mt-10 rounded-3xl w-fit duration-500 transform transition-transform hover:translate-x-2.5 cursor-pointer">
+                  <div className="text-white border border-white py-1 px-4 mt-10 rounded-3xl w-fit duration-500 transform transition-transform hover:translate-x-2.5 cursor-pointer text-sm text-nowrap">
                     Contact us
                   </div>
 
@@ -736,7 +735,7 @@ export default function Home() {
 
               <div className="border-t border-gray-500 mt-6 pt-6 md:pt-9">
 
-                <ul className="flex w-full flex-wrap justify-center items-center text-white underline text-sm md:text-[17px] gap-5 md:gap-9">
+                <ul className="flex w-full flex-wrap justify-center items-center text-white underline text-sm gap-5 md:gap-9">
 
                   <li className="cursor-pointer">Privacy statement</li>
 

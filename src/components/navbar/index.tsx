@@ -17,7 +17,7 @@ export function Navbar() {
 
                         <div className='flex flex-col mt-6 text-md lg:text-xl font-semibold text-gray-600'>
                             <p>Global Thriving</p>
-                            <p>Enterpreneurs Network</p>
+                            <p>Entrepreneurs Network</p>
                         </div>
                     </div>
 
