@@ -62,10 +62,7 @@ export function HomePage() {
 
 
     return (
-        <section
-            className={`fixed top-0 left-0 h-full w-full pt-10 md:p-10 z-30 overflow-hidden duration-500 ${visible ? "block" : "hidden"
-                }`}
-        >
+        <section className={`fixed top-0 left-0 h-full w-full pt-10 md:p-10 z-30 overflow-hidden duration-500 ${visible ? "block" : "hidden"}`}>
             <div className="flex justify-center">
                 <div className="xl:w-[1405px] flex flex-col md:flex-row">
 

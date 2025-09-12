@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { Btn } from "@/components";
 
-
 import image1 from "../../../public/images/img1.png"
 import image2 from "../../../public/images/img2.png"
 import image3 from "../../../public/images/img3.png"
@@ -18,7 +17,6 @@ import image11 from "../../../public/images/img11.png"
 import image12 from "../../../public/images/img12.png"
 import image13 from "../../../public/images/img13.png"
 
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -26,7 +24,6 @@ import Image from "next/image";
 export function AnimationPage() {
 
   gsap.registerPlugin(ScrollTrigger);
-
 
   useEffect(() => {
 
@@ -85,16 +82,11 @@ export function AnimationPage() {
 
   }, []);
 
-
   return (
     <section className="bg-black px-4 sm:px-6 md:px-10 py-16 md:py-30 overflow-x-hidden">
-
       <div className="flex justify-center">
-
         <div className="xl:w-[1405px]">
-
           <div className="w-full flex flex-col justify-center items-center ">
-
             <div className="flex space-x-1.5 md:space-x-4 ">
 
               <div className="flex flex-col space-y-1.5 md:space-y-4 relative top-10 md:top-24">
@@ -173,18 +165,12 @@ export function AnimationPage() {
                   hoverBgColor="hover:bg-white"
                   hoverTextColor="hover:text-black"
                 />
-
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
-
   );
 }
 
