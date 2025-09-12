@@ -69,9 +69,9 @@ export function HomePage() {
             <div className="flex justify-center">
                 <div className="xl:w-[1405px] flex flex-col md:flex-row">
 
-                    <div className="flex flex-col space-y-4 md:space-y-6 lg:w-[70%] xl:w-1/2 2xl:w-[670px] z-40 md:absolute bottom-[5%] md:mt-0 xl:mt-0 lg:mt-30 md:bottom-[10%] px-4 sm:px-6 md:px-0 order-2 md:order-1">
+                    <div className="flex flex-col space-y-4 md:space-y-6 lg:w-[70%] xl:w-1/2 2xl:w-[670px] z-40 md:absolute bottom-[5%] md:mt-10 xl:mt-0 lg:mt-30 md:bottom-[10%] px-4 sm:px-6 md:px-0 order-2 md:order-1">
 
-                        <div className="hidden lg:block text-2xl sm:text-4xl lg:text-6xl xl:text-7xl">
+                        <div className="hidden lg:block lg:text-6xl">
                             Building the <br />
                             <span key={word} className="rotating-word inline-block text-[#bb0f4b]">
                                 {word}
@@ -79,7 +79,7 @@ export function HomePage() {
                             change that lasts
                         </div>
 
-                        <div className="block lg:hidden text-xl mt-4">
+                        <div className="block lg:hidden text-xl md:text-3xl mt-4">
                             Building the{" "}
                             <span key={word} className="rotating-word inline-block text-[#bb0f4b]">
                                 {word}

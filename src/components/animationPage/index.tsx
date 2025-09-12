@@ -87,7 +87,7 @@ export function AnimationPage() {
 
 
   return (
-    <section className="bg-black px-6 md:px-18 py-16 md:py-30 overflow-x-hidden">
+    <section className="bg-black px-4 sm:px-6 md:px-10 py-16 md:py-30 overflow-x-hidden">
 
       <div className="flex justify-center">
 
@@ -97,58 +97,58 @@ export function AnimationPage() {
 
             <div className="flex space-x-1.5 md:space-x-4">
 
-              <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
-                <Image src={image1} alt="Image1" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
-                <Image src={image12} alt="Image12" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
+              <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-16 lg:mt-22 xl:mt-24">
+                <Image src={image1} alt="Image1" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
+                <Image src={image12} alt="Image12" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
               </div>
 
               <div className="flex flex-col space-y-1.5 md:space-y-4">
-                <Image src={image2} alt="Image2" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
-                <Image src={image3} alt="Image3" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
+                <Image src={image2} alt="Image2" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
+                <Image src={image3} alt="Image3" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
               </div>
 
-              <Image src={image4} alt="Image4" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image4 mt-8 md:mt-22" />
-              <Image src={image5} alt="Image5" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
-              <Image src={image6} alt="Image6" className="w-10 h-13 md:w-28 md:h-40 rounded-sm md:rounded-lg image mt-6 md:mt-14" />
-              <Image src={image7} alt="Image7" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image3" />
-              <Image src={image8} alt="Image8" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image mt-8 md:mt-22" />
+              <Image src={image4} alt="Image4" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image4 mt-8 md:mt-22" />
+              <Image src={image5} alt="Image5" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image" />
+              <Image src={image6} alt="Image6" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image mt-6 md:mt-14" />
+              <Image src={image7} alt="Image7" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image3" />
+              <Image src={image8} alt="Image8" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image mt-8 md:mt-22" />
 
               <div className="flex flex-col space-y-1.5 md:space-y-4">
-                <Image src={image9} alt="Image9" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image3" />
-                <Image src={image10} alt="Image10" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image3" />
+                <Image src={image9} alt="Image9" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image3" />
+                <Image src={image10} alt="Image10" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image3" />
               </div>
 
               <div className="flex flex-col space-y-1.5 md:space-y-4 mt-10 md:mt-24">
-                <Image src={image11} alt="Image11" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image" />
-                <Image src={image13} alt="Image12" className="w-10 h-13 md:w-28 md:h-42 rounded-sm md:rounded-lg image2" />
+                <Image src={image11} alt="Image11" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image" />
+                <Image src={image13} alt="Image12" className="w-9 h-13 xs:w-16 xs:h-20 sm:w-18 sm:h-22 md:w-22 md:h-26 lg:w-30 lg:h-38 xl:w-34 xl:h-52 rounded-sm md:rounded-lg object-cover image2" />
               </div>
 
             </div>
 
-            <div className="text-white max-w-2xl mt-10 md:mt-0 md:relative left-[4%]">
-              <h3 className="text-3xl z-10">A network of founders who thrive together</h3>
+            <div className="text-white max-w-2xl mt-10 md:mt-0">
+              <h3 className="text-2xl md:text-3xl z-10">A network of founders who thrive together</h3>
 
-              <p className="text-xl mt-4 md:mt-6 leading-relaxed z-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-4 md:mt-6 leading-relaxed z-10">
                 At G10X, you&apos;re never building in isolation. You&apos;re part of a global founder circle where knowledge flows, partnerships spark, and growth compounds.
               </p>
 
-              <p className="text-xl mt-4 leading-relaxed z-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-4 leading-relaxed z-10">
                 Each category is a close-knit ecosystem — but the strength multiplies when we connect across sectors and borders.
               </p>
 
-              <p className="font-light mt-4 md:mt-6 z-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light mt-4 md:mt-6 z-10">
                 Workshops & Masterclasses → Learn directly from peers, mentors, and industry leaders.
               </p>
 
-              <p className="font-light mt-3 z-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light mt-3 z-10">
                 Collaboration over Competition → Share resources, co-create, and grow together.
               </p>
 
-              <p className="font-light mt-3 z-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light mt-3 z-10">
                 Global Connections → Meet founders from across the world, united by shared focus.
               </p>
 
-              <p className="font-light mt-3 z-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light mt-3 z-10">
                 Celebrating Wins → From funding milestones to product launches, we cheer each other on.
               </p>
 
