@@ -1,11 +1,4 @@
 import { Btn, Navbar, AnimationPage, HomePage, Footer } from "@/components";
-
-import volkerRailImg from "../../public/images/volkerrail_black.png"
-import schipholImg from "../../public/images/schiphol_black.png"
-import bamImg from "../../public/images/bam_black.png"
-import heijmansImg from "../../public/images/heijmans_black.png"
-import croonwolterWitImg from "../../public/images/croonwolter-wit_black.png"
-import spieImg from "../../public/images/spie_black.png"
 import menImg from "../../public/images/men-img.jpg";
 import gardenImg from "../../public/images/garden-img.jpg";
 
@@ -40,13 +33,58 @@ export default function Home() {
 
       <div className="relative mt-[97vh] lg:mb-[97vh] 2xl:mb-[54vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
 
-        <section className="flex overflow-x-auto xl:overflow-x-hidden w-full justify-start xl:justify-center items-center gap-6 lg:gap-18 2xl:gap-25 p-4">
-          <Image src={volkerRailImg} alt="VolkerRail" className="max-w-38 flex-shrink-0" />
-          <Image src={schipholImg} alt="Schiphol" className="max-w-38 flex-shrink-0" />
-          <Image src={bamImg} alt="BAM" className="max-w-38 flex-shrink-0" />
-          <Image src={heijmansImg} alt="Heijmans" className="max-w-38 flex-shrink-0" />
-          <Image src={croonwolterWitImg} alt="CroonwolterWit" className="max-w-38 flex-shrink-0" />
-          <Image src={spieImg} alt="SPIE" className="max-w-38 flex-shrink-0" />
+        <section className="flex overflow-x-auto text-nowrap w-full lg:justify-start 2xl:justify-center items-center gap-10 xl:gap-14 2xl:gap-5 p-4 px-4 md:px-6 lg:px-10 pr-12 sideScrollBar">
+
+          <div className="flex items-end gap-2.5">
+            <Image src={healthCare} alt="building image" className="w-7" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Healthcare</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={finTech} alt="building image" className="w-7" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Fintech</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={connected_car} alt="building image" className="w-7" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Mobility</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={solar_energy} alt="building image" className="w-6" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Energy</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={learning} alt="building image" className="w-6" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Deep Tech</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={climate_change} alt="building image" className="w-6" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Climate & Sustainability</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={space} alt="building image" className="w-6 mt-1" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Space</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={school} alt="building image" className="w-6" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">EdTech</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={protection} alt="building image" className="w-6" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Consumer & Lifestyle</h3>
+          </div>
+
+          <div className="flex items-end gap-2.5">
+            <Image src={smart_cities} alt="building image" className="w-8" />
+            <h3 className="text-sm relative top-2 lg:font-semibold">Smart Infrastructure</h3>
+          </div>
+
         </section>
 
         <section className="bg-black px-4 sm:px-6 md:px-10 pt-10 md:pt-20 md:pb-4">
@@ -166,7 +204,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-5xl lg:text-[70px] text-white">Why Choose G10X?</h2>
               <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 ">
 
-                <div className="bg-[#ede7dd] flex justify-center items-center py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
+                <div className="bg-[#ede7dd] py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
                   <div className="flex flex-col space-y-2">
                     <h3 className="text-xl md:text-[25px] lg:text-[30px]">Sector-Focused Ecosystems</h3>
                     <p className="text-sm sm:text-base md:text-lg font-light">10 categories. 10 growth tracks</p>
@@ -174,7 +212,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-[#ede7dd] flex justify-center items-center py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
+                <div className="bg-[#ede7dd] py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
                   <div className="flex flex-col space-y-2">
                     <h3 className="text-xl md:text-[25px] lg:text-[30px]">Collective Growth Philosophy</h3>
                     <p className="text-sm sm:text-base md:text-lg font-light">When one grows, all grow.</p>
@@ -182,7 +220,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-[#ede7dd] flex justify-center items-center py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
+                <div className="bg-[#ede7dd] py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
                   <div className="flex flex-col space-y-2">
                     <h3 className="text-xl md:text-[25px] lg:text-[30px]">Built for Founders, by Founders</h3>
                     <p className="text-sm sm:text-base md:text-lg font-light">No noise, no dilution.</p>
@@ -245,11 +283,11 @@ export default function Home() {
                 <h2 className="text-2xl md:text-5xl">Building ventures that make an impact across industries</h2>
               </div>
 
-              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
 
                 <div className="flex flex-col">
                   <div className="flex items-end gap-2.5">
-                    <Image src={healthCare} alt="building image" className="w-10" />
+                    <Image src={healthCare} alt="building image" className="w-7" />
                     <h3 className="text-md md:text-xl lg:text-[28px] relative top-2 lg:font-semibold">Healthcare</h3>
                   </div>
                   <p className="text-sm sm:text-base md:text-lg mt-6 font-light"> Innovative solutions transforming patient care and medical ecosystems.</p>
@@ -354,7 +392,7 @@ export default function Home() {
                 <div className="relative">
                   <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[22%] left-[4%] p-4">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[20%] xl:bottom-[28.5%] left-[4%] p-4">
                     <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">Healthcare Circle</p>
                     <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl"> Dr. Ananya: How her startup reduced patient wait time in rural clinics by 40% with AI triage.</h3>
                     <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
@@ -364,7 +402,7 @@ export default function Home() {
                 <div className="relative">
                   <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[22%] left-[4%] p-4">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[20%] xl:bottom-[29%] left-[4%] p-4">
                     <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">Fintech Circle</p>
                     <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl">Arjun Mehta: Scaling a cross-border payments platform with mentorship from the G10X Fintech track.</h3>
                     <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
@@ -374,19 +412,9 @@ export default function Home() {
                 <div className="relative">
                   <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
                   <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[34%] lg:bottom-[28%] xl:bottom-[22%] left-[4%] p-4">
+                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[24%] lg:bottom-[20%] xl:bottom-[22%] left-[4%] p-4">
                     <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">Mobility Circle</p>
                     <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl">Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X</h3>
-                    <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
-                  </div>
-                </div>
-
-                <div className="relative">
-                  <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
-                  <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>
-                  <div className="flex flex-col space-y-5 absolute bottom-[24%] sm:bottom-[16%] md:bottom-[26%] lg:bottom-[22%] xl:bottom-[22%] left-[4%] p-4">
-                    <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-lg">DeepTech Circle</p>
-                    <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-2xl xl:3xl">Ravi & team: Turning a university project into a funded robotics startup with guidance from G10X mentors.</h3>
                     <p className="text-white text-sm sm:text-base md:text-lg font-semibold underline">Read more</p>
                   </div>
                 </div>
