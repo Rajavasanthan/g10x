@@ -1,9 +1,15 @@
 export * from './navbar'
-
 export * from './btn'
-
 export * from './animationPage'
-
 export * from './home'
-
 export * from './footer'
+export * from './ui/section1'
+export * from './ui/section2'
+export * from './ui/section3'
+export * from './ui/section4'
+export * from './ui/section5'
+export * from './ui/section6'
+export * from './ui/section8'
+export * from './ui/section9'
+export * from './ui/section10'
+export * from './ui/comments'
