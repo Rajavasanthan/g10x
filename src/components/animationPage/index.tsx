@@ -78,8 +78,6 @@ export function AnimationPage() {
       ease: "power3.out",
       stagger: 0.2,
     });
-
-
   }, []);
 
   return (

@@ -1,13 +1,8 @@
+import { SectionEight } from '@/types'
 import Image from 'next/image'
 import React from 'react'
 
-interface Props {
-    image: string,
-    title: string,
-    content: string
-}
-
-export function Card({ image, title, content }: Props) {
+export function Card({ image, title, content }: SectionEight) {
     return (
         <div className="relative">
             <Image
@@ -26,5 +21,4 @@ export function Card({ image, title, content }: Props) {
         </div>
     )
 }
-
 export default Card

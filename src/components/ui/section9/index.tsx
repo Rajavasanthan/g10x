@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 import menImg3 from "../../../../public/images/men-img3.webp";
 
-
 export function SectionNine() {
     return (
         <section className="bg-gradient-to-r from-[#52b2b8] to-[#b0e8eb] overflow-x-hidden px-4 sm:px-6 md:px-10 py-14 md:py-18 lg:py-22 xl:py-22">
@@ -34,5 +33,4 @@ export function SectionNine() {
         </section>
     )
 }
-
 export default SectionNine

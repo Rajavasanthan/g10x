@@ -1,5 +1,4 @@
 export function useBlogsData() {
-
     return [
         {
             id: 1,

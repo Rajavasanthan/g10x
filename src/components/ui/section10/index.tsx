@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-
 import originalLogo from "../../../../public/images/original_logo.png";
 import linkedInImg from "../../../../public/images/Linkedin-img.svg";
 import instagramImg from "../../../../public/images/Instagram-img.svg";
@@ -47,5 +46,4 @@ export function SectionTen() {
         </section>
     )
 }
-
 export default SectionTen

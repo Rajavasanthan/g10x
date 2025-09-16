@@ -1,12 +1,7 @@
+import { CardProps  } from '@/types'
 import React from 'react'
 
-interface Props {
-    title: string,
-    subTitle: string,
-    content: string
-}
-
-export function Card({title, subTitle, content}: Props) {
+export function Card({title, subTitle, content}: CardProps ) {
     return (
         <div className="bg-[#ede7dd] py-10 px-6 lg:py-14 lg:px-8 rounded-l-[60px] rounded-b-[60px]">
             <div className="flex flex-col space-y-2">

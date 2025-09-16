@@ -6,9 +6,7 @@ import { useBlogsData } from "@/hooks/useBlogsData";
 import menImg from "../../../../public/images/men-img.jpg";
 
 export function Blog() {
-
     const blogData = useBlogsData()
-
     return (
         blogData.map((blog) => (
             <Link key={blog.id} href={`blog/${blog.fileName}`} className="overflow-hidden cursor-pointer block">

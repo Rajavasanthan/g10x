@@ -5,7 +5,6 @@ import menImg2 from "../../../../public/images/men-img2.jpg";
 
 export function SectionEight() {
     return (
-
         <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 md:py-16 py-10 lg:py-20 pb-0 md:pb-2 lg:pb-6">
             <div className="flex justify-center">
                 <div className="xl:w-[1405px]">
@@ -14,12 +13,8 @@ export function SectionEight() {
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 -space-y-14 md:gap-6">
 
                         <Card image={menImg2.src} title="Healthcare Circle" content="Dr. Ananya: How her startup reduced patient wait time in rural clinics by 40% with AI triage." />
-
                         <Card image={menImg2.src} title="Fintech Circle" content="Arjun Mehta: Scaling a cross-border payments platform with mentorship from the G10X Fintech track." />
-
                         {/* <Card image={menImg2.src} title="Mobility Circle" content="Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X" /> */}
-
-
                         <div className="relative">
                             <Image src={menImg2} alt="Men image 2" className="rounded-l-[60px] rounded-b-[60px] sm:w-full" />
                             <div className="relative bottom-27 w-full h-28 bg-gradient-to-t from-black to-transparent rounded-b-[60px]"></div>

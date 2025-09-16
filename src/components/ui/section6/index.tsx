@@ -30,25 +30,15 @@ export function SectionSix() {
                     </div>
 
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-
                         <Logo logo={healthCare.src} title="Healthcare" content="Innovative solutions transforming patient care and medical ecosystems." />
-
                         <Logo logo={finTech.src} title="Fintech" content="Smarter, inclusive financial systems built for the digital age." />
-
                         <Logo logo={connected_car.src} title="Mobility" content="From EVs to logistics, reimagining how the world moves." />
-
                         <Logo logo={solar_energy.src} title="Energy" content="Clean, sustainable solutions powering the future." />
-
                         <Logo logo={learning.src} title="Deep Tech" content="AI, robotics, and frontier tech redefining what&apos;s possible." />
-
                         <Logo logo={climate_change.src} title="Climate & Sustainability" content="Driving green initiatives and circular economies." />
-
                         <Logo logo={space.src} title="Space" content="Unlocking opportunities beyond Earth." />
-
                         <Logo logo={school.src} title="EdTech" content="Reinventing how people learn and upskill." />
-
                         <Logo logo={protection.src} title="Consumer & Lifestyle" content="Products and platforms shaping daily life." />
-
                         <Logo logo={smart_cities.src} title="Smart Infrastructure" content="Next-gen cities, security, and connected systems." />
                     </div>
 

@@ -1,13 +1,8 @@
+import { SectionSix } from "@/types";
 import Image from "next/image";
 import React from "react";
 
-interface Props {
-    logo: string;
-    title: string;
-    content: string;
-}
-
-export function Logo({ logo, title, content }: Props) {
+export function Logo({ logo, title, content }: SectionSix) {
     return (
         <div className="flex flex-col">
             <div className="flex items-end gap-2.5">
@@ -28,5 +23,4 @@ export function Logo({ logo, title, content }: Props) {
         </div>
     );
 }
-
 export default Logo;

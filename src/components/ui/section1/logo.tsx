@@ -1,13 +1,8 @@
+import { SectionOne } from '@/types'
 import Image from 'next/image'
 import React from 'react'
 
-interface Props {
-    logoUrl: string,
-    altText: string,
-    text: string
-}
-
-export function Logo({ logoUrl, altText, text }: Props) {
+export function Logo({ logoUrl, altText, text }: SectionOne) {
     return (
         <div className="flex flex-col items-center">
             <div className="w-20 h-20 relative">
