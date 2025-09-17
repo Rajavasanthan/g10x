@@ -1,15 +1,12 @@
-interface BtnProps {
-    text: string;
-    bgColor: string;
-    borderColor: string;
-    textColor: string;
-    hoverBgColor: string;
-    hoverTextColor: string;
-}
+import { BtnProps } from "@/types";
+import Link from "next/link";
+
 
 export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hoverTextColor }: BtnProps) {
     return (
-        <button className={`group ${bgColor} ${textColor} p-1.5 pl-4 rounded-full text-sm md:text-[15px] lg:text-lg flex items-center gap-4 cursor-pointer ${hoverBgColor} ${hoverTextColor} ${borderColor} duration-500 transform transition-transform hover:translate-x-2.5`}>
+        <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSchDjlivaPBX7Dk9SrRreopzUGDoPuYzucAZ7I34tZI0zK9Tw/viewform"} 
+        target="_blank"
+        className={`group ${bgColor} ${textColor} p-1.5 pl-4 rounded-full text-sm md:text-[15px] lg:text-lg flex items-center gap-4 cursor-pointer ${hoverBgColor} ${hoverTextColor} ${borderColor} duration-500 transform transition-transform hover:translate-x-2.5 w-fit`}>
             {text}
             <span
                 className={`relative w-8 h-8 lg:w-10 lg:h-10 bg-[#e83a77] rounded-full flex items-center justify-center overflow-hidden`}>
@@ -43,6 +40,6 @@ export function Btn({ text, bgColor, borderColor, textColor, hoverBgColor, hover
                     />
                 </svg>
             </span>
-        </button>
+        </Link>
     );
 }

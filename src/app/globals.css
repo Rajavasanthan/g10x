@@ -8,6 +8,6 @@
   font-family: var(--font-sora);
 }
 
-.sideScrollBar::-webkit-scrollbar {
-  width: 2px;
+.no-scrollbar::-webkit-scrollbar {
+  width: 0.5px;
 }
