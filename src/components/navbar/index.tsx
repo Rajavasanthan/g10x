@@ -14,13 +14,18 @@ export function Navbar({ items }: { items: NavItem[] }) {
             const el = document.getElementById(item.targetId);
             if (el) {
                 el.scrollIntoView({ behavior: "smooth" });
-                return;
             }
         }
         if (item.href) {
             router.push(item.href);
         }
+
+        const menuToggle = document.getElementById("menu-toggle") as HTMLInputElement;
+        if (menuToggle) {
+            menuToggle.checked = false;
+        }
     };
+
     return (
         <div className="relative w-full h-32 md:h-42">
             <div className="relative bg-[#ede7dd] flex items-center justify-center h-1/2 z-10">
@@ -81,7 +86,6 @@ export function Navbar({ items }: { items: NavItem[] }) {
                 </div>
             </div>
 
-            {/* Bottom gradient */}
             <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-via-transparent via-transparent to-[#ede7dd]"></div>
         </div>
     );
