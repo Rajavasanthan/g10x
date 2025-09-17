@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useBlogsData } from "@/hooks/useBlogsData";
-
 import menImg from "../../../../public/images/men-img.jpg";
 
 export function Blog() {

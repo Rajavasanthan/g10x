@@ -4,12 +4,17 @@ import {
   SectionEight, SectionNine, SectionTen
 } from "@/components";
 
-
 export default function Home() {
   return (
     <div className="w-full min-h-screen bg-[#ede7dd] overflow-y-auto">
       <div className="absolute top-0 left-0 w-full z-50">
-        <Navbar />
+        <Navbar
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Blogs", targetId: "blogs-section" },
+            { label: "Community", targetId: "community-section" },
+          ]}
+        />
       </div>
 
       <HomePage />
@@ -18,7 +23,9 @@ export default function Home() {
 
         <SectionOne />
 
-        <SectionTwo />
+        <div id="blogs-section">
+          <SectionTwo />
+        </div>
 
         <SectionThree />
 
@@ -28,7 +35,9 @@ export default function Home() {
 
         <SectionSix />
 
-        <AnimationPage />
+        <div id="community-section">
+          <AnimationPage />
+        </div>
 
         <SectionEight />
 

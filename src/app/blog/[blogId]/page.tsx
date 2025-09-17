@@ -5,12 +5,10 @@ import remarkGfm from "remark-gfm";
 import { Metadata } from "next";
 import matter from "gray-matter";
 
-import { Navbar, Comments, CommentCount } from "@/components";
+import { Navbar, Comments, CommentCount, BlogClapCount, ShareBtn } from "@/components";
 import Image from 'next/image'
 
 import menImg from "../../../../public/images/men-img2.jpg"
-import clapIcon from "../../../../public/images/clap_icon.svg"
-import shareIcon from "../../../../public/images/share_icon.svg"
 
 export async function generateMetadata({ params }: { params: Promise<{ blogId: string }> }): Promise<Metadata> {
 
@@ -53,33 +51,38 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
     console.error("Markdown file not found:", filePath, err);
   }
 
-  const { content } = matter(fileContent);
+  const { data, content } = matter(fileContent);
 
   return (
     <div className="h-screen pb-1  bg-[#ede7dd] overflow-x-hidden text-gray-700">
-
-      <Navbar />
-
+      <Navbar
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Comments", targetId: "comments-section" },
+        ]}
+      />
       <div className="max-w-4xl mx-auto mb-12 px-4 md:px-6 lg:px-10">
         <div className="flex flex-col">
 
           <div className="flex items-center space-x-4">
-            <Image src={menImg} alt="Profile image" className="rounded-full w-10 h-10 object-cover" />
-            <h2 className="font-semibold text-lg">ZIRU</h2>
-            <p className="text-gray-700 text-sm">7 min read</p>
+            <Image
+              src={data.profileImage}
+              alt="Profile image"
+              className="rounded-full w-10 h-10 object-cover"
+              width={40}
+              height={40}
+            />
+            <h2 className="font-semibold text-lg">{data.author || "Unknown"}</h2>
+            <p className="text-gray-700 text-sm">{data.readTime || "0 min read"}</p>
             <p>.</p>
-            <p className="text-gray-700 text-sm">Jul 22, 2025</p>
+            <p className="text-gray-700 text-sm">{data.date || "Unknown date"}</p>
           </div>
 
           <div className="flex items-center justify-around sm:justify-start space-x-8 mt-8 ml-2">
-            <div className="flex space-x-1.5 items-center">
-            <Image src={clapIcon} alt="Clap icon" />
-              <p className="text-sm text-gray-600">2.1k</p>
-            </div>
-            <CommentCount blogId={blogId}/>
-            <Image src={shareIcon} alt="Share icon" />
+            <BlogClapCount blogId={blogId} />
+            <CommentCount blogId={blogId} />
+            <ShareBtn />
           </div>
-
         </div>
         <Markdown
           remarkPlugins={[remarkGfm]}
@@ -109,9 +112,9 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
           {content}
         </Markdown>
       </div>
-
-      <Comments/>
-
+      <div id="comments-section">
+        <Comments />
+      </div>
     </div>
   );
 }

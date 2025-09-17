@@ -1,4 +1,8 @@
 ---
+author: Eva Keiffenheim
+profileImage: /images/men-img2.jpg
+readTime: 6 min read
+date: May 16, 2025
 ogImage: /images/article4.png
 ---
 

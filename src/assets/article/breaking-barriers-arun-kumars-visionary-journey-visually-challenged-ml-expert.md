@@ -1,4 +1,8 @@
 ---
+author: Utsuk Agarwal
+profileImage: /images/men-img2.jpg
+readTime: 9 min read
+date: Aug 11, 2025
 ogImage: /images/article5.png
 ---
 

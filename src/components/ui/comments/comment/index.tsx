@@ -32,7 +32,7 @@ export function Comments() {
 
     function handleClapIcon(id: number, currentClapCount: number) {
         const newClapCount = currentClapCount + 1;
-        updateClapCountById(id, newClapCount);
+        updateClapCountById(String(id), newClapCount);
 
         setComments(prev =>
             prev.map(c =>

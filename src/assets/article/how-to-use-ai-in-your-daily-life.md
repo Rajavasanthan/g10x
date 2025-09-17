@@ -1,4 +1,8 @@
 ---
+author: Cam Silver, Ph.D.
+profileImage: /images/men-img2.jpg
+readTime: 5 min read
+date: Jul 12, 2025
 ogImage: /images/article10.png
 ---
 

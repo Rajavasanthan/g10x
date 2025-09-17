@@ -8,7 +8,7 @@ export function Logo({ logo, title, content }: SectionSix) {
             <div className="flex items-end gap-2.5">
                 <Image
                     src={logo}
-                    alt="building image"
+                    alt={title}
                     width={28}   
                     height={28}  
                     className="w-10 object-contain"

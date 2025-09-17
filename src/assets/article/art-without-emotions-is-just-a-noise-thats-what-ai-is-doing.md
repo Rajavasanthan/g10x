@@ -1,4 +1,8 @@
 ---
+author: ZIRU
+profileImage: /images/men-img2.jpg
+readTime: 7 min read
+date: Jul 22, 2025
 ogImage: /images/article11.png
 ---
 

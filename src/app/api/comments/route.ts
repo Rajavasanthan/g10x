@@ -1,5 +1,5 @@
-import Comment from "./models/comments";
-import { db } from "./db";
+import Comment from "../models/comments";
+import { db } from "../db";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -12,8 +12,6 @@ export async function POST(request: Request) {
     } catch (error) {
         console.log(error);
         return NextResponse.json({ message: "Something went wrong" }, { status: 500 })
-    } finally {
-        await db.close()
     }
 }
 
@@ -27,8 +25,6 @@ export async function GET(request: Request) {
     } catch (error) {
         console.log(error);
         return NextResponse.json({ message: "Something went wrong" }, { status: 500 })
-    } finally {
-        await db.close()
     }
 }
 
@@ -38,7 +34,7 @@ export async function PUT(request: Request) {
         const url = new URL(request.url);
         const id = url.searchParams.get("id");
         const { clapCount } = await request.json();
-        const result = await Comment.updateOne(
+        await Comment.updateOne(
             { _id: id },
             { $set: { clapCount } }
         );
@@ -46,8 +42,5 @@ export async function PUT(request: Request) {
     } catch (error) {
         console.error(error);
         return NextResponse.json({ message: "Something went wrong" }, { status: 500 });
-    } finally {
-        await db.close();
     }
 }
-
