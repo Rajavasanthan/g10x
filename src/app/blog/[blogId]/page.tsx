@@ -64,21 +64,25 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
       <div className="max-w-4xl mx-auto mb-12 px-4 md:px-6 lg:px-10">
         <div className="flex flex-col">
 
-          <div className="flex items-center space-x-4">
-            <Image
-              src={data.profileImage}
-              alt="Profile image"
-              className="rounded-full w-10 h-10 object-cover"
-              width={40}
-              height={40}
-            />
-            <h2 className="font-semibold text-lg">{data.author || "Unknown"}</h2>
-            <p className="text-gray-700 text-sm">{data.readTime || "0 min read"}</p>
-            <p>.</p>
-            <p className="text-gray-700 text-sm">{data.date || "Unknown date"}</p>
+          <div className="flex flex-col sm:flex-row sm:items-center space-x-4">
+            <div className="flex items-center space-x-4 sm:order-1 order-2 mt-3 sm:mt-0">
+              <Image
+                src={data.profileImage}
+                alt="Profile image"
+                className="rounded-full w-10 h-10 object-cover"
+                width={40}
+                height={40}
+              />
+              <h2 className="font-semibold text-lg">{data.author || "Unknown"}</h2>
+            </div>
+            <div className="flex items-center space-x-4 sm:order-2 order-1">
+              <p className="text-gray-700 text-sm">{data.readTime || "0 min read"}</p>
+              <p>.</p>
+              <p className="text-gray-700 text-sm">{data.date || "Unknown date"}</p>
+            </div>
           </div>
 
-          <div className="flex items-center justify-around sm:justify-start space-x-8 mt-8 ml-2">
+          <div className="flex items-center justify-around sm:justify-start space-x-8 mt-8">
             <BlogClapCount blogId={blogId} />
             <CommentCount blogId={blogId} />
             <ShareBtn />
