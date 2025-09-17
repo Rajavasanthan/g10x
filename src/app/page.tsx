@@ -19,7 +19,7 @@ export default function Home() {
 
       <HomePage />
 
-      <div className="relative mt-[97vh] lg:mb-[97vh] 2xl:mb-[54vh] z-50 bg-[#ede7dd] border-t border-t-black w-full">
+      <div className="relative mt-[97vh] lg:mb-[97vh] 2xl:mb-[760px] z-50 bg-[#ede7dd] border-t border-t-black w-full">
 
         <SectionOne />
 

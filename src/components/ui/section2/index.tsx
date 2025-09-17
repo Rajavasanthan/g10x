@@ -3,7 +3,7 @@ import Blog from './blog';
 
 export function SectionTwo() {
     return (
-        <section className="bg-black px-4 sm:px-6 md:px-10 pt-10 md:pt-20 md:pb-4">
+        <section className="bg-black px-4 sm:px-6 md:px-10 pt-10 md:pt-20 md:pb-14">
             <div className="flex justify-center">
                 <div className="xl:w-[1405px]">
 

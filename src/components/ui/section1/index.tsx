@@ -14,7 +14,7 @@ import space from "../../../../public/images/space.png"
 
 export function SectionOne() {
     return (
-        <section className="flex overflow-x-auto text-nowrap w-full lg:justify-start 2xl:justify-center items-center gap-14 2xl:gap-16.5 py-6 px-4 md:px-6 lg:px-10  no-scrollbar">
+        <section className="flex overflow-x-auto text-nowrap w-full lg:justify-start 2xl:justify-center items-center gap-14 lg:gap-14.5 2xl:gap-16.5 py-6 px-4 md:px-6 lg:px-10  no-scrollbar">
 
             <Logo logoUrl={healthCare.src} altText="Healthcare" text="Healthcare" />
             <Logo logoUrl={finTech.src} altText="finTech" text="Fintech" />

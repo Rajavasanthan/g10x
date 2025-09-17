@@ -8,7 +8,7 @@ export function Blog() {
     const blogData = useBlogsData()
     return (
         blogData.map((blog) => (
-            <Link key={blog.id} href={`blog/${blog.fileName}`} className="overflow-hidden cursor-pointer block">
+            <Link key={blog.id} href={`blog/${blog.fileName}`} className="overflow-hidden cursor-pointer xl:h-84">
                 <Image
                     src={menImg}
                     alt="Men image"
@@ -18,7 +18,7 @@ export function Blog() {
                 />
                 <div className="relative bottom-16 w-full h-18 bg-gradient-to-t from-black to-transparent"></div>
 
-                <div className="relative bottom-24 left-6 md:w-64 flex flex-col text-white">
+                <div className="relative bottom-24 left-6 md:w-64 h-fit flex flex-col text-white">
                     <h3 className="text-lg md:text-xl lg:text-2xl">{blog.title}</h3>
                     <p className="text-sm md:text-[16px] mt-6">{blog.description}</p>
                     <p className="mt-6 text-lg underline">Read more</p>
