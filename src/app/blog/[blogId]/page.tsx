@@ -4,11 +4,8 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Metadata } from "next";
 import matter from "gray-matter";
-
 import { Navbar, Comments, CommentCount, BlogClapCount, ShareBtn } from "@/components";
 import Image from 'next/image'
-
-import menImg from "../../../../public/images/men-img2.jpg"
 
 export async function generateMetadata({ params }: { params: Promise<{ blogId: string }> }): Promise<Metadata> {
 
