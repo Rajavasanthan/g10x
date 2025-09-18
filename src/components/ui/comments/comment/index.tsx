@@ -7,6 +7,7 @@ import { useParams } from 'next/navigation'
 import { CommentsType } from '@/types'
 import { getComment, updateClapCountById } from '@/utils/api'
 import CommentsForm from '../form'
+import gsap from "gsap"
 
 export function Comments() {
     const params = useParams()
@@ -14,6 +15,7 @@ export function Comments() {
     const blogId = Array.isArray(blogIdParam) ? blogIdParam[0] : blogIdParam;
 
     const [comments, setComments] = useState<CommentsType[]>([])
+    const [plusOnes, setPlusOnes] = useState<{ id: number; key: number }[]>([])
 
     const fetchComments = async () => {
         if (!blogId) return
@@ -39,7 +41,40 @@ export function Comments() {
                 c._id === id ? { ...c, clapCount: newClapCount } : c
             )
         );
+
+        const key = Date.now();
+        setPlusOnes(prev => [...prev, { id, key }]);
+
+        setTimeout(() => {
+            const el = document.getElementById(`plus-${id}-${key}`);
+            if (el) {
+                gsap.fromTo(
+                    el,
+                    { opacity: 0, y: 0, scale: 0.5 },
+                    {
+                        opacity: 1,
+                        y: -50,
+                        scale: 1.2,
+                        duration: 0.6,
+                        ease: "back.out(2)",
+                        onComplete: () => {
+                            gsap.to(el, {
+                                opacity: 0,
+                                y: -90,
+                                scale: 0.8,
+                                duration: 0.5,
+                                ease: "power2.in",
+                                onComplete: () => {
+                                    setPlusOnes(prev => prev.filter(p => p.key !== key));
+                                }
+                            });
+                        }
+                    }
+                );
+            }
+        }, 0);
     }
+
     return (
         <div className='flex flex-col space-y-8 lg:space-y-10 max-w-4xl mx-auto mb-12 px-4 md:px-6 lg:px-10'>
 
@@ -66,10 +101,26 @@ export function Comments() {
                             </div>
                             <p className='text-wrap text-sm lg:text-[15px]'>{comment.comment}</p>
                             <div className="flex items-center space-x-6 lg:space-x-8">
-                                <div className="flex space-x-1.5 items-center">
-                                    <Image src={clapIcon} alt="Clap icon" className='cursor-pointer'
-                                        onClick={() => handleClapIcon(comment._id, comment.clapCount)} />
+                                <div className="flex space-x-1.5 items-center relative">
+                                    <Image
+                                        src={clapIcon}
+                                        alt="Clap icon"
+                                        className='cursor-pointer'
+                                        onClick={() => handleClapIcon(comment._id, comment.clapCount)}
+                                    />
+
                                     <p className="text-sm text-gray-600">{comment.clapCount}</p>
+
+                                    {plusOnes
+                                        .filter(p => p.id === comment._id)
+                                        .map(p => (
+                                            <span
+                                                key={p.key}
+                                                id={`plus-${comment._id}-${p.key}`}
+                                                className="absolute px-2 py-1.5 bg-black text-white text-xs font-bold rounded-full shadow-lg opacity-0">
+                                                +1
+                                            </span>
+                                        ))}
                                 </div>
                             </div>
                         </div>
