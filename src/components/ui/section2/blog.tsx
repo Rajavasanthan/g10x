@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useBlogsData } from "@/hooks/useBlogsData";
-import menImg from "../../../../public/images/men-img.jpg";
 
 export function Blog() {
     const blogData = useBlogsData()
@@ -10,7 +9,7 @@ export function Blog() {
         blogData.map((blog) => (
             <Link key={blog.id} href={`blog/${blog.fileName}`} className="overflow-hidden cursor-pointer xl:h-84">
                 <Image
-                    src={menImg}
+                    src={blog.image}
                     alt="Men image"
                     width={600}
                     height={200}
