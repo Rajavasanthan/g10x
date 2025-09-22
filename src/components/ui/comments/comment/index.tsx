@@ -5,23 +5,35 @@ import Image from 'next/image'
 import clapIcon from "../../../../../public/images/clap_icon.svg"
 import { useParams } from 'next/navigation'
 import { CommentsType } from '@/types'
-import { getComment, updateClapCountById } from '@/utils/api'
+import { getBlogsClapCount, getComment, updateClapCountById } from '@/utils/api'
 import CommentsForm from '../form'
 import gsap from "gsap"
 
 export function Comments() {
-    const params = useParams()
-    const blogIdParam = params?.blogId
-    const blogId = Array.isArray(blogIdParam) ? blogIdParam[0] : blogIdParam;
+    const params = useParams<{ blogId: string }>()
+    const blogId = params.blogId
 
     const [comments, setComments] = useState<CommentsType[]>([])
     const [plusOnes, setPlusOnes] = useState<{ id: number; key: number }[]>([])
+    const [slugId, setSlugId] = useState("")
+
+    useEffect(() => {
+        const fetchBlog = async () => {
+            try {
+                const res = await getBlogsClapCount(blogId);
+                setSlugId(res.data._id)
+            } catch (error) {
+                console.error("Failed to fetch blog", error);
+            }
+        };
+        fetchBlog();
+    }, [blogId]);
 
     const fetchComments = async () => {
-        if (!blogId) return
+        if (!slugId) return
 
         try {
-            const res = await getComment(blogId);
+            const res = await getComment(slugId);
             setComments(res.data)
         } catch (error) {
             console.log("Failed to fetch comments", error)
@@ -30,7 +42,7 @@ export function Comments() {
 
     useEffect(() => {
         fetchComments()
-    }, [blogId])
+    }, [slugId])
 
     function handleClapIcon(id: number, currentClapCount: number) {
         const newClapCount = currentClapCount + 1;

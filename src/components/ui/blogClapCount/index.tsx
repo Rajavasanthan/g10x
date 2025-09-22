@@ -3,30 +3,30 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import clapIcon from "../../../../public/images/clap_icon.svg";
-import { createBlogsForClaps, getBlogsClapCount, updateClapCountByBlogId } from "@/utils/api";
+import { createBlogsForClaps, getBlogsClapCount, updateClapCountBySlug } from "@/utils/api";
 import { Blog } from "@/types";
 
-export function BlogClapCount({ blogId }: { blogId: string }) {
+export function BlogClapCount({ slug }: { slug: string }) {
     const [blog, setBlog] = useState<Blog | null>(null);
     const [plusOnes, setPlusOnes] = useState<number[]>([]); 
 
     useEffect(() => {
         const ensureBlog = async () => {
             try {
-                await createBlogsForClaps(blogId);
+                await createBlogsForClaps(slug);
             } catch (error) {
                 console.error("Failed to ensure blog", error);
             }
         };
         ensureBlog();
-    }, [blogId]);
+    }, [slug]);
 
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const res = await getBlogsClapCount(blogId);
+                const res = await getBlogsClapCount(slug);
                 setBlog({
-                    blogId,
+                    slug,
                     clapCount: res.data.clapCount || 0
                 });
             } catch (error) {
@@ -34,9 +34,9 @@ export function BlogClapCount({ blogId }: { blogId: string }) {
             }
         };
         fetchBlog();
-    }, [blogId]);
+    }, [slug]);
 
-    async function handleClapIcon(blogId: string) {
+    async function handleClapIcon(slug: string) {
         if (!blog) return;
         const newClapCount = (blog.clapCount || 0) + 1;
         setBlog({ ...blog, clapCount: newClapCount });
@@ -45,7 +45,7 @@ export function BlogClapCount({ blogId }: { blogId: string }) {
         setPlusOnes((prev) => [...prev, id]);
 
         try {
-            await updateClapCountByBlogId(blogId, newClapCount);
+            await updateClapCountBySlug(slug, newClapCount);
         } catch (error) {
             console.error("Failed to update clap count", error);
             setBlog((prev) => prev ? { ...prev, clapCount: prev.clapCount - 1 } : prev);
@@ -89,7 +89,7 @@ export function BlogClapCount({ blogId }: { blogId: string }) {
                 <Image
                     src={clapIcon}
                     alt="Clap icon"
-                    onClick={() => handleClapIcon(blogId)}
+                    onClick={() => handleClapIcon(slug)}
                     className="cursor-pointer"
                 />
 

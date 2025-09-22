@@ -20,7 +20,7 @@ export interface FormErrors {
 }
 
 export interface CommentData extends FormValues {
-    blogId: string;
+    slugId: string;
 }
 
 export interface SectionOne {
@@ -56,7 +56,7 @@ export interface CommentsType {
 }
 
 export interface Blog {
-    blogId: string;
+    slug: string;
     clapCount: number;
 }
 

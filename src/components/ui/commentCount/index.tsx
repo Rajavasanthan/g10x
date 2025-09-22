@@ -1,25 +1,41 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getComment } from "@/utils/api";
+import { getBlogsClapCount, getComment } from "@/utils/api";
 import { CommentsType } from "@/types";
 import Image from "next/image";
 import commentIcon from "../../../../public/images/comment_icon.svg";
 
 export function CommentCount({ blogId }: { blogId: string }) {
     const [comments, setComments] = useState<CommentsType[]>([]);
+    const [slugId, setSlugId] = useState("")
 
     useEffect(() => {
-        const fetchComments = async () => {
+        const fetchBlog = async () => {
             try {
-                const res = await getComment(blogId);
-                setComments(res.data);
+                const res = await getBlogsClapCount(blogId);
+                setSlugId(res.data._id)
             } catch (error) {
-                console.error("Failed to fetch comments", error);
+                console.error("Failed to fetch blog", error);
             }
         };
-        fetchComments();
+        fetchBlog();
     }, [blogId]);
+
+    const fetchComments = async () => {
+        if (!slugId) return
+
+        try {
+            const res = await getComment(slugId);
+            setComments(res.data)
+        } catch (error) {
+            console.log("Failed to fetch comments", error)
+        }
+    }
+
+    useEffect(() => {
+        fetchComments()
+    }, [slugId])
 
     const commentsCount = comments.length;
     const handleScrollToComments = () => {

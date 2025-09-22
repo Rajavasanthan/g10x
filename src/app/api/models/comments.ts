@@ -9,8 +9,9 @@ const CommentSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    blogId: {
-        type: String,
+    slugId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Blog",
         required: true
     },
     clapCount: {
