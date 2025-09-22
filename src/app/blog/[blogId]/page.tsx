@@ -80,7 +80,7 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
           </div>
 
           <div className="flex items-center justify-around sm:justify-start space-x-8 mt-8">
-            <BlogClapCount blogId={blogId} />
+            <BlogClapCount slug={blogId} />
             <CommentCount blogId={blogId} />
             <ShareBtn />
           </div>

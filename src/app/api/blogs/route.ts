@@ -6,9 +6,9 @@ export async function POST(request: Request) {
     try {
         const data = await request.json();
         await db.connect();
-        let blog = await Blog.findOne({ blogId: data.blogId });
+        let blog = await Blog.findOne({ slug: data.slug });
         if (!blog) {
-            blog = new Blog({ blogId: data.blogId });
+            blog = new Blog({ slug: data.slug });
             await blog.save();
         }
         return NextResponse.json({ message: "Saved successfully", blog });
@@ -21,12 +21,12 @@ export async function POST(request: Request) {
 export async function GET(request: Request) {
     try {
         const url = new URL(request.url);
-        const blogId = url.searchParams.get("blogId");
-        if (!blogId) {
-            return NextResponse.json({ message: "blogId is required" }, { status: 400 });
+        const slug = url.searchParams.get("slug");
+        if (!slug) {
+            return NextResponse.json({ message: "slug is required" }, { status: 400 });
         }
         await db.connect();
-        const blog = await Blog.findOne({ blogId });
+        const blog = await Blog.findOne({ slug });
 
         return NextResponse.json(blog);
     } catch (error) {
@@ -39,10 +39,10 @@ export async function PUT(request: Request) {
     try {
         await db.connect();
         const url = new URL(request.url);
-        const blogId = url.searchParams.get("blogId");
+        const slug = url.searchParams.get("slug");
         const { clapCount } = await request.json();
 
-        await Blog.updateOne({ blogId }, { $set: { clapCount } });
+        await Blog.updateOne({ slug }, { $set: { clapCount } });
         return NextResponse.json({ message: "Blog clapCount updated successfully" });
     } catch (error) {
         console.error("PUT method error:", error);

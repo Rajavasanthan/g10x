@@ -1,19 +1,36 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useFormik } from "formik"
 import ReCAPTCHA from "react-google-recaptcha"
 import { FormErrors, FormValues } from "@/types"
 import { useParams } from "next/navigation"
-import { postComment } from "@/utils/api"
+import { getBlogsClapCount, postComment } from "@/utils/api"
 
 interface CommentFormProps {
     onNewComment?: () => void
 }
 
 export function CommentsForm({ onNewComment }: CommentFormProps) {
-    const { blogId } = useParams()
+    const params = useParams<{ blogId: string }>()
+    const blogId = params.blogId
+
     const [captchaToken, setCaptchaToken] = useState<string | null>(null)
+    const [slugId, setSlugId] = useState("")
+
+    useEffect(() => {
+        const fetchBlog = async () => {
+            try {
+                const res = await getBlogsClapCount(blogId);
+                console.log("Blog response:", res.data); 
+                const id = res.data._id; 
+                setSlugId(id);
+            } catch (error) {
+                console.error("Failed to fetch blog", error);
+            }
+        };
+        fetchBlog();
+    }, [blogId]);
 
     const formik = useFormik<FormValues>({
         initialValues: {
@@ -43,22 +60,20 @@ export function CommentsForm({ onNewComment }: CommentFormProps) {
             return errors
         },
         onSubmit: async (values, { resetForm }) => {
-            if (!blogId) {
+            if (!slugId) {
                 alert("Blog ID is missing");
                 return;
             }
             try {
-                console.log("Form submitted:", values)
-                const res = await postComment({
-                    ...values,
-                    blogId: Array.isArray(blogId) ? blogId[0] : blogId,
-                })
+                const payload = { ...values, slugId };
+                console.log("Submitting payload:", payload);
+                const res = await postComment(payload);
                 if (onNewComment) onNewComment();
-                alert("Comment sent successfully")
-                resetForm()
-                setCaptchaToken(null)
+                alert("Comment sent successfully");
+                resetForm();
+                setCaptchaToken(null);
             } catch {
-                alert("Something went wrong")
+                alert("Something went wrong");
             }
         },
     })
