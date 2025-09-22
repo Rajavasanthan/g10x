@@ -3,7 +3,7 @@ author: KarthiKeyan Ponniah
 profileImage: /images/blog-profile-img1.png
 readTime: 3 min read
 date: Sep 21, 2025
-ogImage: /images/blog-img1.jpg
+ogImage: /images/blog-og-img1.png
 ---
 
 # The ritual of startup naming
