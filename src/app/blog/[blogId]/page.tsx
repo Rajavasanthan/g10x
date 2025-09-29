@@ -36,6 +36,20 @@ export async function generateMetadata({ params }: { params: Promise<{ blogId: s
   };
 }
 
+const dates: { [key: string]: Date } = {};
+
+function generateRandomDate(): Date {
+  const now = new Date();
+  const randomDays = Math.floor(Math.random() * (20 - 8 + 1)) + 8;
+
+  const date = new Date();
+  date.setDate(now.getDate() - randomDays);
+  date.setHours(0, 0, 0, 0);
+
+  const randomMs = Math.floor(Math.random() * 24 * 60 * 60 * 1000);
+  return new Date(date.getTime() + randomMs);
+}
+
 export default async function Page({ params }: { params: Promise<{ blogId: string }> }) {
   const { blogId } = await params;
 
@@ -49,6 +63,10 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
   }
 
   const { data, content } = matter(fileContent);
+
+  if (!dates[blogId]) {
+    dates[blogId] = generateRandomDate();
+  }
 
   return (
     <div className="h-screen pb-1  bg-[#ede7dd] overflow-x-hidden text-gray-700">
@@ -75,7 +93,15 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
             <div className="flex items-center space-x-4 sm:order-2 order-1">
               <p className="text-gray-700 text-sm">{data.readTime || "0 min read"}</p>
               <p>.</p>
-              <p className="text-gray-700 text-sm">{data.date || "Unknown date"}</p>
+              <p className="text-gray-700 text-sm">
+                {
+                  dates[blogId].toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric"
+                  })
+                }
+              </p>
             </div>
           </div>
 

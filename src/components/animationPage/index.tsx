@@ -87,6 +87,8 @@ export function AnimationPage() {
           <div className="w-full flex flex-col justify-center items-center ">
             <div className="flex space-x-1.5 md:space-x-4 ">
 
+            {/* Image height: 200 px, width: 128 px  */}
+
               <div className="flex flex-col space-y-1.5 md:space-y-4 relative top-10 md:top-24">
                 <Image src={image1} alt="Image1" className="h-fit rounded-sm md:rounded-lg object-cover image2" />
                 <Image src={image12} alt="Image12" className="h-fit rounded-sm md:rounded-lg object-cover image2" />

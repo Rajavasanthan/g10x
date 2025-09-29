@@ -5,7 +5,7 @@ import React from "react";
 export function Logo({ logo, title, content }: SectionSix) {
     return (
         <div className="flex flex-col">
-            <div className="flex items-end gap-2.5">
+            <div className="flex items-center gap-2.5">
                 <Image
                     src={logo}
                     alt={title}
