@@ -35,11 +35,11 @@ export function SectionSix() {
                         <Logo logo={connected_car.src} title="Mobility" content="From EVs to logistics, reimagining how the world moves." />
                         <Logo logo={solar_energy.src} title="Energy" content="Clean, sustainable solutions powering the future." />
                         <Logo logo={learning.src} title="Deep Tech" content="AI, robotics, and frontier tech redefining what&apos;s possible." />
-                        <Logo logo={climate_change.src} title="Climate & Sustainability" content="Driving green initiatives and circular economies." />
+                        <Logo logo={climate_change.src} title="agri tech" content="Driving green initiatives and circular economies." />
                         <Logo logo={space.src} title="Space" content="Unlocking opportunities beyond Earth." />
                         <Logo logo={school.src} title="EdTech" content="Reinventing how people learn and upskill." />
-                        <Logo logo={protection.src} title="Consumer & Lifestyle" content="Products and platforms shaping daily life." />
-                        <Logo logo={smart_cities.src} title="Smart Infrastructure" content="Next-gen cities, security, and connected systems." />
+                        <Logo logo={protection.src} title="Lifestyle" content="Products and platforms shaping daily life." />
+                        <Logo logo={smart_cities.src} title="Infrastructure" content="Next-gen cities, security, and connected systems." />
                     </div>
 
                     <div className="mt-10 md:mt-14">
