@@ -3,7 +3,7 @@ author: Rajavasanthan
 profileImage: /images/blog-profile-img2.png
 readTime: 3.5 min read
 date: Sep 21, 2025
-ogImage: /images/blog-og-img1.png
+ogImage: /images/blog-og-img2.png
 ---
 
 # Your Startup Is Not About the Idea… It’s Something More Than That
