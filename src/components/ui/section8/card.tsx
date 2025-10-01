@@ -4,7 +4,7 @@ import React from 'react'
 
 export function Card({ image, title, content }: SectionEight) {
     return (
-        <div className="relative w-full h-[350px] lg:h-[450px]"> 
+        <div className="relative w-full h-[350px] lg:h-[360px] 2xl:h-[380px]"> 
             <Image
                 src={image}
                 alt={title}
@@ -15,15 +15,13 @@ export function Card({ image, title, content }: SectionEight) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent rounded-b-[60px]"></div>
 
             <div className="absolute bottom-6 left-6 right-6 flex flex-col space-y-3">
-                <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-[16px]">
+                <p className="border border-white rounded-full py-1 px-3 text-white w-fit text-sm sm:text-base md:text-[12px]">
                     {title}
                 </p>
-                <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                <h3 className="text-white text-sm sm:text-base md:text-md lg:text-lg">
                     {content}
                 </h3>
-                <p className="text-white text-sm sm:text-base md:text-[16px] font-semibold underline">
-                    Read more
-                </p>
+                
             </div>
         </div>
     )

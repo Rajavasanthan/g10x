@@ -15,7 +15,7 @@ import { Btn } from '@/components/btn';
 
 export function SectionSix() {
     return (
-        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 pt-4 md:pt-12 lg:pt-20 pb-18 md:pb-26">
+        <section className="bg-[#ede7dd] px-4 sm:px-6 md:px-10 pt-4 md:pt-12 lg:pt-20 pb-18 md:pb-22">
             <div className="flex justify-center">
                 <div className="xl:w-[1405px]">
 

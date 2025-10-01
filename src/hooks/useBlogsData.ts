@@ -1,5 +1,7 @@
 import blogOneImg from '../../public/images/blog-img1.jpg'
-import menImg from "../../public/images/men-img.jpg";
+import blogTwoImg from '../../public/images/blog-img2.png'
+import blogThreeImg from '../../public/images/blog-img3.png'
+import blogFourImg from "../../public/images/blog-img4.png";
 
 export function useBlogsData() {
     return [
@@ -15,21 +17,21 @@ export function useBlogsData() {
             fileName: "your-startup-is-not-about-the-idea-its-something",
             title: "Your Startup Is Not About the Idea…",
             description: "When we think about startups, we often obsess over the idea. We believe the magic",
-            image: menImg
+            image: blogTwoImg
         },
         {
             id: 3,
-            fileName: "breaking-barriers-arun-kumars-visionary-journey-visually-challenged-ml-expert",
-            title: "Founder Playbooks",
-            description: "Real stories, hard lessons, and proven methods from entrepreneurs who've been there.",
-            image: menImg
+            fileName: "beyond-the-hype-debunking-the-5-most-common-myths",
+            title: "Beyond the Hype : Debunking...",
+            description: "For any entrepreneur, the journey from a spark of an idea to a thriving business",
+            image: blogThreeImg
         },
         {
             id: 4,
-            fileName: "google-developers-student-club-organizes-tech-event-vit-chennai-campus",
-            title: "Global Startup Trends",
-            description: "Stay tuned to what's happening across ecosystems — from Silicon Valley to Singapore.",
-            image: menImg
+            fileName: "entrepreneurship-vs-startups-a-beginners-guide",
+            title: "Entrepreneurship vs. Startups...",
+            description: "When I started my company some of the meetups people asked me, yours is a startup",
+            image: blogFourImg
         }
     ];
 }

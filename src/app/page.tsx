@@ -35,9 +35,9 @@ export default function Home() {
 
         <SectionSix />
 
-        <div id="community-section">
+        {/* <div id="community-section">
           <AnimationPage />
-        </div>
+        </div> */}
 
         <SectionEight />
 

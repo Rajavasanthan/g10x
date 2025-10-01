@@ -90,7 +90,7 @@ export default async function Page({ params }: { params: Promise<{ blogId: strin
               />
               <h2 className="font-semibold text-lg">{data.author || "Unknown"}</h2>
             </div>
-            <div className="flex items-center space-x-4 sm:order-2 order-1">
+            <div className="flex items-center space-x-2 sm:order-2 order-1">
               <p className="text-gray-700 text-sm">{data.readTime || "0 min read"}</p>
               <p>.</p>
               <p className="text-gray-700 text-sm">
