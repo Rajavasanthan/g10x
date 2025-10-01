@@ -25,4 +25,3 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/api/comments"],
   "exclude": ["node_modules"]
 }
-
