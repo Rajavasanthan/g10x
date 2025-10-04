@@ -15,23 +15,23 @@ export function SectionEight() {
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3 space-y-3">
                         <Card
                             image={blogOneImg.src}
-                            title="Healthcare Circle"
-                            content="Dr. Ananya: How her startup reduced patient wait time in rural clinics by 40% with AI triage."
+                            title="DeepTech"
+                            content="Karthikeyan Ponniah"
                         />
                         <Card
                             image={blogTwoImg.src}
-                            title="Fintech Circle"
-                            content="Arjun Mehta: Scaling a cross-border payments platform with mentorship from the G10X Fintech track."
+                            title="EduTech"
+                            content="Rajavasanthan (RV)"
                         />
                         <Card
                             image={blogThreeImg.src}
-                            title="Mobility Circle"
-                            content="Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X"
+                            title="Media & Entertainment"
+                            content="Vijay"
                         />
                         <Card
                             image={blogFourImg.src}
-                            title="Mobility Circle"
-                            content="Lena Torres: From prototype to pilot — building sustainable EV charging hubs with G10X"
+                            title="AgriTech"
+                            content="Murali Selvaraj"
                         />
                     </div>
                 </div>
