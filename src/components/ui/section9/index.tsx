@@ -1,7 +1,7 @@
 import { Btn } from '@/components/btn'
 import Image from 'next/image'
 import React from 'react'
-import menImg3 from "../../../../public/images/men-img3.webp";
+import menImg3 from "../../../../public/images/grow.png";
 
 export function SectionNine() {
     return (
